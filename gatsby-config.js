@@ -1,12 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `les  parentheses`,
+    author: `camille villard`,
+    description: `histoires & ponctuation.`,
+    siteUrl: `https://www.les-parentheses.com`,
     social: {
-      twitter: `kylemathews`,
-    },
+      twitter: 'camvillard',
+      instagram:  'camvillard',
+      linkedin: 'camillevillard',
+      behance: 'camille villard',
+      dribbble:  'camille villard'
+    }
   },
   plugins: [
     {
@@ -45,6 +49,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+         include: /images/
+        }
+      }
+    },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -57,8 +70,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `les parenthèses`,
+        short_name: `les parenthèses`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -68,11 +81,5 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
   ],
 }

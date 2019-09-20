@@ -1,6 +1,9 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
+description: récit
+image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
+categories:
 ---
 
 This is my first post on my new fake blog! How exciting!
