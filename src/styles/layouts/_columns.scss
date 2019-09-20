@@ -1,7 +1,10 @@
- /*----- INDEX FOR LAYOUTS ----- */
+/*----- LAYOUTS : COLUMNS ----- */
 
-@import "columns";
-@import "general";
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
 
 @media (min-width: $xsm-screen) {
 } // end of xsm-screen - 576px
@@ -10,6 +13,15 @@
 } // end of sm-screen - 768px
 
 @media (min-width: $md-screen) {
+  .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .is-one-half {
+    flex: 0 0 50%;
+  }
 } // end of md-screen - 992px
 
 @media only screend and (min-width: $lg-screen) {
