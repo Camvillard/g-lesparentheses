@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 // internal stuff
 import SEO from "./seo"
 import Navbar from "./navbar"
+import Header from "./header"
 
 // styles & assets
 
@@ -15,6 +16,7 @@ class Layout extends React.Component {
     console.log(this.props.children)
     return (
       <React.Fragment>
+        <Header />
         <Navbar />
 
         <main>{children}</main>

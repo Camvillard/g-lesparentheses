@@ -1,14 +1,23 @@
 /*----- INDEX FOR COMPONENTS ----- */
 
-@import "blobs";
-@import "buttons";
-@import "forms";
-@import "header";
-@import "images";
-@import "instagram";
-@import "navbar";
-@import "text";
 
+header {
+  position: relative;
+}
+
+.logo-image {
+  width: 280px;
+  margin: 24px auto;
+}
+
+.header-tagline {
+  position: absolute;
+  bottom: 8px;
+  left: 120px;
+  margin: 0;
+  font-family: $accent-font;
+  color: $dark-gray;
+}
 
 @media (min-width: $xsm-screen) {
 } // end of xsm-screen - 576px
