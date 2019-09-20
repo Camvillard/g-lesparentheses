@@ -1,7 +1,14 @@
- /*----- INDEX FOR LAYOUTS ----- */
+/*----- COMPONENTS : BLOBS ----- */
 
-@import "columns";
-@import "general";
+.blobs  {
+  // max-width: 100%;
+  &.absolute {
+    position: absolute;
+  }
+  &.fixed {
+    position: fixed;
+  }
+}
 
 @media (min-width: $xsm-screen) {
 } // end of xsm-screen - 576px
