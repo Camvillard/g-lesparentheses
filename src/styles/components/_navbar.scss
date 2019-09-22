@@ -32,34 +32,12 @@
   }
 }
 
-#show-menu {
-  position: relative;
-  // right: -48px;
-}
-
-#show-social {
-  position: relative;
-  // left: -48px;
-}
-
-// open menu
-
-.menu-open {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10000;
-  background: white;
-}
-
-
 .blog-menu {
-  width: 100vw;
+  width:  100vw;
   height: 100vh;
-  justify-content: center;
+  justify-content: flex-end;
   padding-left: 12%;
+  padding-bottom: 6vh;
 }
 
 .sub-navigation {
@@ -69,15 +47,88 @@
 }
 
 .sub-nav-item a {
-  color: $white;
   font-family: $headers-font;
   font-size: 3.8rem;
+  animation-name: showSubNavItems;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-delay: 0.6;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
+@keyframes showSubNavItems {
+  0% {
+    // color: white;
+    opacity: 0;
+  }
+
+  100% {
+    color: $white;
+    opacity: 1;
+  }
+}
+
+// open menu
+
+.menu-open {
+  animation-name: showingMenu;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes showingMenu {
+  0% {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+  100% {
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+}
+
+
 #blob-menu {
-  bottom: -21px;
-  width: 620px !important;
+  animation-name: showingBlobMenu;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-delay: 0.2;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  bottom: -84px;
   left: -126px;
+  width: 180% !important;
+}
+
+
+
+@keyframes showingBlobMenu {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 180% !important;
+  }
 }
 
 #blob-social {
@@ -86,8 +137,6 @@
   width: 634px !important;
   right: -199px;
 }
-
-
 
 
 @media (min-width: $xsm-screen) {

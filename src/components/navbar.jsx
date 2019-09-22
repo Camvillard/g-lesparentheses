@@ -12,8 +12,8 @@ import "../styles/main.scss"
 
 const BlogMenu = () => {
   return(
-    <React.Fragment>
-      <div className="columns blog-menu menu-open">
+    <div className="menu-open">
+      <div className="columns blog-menu">
         <ul className="sub-navigation is-one-half">
           <li className="sub-nav-item"><Link to="#">histoires</Link></li>
           <li className="sub-nav-item"><Link to="#">vie</Link></li>
@@ -26,9 +26,9 @@ const BlogMenu = () => {
           <li className="sub-nav-item"><Link to="#">- portfolio</Link></li>
           <li className="sub-nav-item"><Link to="#">- e-shop</Link></li>
         </ul>
-        <BlobMenu id="blob-menu" className="blobs fixed"/>
       </div>
-    </React.Fragment>
+      <BlobMenu id="blob-menu" className="blobs fixed"/>
+    </div>
   )
 }
 
