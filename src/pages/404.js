@@ -1,8 +1,14 @@
+// external librairies
 import React from "react"
 import { graphql } from "gatsby"
 
+// internal stuff
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+// styles & assets
+import "../styles/main.scss"
+
 
 class NotFoundPage extends React.Component {
   render() {
