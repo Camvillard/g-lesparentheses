@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby"
 // internal components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import HomepageLastCard from "../components/post-cards/homepage-last-card";
+import HomepagePostCard from "../components/post-cards/homepage-post-card";
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,7 +17,22 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
 
-        <HomepageLastCard/>
+        <div className="main-container">
+
+          <div className="posts-container">
+            <HomepagePostCard postIndex="last post"/>
+            <HomepagePostCard postIndex="second post"/>
+            <HomepagePostCard postIndex="third post"/>
+            <HomepagePostCard postIndex="fourth post"/>
+          </div>
+
+          <div className="button-typo read-more">
+            <Link to="/">lire plus d'articles</Link>
+          </div>
+
+
+        </div>
+
 
 
       </Layout>

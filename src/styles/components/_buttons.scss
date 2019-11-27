@@ -54,6 +54,13 @@
   width: 100%;
 }
 
+.button-typo {
+  a {
+    font-size: 4.6rem;
+    font-family: $headers-font;
+  }
+}
+
 
 
 @media (min-width: $xsm-screen) {

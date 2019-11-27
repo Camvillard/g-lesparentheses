@@ -7,16 +7,14 @@ import { Link } from "gatsby"
 // styles & assets
 
 
-class HomepageLastCard extends React.Component {
+class HomepagePostCard extends React.Component {
   render() {
     return (
-      <div className="blog-card last-post">
+      <div className={`blog-card ${this.props.postIndex}`}>
         <p className="meta-informations">histoire publiée le 12 janvier 2018</p>
-        <div
-          className="featured-image-container"
-          style={{
-            background: "linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.8)), url(https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_100.jpg)"
-          }}>
+        <div className="featured-image-container">
+          <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt=""/>
+          <div className="image-overlay"></div>
         </div>
         <h2 className="post-title"><span>deux mille dix-huit, deux mille dix-neuf</span></h2>
         <p className="post-excerpt">
@@ -29,4 +27,4 @@ class HomepageLastCard extends React.Component {
   }
 }
 
-export default HomepageLastCard
+export default HomepagePostCard
