@@ -19,7 +19,7 @@ class Layout extends React.Component {
         <Header />
         <Navbar />
 
-        <main>{children}</main>
+        <main className="main-container">{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

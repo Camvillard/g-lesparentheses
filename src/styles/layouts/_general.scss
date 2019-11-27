@@ -3,35 +3,57 @@
 
 :root {
   font-size: 62.5%;
-  body {
-    margin: 0;
-    font-size: 1.6rem;
-  }
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
 html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
+
 *:before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
+
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-
-a {
-  text-decoration: none;
-  color: $primary-color;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
-.hidden {
-  border: 3px solid blue;
+img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 
 
 @media (min-width: $xsm-screen) {
@@ -43,7 +65,7 @@ a {
 @media (min-width: $md-screen) {
 } // end of md-screen - 992px
 
-@media only screend and (min-width: $lg-screen) {
+@media (min-width: $lg-screen) {
 } // end of lg-screen - 1200px
 
 @media (min-width: $hg-screen) {

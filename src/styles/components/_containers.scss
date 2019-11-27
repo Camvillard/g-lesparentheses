@@ -1,6 +1,10 @@
-/*----- INDEX FOR PAGES ----- */
+/*----- COMPONENTS : CONTAINERS ----- */
 
-@import "homepage";
+
+.main-container {
+  width: 92vw;
+  margin: 24px auto;
+}
 
 @media (min-width: $xsm-screen) {
 } // end of xsm-screen - 576px
