@@ -1,1 +1,135 @@
 /*----- COMPONENTS : FORMS ----- */
+
+
+input,
+label,
+::placeholder {
+  font-size: 1.4rem;
+}
+
+::placeholder {
+  font-family: $accent-font;
+  color: $dark-gray;
+  opacity: 1;
+}
+
+.form-row  {
+  display: flex;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+
+.form-stroke {
+  font-family: $accent-font;
+
+  input {
+    border: none;
+    background: none;
+    padding: 6px;
+    font-family: $accent-font;
+  }
+
+}
+
+.form-stroke.dark {
+  input {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid $dark-gray;
+    color: $dark-gray;
+  }
+
+  input:active,
+  input:focus,
+  input:hover {
+    outline: none;
+    border: 2px solid $dark-gray;
+    padding-left: 4px;
+  }
+
+  input.validated {
+    border: 2px solid $dark-gray;
+    padding-left: 4px;
+  }
+}
+
+
+
+.magic-form {
+  position: relative;
+
+  input {
+    width: 70%;
+  }
+
+  input[type="submit"]  {
+    width: 30%;
+    text-align: left;
+    position: absolute;
+    right: 70%;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  input[type="submit"].move-input {
+    animation-name: moveInput;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+@keyframes moveInput {
+  0% {
+    opacity: 0;
+    z-index: 3;
+  }
+
+  100% {
+    right: 0;
+    opacity: 1;
+    z-index: 3;
+  }
+}
+
+
+// animation-name,
+// animation-duration,
+// animation-timing-function,
+// animation-delay,
+// animation-iteration-count,
+// animation-direction,
+// animation-fill-mode,
+// animation-play-state.
+
+@media (min-width: $xsm-screen) {
+} // end of xsm-screen - 576px
+
+@media (min-width: $sm-screen) {
+} // end of sm-screen - 768px
+
+@media (min-width: $md-screen) {
+  .magic-form {
+    position: relative;
+
+    input {
+      width: 80%;
+    }
+
+    input[type="submit"]  {
+      width: 20%;
+      right: 80%;
+    }
+
+  }
+} // end of md-screen - 992px
+
+@media (min-width: $lg-screen) {
+} // end of lg-screen - 1200px
+
+@media (min-width: $hg-screen) {
+} // end of hg-screen - 1440px
+
+
