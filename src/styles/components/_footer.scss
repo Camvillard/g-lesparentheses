@@ -1,17 +1,23 @@
-/*----- INDEX FOR COMPONENTS ----- */
+/*----- COMPONENTS : FOOTER ----- */
 
-@import "blobs";
-@import "buttons";
-@import "cards";
-@import "containers";
-@import "footer";
-@import "forms";
-@import "grid";
-@import "header";
-@import "images";
-@import "instagram";
-@import "navbar";
-@import "text";
+footer {
+  text-align: center;
+  margin: 24px 0 16px;
+
+  .legal-stuff {
+    color: $old-pink;
+  }
+
+  .legal-links{
+    font-size: 1.2rem;
+  }
+
+  .brand-stuff {
+    p {
+      margin: 0.2em 0;
+    }
+  }
+}
 
 
 @media (min-width: $xsm-screen) {

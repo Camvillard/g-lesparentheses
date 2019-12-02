@@ -1,10 +1,6 @@
-// external librairies
 import React from "react"
 import { Link } from "gatsby"
 
-// internal stuff
-
-// styles & assets
 
 
 class HomepagePostCard extends React.Component {

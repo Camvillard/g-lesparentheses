@@ -1,12 +1,7 @@
-// external librairies
-import React from "react"
+ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-
-// internal stuff
-
-// styles & assets
 
 
 const Header = () => {
