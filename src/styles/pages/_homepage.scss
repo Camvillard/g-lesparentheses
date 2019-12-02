@@ -1,1 +1,94 @@
 /*----- LAYOUTS: HOMEPAGE ----- */
+
+.homepage-section {
+  margin: 24px auto;
+}
+
+// post section
+
+.read-more {
+  text-align: center;
+}
+
+// about section
+
+.about-container {
+  padding: 24px 0;
+
+  .about-content {
+    font-family: $accent-font;
+    font-size: 16px;
+  }
+}
+
+// petites parentheses
+
+.petites-parentheses-container {
+  .description {
+    color: $medium-gray;
+  }
+}
+
+.newsletter-container {
+  padding: 16px;
+  width: 92vw;
+  background: $old-pink;
+  margin-bottom: 450px;
+  margin-top: 56px;
+
+  .section-title {
+    margin-top: -40px;
+  }
+
+}
+
+@media (min-width: $xsm-screen) {
+} // end of xsm-screen - 576px
+
+@media (min-width: $sm-screen) {
+} // end of sm-screen - 768px
+
+@media (min-width: $md-screen) {
+  // post section
+
+  .read-more {
+    margin: auto;
+    a {
+      background: $old-pink;
+      padding: 24px 48px;
+      color: white;
+      font-size: 8.8rem;
+    }
+  }
+
+} // end of md-screen - 992px
+
+@media (min-width: $lg-screen) {
+  // petites parentheses
+
+  .petites-parentheses-container {
+    .description {
+      color: $medium-gray;
+    }
+  }
+
+  .newsletter-container {
+    padding: 24px;
+    width: 55%;
+    margin-left: 10%;
+    margin-top: 64px;
+
+    .section-title {
+      margin-top: -50px;
+    }
+
+    .form-stroked {
+      padding: 24px;
+    }
+  }
+} // end of lg-screen - 1200px
+
+@media (min-width: $hg-screen) {
+} // end of hg-screen - 1440px
+
+

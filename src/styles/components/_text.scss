@@ -13,17 +13,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
-p {
+p, li {
+  margin: 0.3em auto 1em;
   font-family: $body-font;
   color: $gray;
   font-weight: 300;
+  font-size: 1.4rem;
 }
 
 .accent-text, em, a {
   font-family: $accent-font;
   font-weight: 400;
+  font-size: 1.4rem;
 }
-
 
 a {
   text-decoration: none;
@@ -83,9 +85,19 @@ h6 {
 } // end of sm-screen - 768px
 
 @media (min-width: $md-screen) {
+  p, li, em, a {
+    font-size: 1.6rem;
+  }
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
+  p, li, em, a {
+    font-size: 1.8rem;
+  }
+
+  .accent-text {
+    font-size: 1.6rem;
+  }
 } // end of lg-screen - 1200px
 
 @media (min-width: $hg-screen) {

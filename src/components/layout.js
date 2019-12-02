@@ -12,19 +12,20 @@ import Header from "./header"
 
 class Layout extends React.Component {
   render() {
-    const {children} = this.props
-    console.log(this.props.children)
+    const {children, pageName } = this.props
     return (
       <React.Fragment>
-        <Header />
-        <Navbar />
+        <div className={`page ${pageName}`}>
+          <Header />
+          <Navbar />
 
-        <main className="main-container">{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
       </React.Fragment>
     )
   }

@@ -5,6 +5,8 @@
 // general for post cards
 
 .blog-card {
+  margin: 48px 0;
+
   .meta-informations {
     font-family: $accent-font;
     font-size: 1.2rem;
@@ -14,12 +16,10 @@
 
   .featured-image-container {
     position: relative;
-    // background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4));
-    background: linear-gradient(white, white);
   }
 
   .image-overlay {
-    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.5) 90%) ;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3) 94%) ;
     position: absolute;
     top: 0;
     left: 0;
@@ -34,6 +34,34 @@
   }
 }
 
+
+.petites-parentheses-card {
+  margin: 32px auto;
+  position: relative;
+
+  .meta-informations {
+    font-family: $accent-font;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $old-pink;
+    margin: 0;
+  }
+
+  .post-title {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 14rem;
+    color: lighten($old-pink, 15%);
+    margin: 0;
+  }
+
+  .post-excerpt {
+    position: relative;
+    margin-top: 0.4rem;
+  }
+}
+
 // homepage : last post card
 
 
@@ -45,6 +73,77 @@
 } // end of sm-screen - 768px
 
 @media (min-width: $md-screen) {
+  .blog-card  {
+    margin: 122px 0;
+
+    .meta-informations {
+      margin-right: 8%;
+    }
+    .featured-image-container {
+      width: 84%;
+      margin: auto;
+    }
+
+    .featured-image {
+      max-height: 480px;
+      width: 100%;
+    }
+
+    .post-title {
+      width: 60%;
+      margin-left: 0;
+      margin-top: -42px;
+      font-size: 5.2rem;
+    }
+
+    .post-excerpt {
+      width: 60%;
+      margin-left: 12%;
+    }
+
+    .button-block {
+      margin-left: 12%;
+    }
+
+  }
+
+  .blog-card.last {
+    .post-title {
+      width: 64%;
+      margin-top: -42px;
+      font-size: 5.6rem;
+    }
+  }
+
+  .blog-card.second  {
+    width: 80%;
+  }
+
+  .blog-card.third {
+    width: 60%;
+    margin-left: 38%;
+    .featured-image-container {
+      width: 100%;
+    }
+    .post-title {
+      width:  80%;
+      margin-left: -12%;
+    }
+    .post-excerpt {
+      width: 100%;
+      margin-left: 0;
+    }
+    .button-block {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .blog-card.fourth {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
