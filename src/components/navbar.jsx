@@ -58,13 +58,15 @@ class Navbar extends React.Component {
     }
   };
 
-  showMenu = () => {
+  showMenu = (e) => {
+    e.target.classList.toggle('active');
     this.setState({
       menuIsOpen: !this.state.menuIsOpen
     })
   };
 
-  showSocial= () => {
+  showSocial= (e) => {
+    e.target.classList.toggle('active');
     this.setState({
       socialIsOpen: !this.state.socialIsOpen
     })
@@ -79,11 +81,11 @@ class Navbar extends React.Component {
           <li className="nav-item"  id="show-menu" onClick={this.showMenu}>
             {this.state.menuIsOpen ? 'fermer' : 'menu'}
           </li>
-          <li className="nav-item">
-            <Link to="#">contact</Link>
-          </li>
           <li className="nav-item" id="show-social" onClick={this.showSocial}>
             {this.state.socialIsOpen ? 'fermer' : 'social'}
+          </li>
+          <li className="nav-item">
+            <Link to="#">contact</Link>
           </li>
         </ul>
 
