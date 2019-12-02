@@ -3,32 +3,37 @@
 
 .main-navigation {
   position: fixed;
-  bottom: -2px;
-  width: 100%;
+  top: calc(100vh - 148px);
+  left: -22px;
   z-index: 100000000;
-  // height: 100px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: $old-pink;
   margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding-left: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item {
-  text-align: center;
-  // transform: rotate(-68deg);
+  margin: 0;
   font-family: $accent-font;
-  background: $old-pink;
-  padding-top: 4px;
-  padding-bottom: 6px;
-  width: 92px;
+  padding-top: 2px;
+  padding-bottom: 4px;
   color: $white;
   text-transform: uppercase;
 
   a {
     color: $white;
     text-transform: uppercase;
+  }
+
+  &.active {
+    color: $dark-gray;
   }
 }
 
@@ -145,6 +150,28 @@
 } // end of sm-screen - 768px
 
 @media (min-width: $md-screen) {
+  .main-navigation {
+    top: 6vh;
+    right: 0 !important;
+  }
+
+  .nav-item {
+    width: 88px;
+    margin: 4px 0;
+    text-align: center;
+    // transform: rotate(-68deg);
+    font-family: $accent-font;
+    background: $old-pink;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    color: $white;
+    text-transform: uppercase;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
