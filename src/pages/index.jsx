@@ -1,14 +1,14 @@
-// external librairies
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { FaPen } from "react-icons/fa";
 
-// internal components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
 import HomepagePostCard from "../components/post-cards/homepage-post-card";
 import PetitesParenthesesCard from "../components/post-cards/petites-parentheses-card";
 import AboutContainer from "../components/about-container";
+
 
 class BlogIndex extends React.Component {
 

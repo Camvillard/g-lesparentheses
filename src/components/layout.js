@@ -1,11 +1,10 @@
-// external librairies
 import React from "react"
 import { Link } from "gatsby"
 
-// internal stuff
 import SEO from "./seo"
 import Navbar from "./navbar"
 import Header from "./header"
+import Footer from "./footer"
 
 // styles & assets
 
@@ -20,11 +19,8 @@ class Layout extends React.Component {
           <Navbar />
 
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+
+          <Footer />
         </div>
       </React.Fragment>
     )
