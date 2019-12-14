@@ -46,14 +46,14 @@ class BlogIndex extends React.Component {
         </div>
 
         <div className="button-typo read-more">
-          <Link to="/">lire plus d'articles</Link>
+          <Link to="/" className="button-block">lire plus d'articles</Link>
         </div>
 
         <AboutContainer />
 
-        <div className="main-container petites-parentheses-container homepage-section">
+        <div className="main-container petites-parentheses-container homepage-section grid">
 
-          <h2 className="section-title">les petites parenthèses</h2>
+          <h2 className="section-title column full-width">les petites parenthèses</h2>
           <p className="description">
           les petites parenthèses, ce sont tous ces petits textes sans forcément d'image ni même de ponctuation, mais qui en avaient marre de sommeiller dans mes petits carnets.
           </p>

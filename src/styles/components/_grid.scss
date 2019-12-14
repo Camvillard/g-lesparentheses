@@ -5,6 +5,12 @@
   grid-template-columns: 1fr;
 }
 
+.column {
+  &.full-width {
+    grid-column: span 12;
+  }
+}
+
 @media (min-width: $xsm-screen) {
 } // end of xsm-screen - 576px
 

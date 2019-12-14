@@ -42,7 +42,7 @@
   height: 100vh;
   justify-content: flex-end;
   padding-left: 12%;
-  padding-bottom: 6vh;
+  padding-bottom: 20vh;
 }
 
 .sub-navigation {
@@ -77,13 +77,21 @@
 // open menu
 
 .menu-open {
-  animation-name: showingMenu;
-  animation-duration: 0.6s;
-  animation-timing-function: linear;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  // animation-name: showingMenu;
+  // animation-duration: 0.6s;
+  // animation-timing-function: linear;
+  // animation-delay: 0;
+  // animation-iteration-count: 1;
+  // animation-direction: normal;
+  // animation-fill-mode: forwards;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+
 }
 
 
