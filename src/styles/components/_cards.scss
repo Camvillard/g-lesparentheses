@@ -43,6 +43,7 @@
 .petites-parentheses-card {
   margin: 32px auto;
   position: relative;
+  width: 80%;
 
   .meta-informations {
     font-family: $accent-font;
@@ -64,6 +65,7 @@
   .post-excerpt {
     position: relative;
     margin-top: 0.4rem;
+    margin-bottom: 1.8rem;
   }
 }
 

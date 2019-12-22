@@ -15,7 +15,8 @@ class HomepagePostCard extends React.Component {
             className="featured-image"/>
           <div className="image-overlay"></div>
         </div>
-        <h2 className="post-title"><span>deux mille dix-huit, deux mille dix-neuf</span></h2>
+
+        <Link to={"/deux-mille-dix-huit-dix-neuf/"}><h2 className="post-title">deux mille dix-huit, deux mille dix-neuf</h2></Link>
         <p className="post-excerpt">
         abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor, quia, temporibus nisi nulla eius dolore dolores illo cumque similique porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
@@ -28,3 +29,5 @@ class HomepagePostCard extends React.Component {
 }
 
 export default HomepagePostCard
+
+

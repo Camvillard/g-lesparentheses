@@ -1,8 +1,12 @@
 /*----- COMPONENTS  : GRID ----- */
 
+// regular grid
 .grid {
   display: grid;
   grid-template-columns: 1fr;
+  &.gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .column {
@@ -10,6 +14,9 @@
     grid-column: span 12;
   }
 }
+
+
+
 
 @media (min-width: $xsm-screen) {
 } // end of xsm-screen - 576px

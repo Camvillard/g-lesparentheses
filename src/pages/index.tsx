@@ -51,16 +51,19 @@ class BlogIndex extends React.Component {
 
         <AboutContainer />
 
-        <div className="main-container petites-parentheses-container homepage-section grid">
+        <div className="main-container petites-parentheses-container homepage-section">
 
           <h2 className="section-title column full-width">les petites parenthèses</h2>
           <p className="description">
           les petites parenthèses, ce sont tous ces petits textes sans forcément d'image ni même de ponctuation, mais qui en avaient marre de sommeiller dans mes petits carnets.
           </p>
 
-          <PetitesParenthesesCard />
-          <PetitesParenthesesCard />
-          <PetitesParenthesesCard />
+          <div className="petites-parentheses-content grid">
+            <PetitesParenthesesCard />
+            <PetitesParenthesesCard />
+            <PetitesParenthesesCard />
+          </div>
+
 
         </div>
 
