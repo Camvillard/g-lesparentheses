@@ -4,70 +4,70 @@
 
 // general for post cards
 
-.blog-card {
-  margin: 48px 0;
+// .blog-card {
+  // margin: 48px 0;
 
-  .meta-informations {
-    font-family: $accent-font;
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-align: right;
-  }
+  // .meta-informations {
+  //   font-family: $accent-font;
+  //   font-size: 1.2rem;
+  //   font-weight: 300;
+  //   text-align: right;
+  // }
 
-  .featured-image-container {
-    position: relative;
-  }
+  // .featured-image-container {
+  //   position: relative;
+  // }
 
-  .image-overlay {
-    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3) 94%) ;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  // .image-overlay {
+  //   background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3) 94%) ;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  // }
 
-  .post-title {
-    position: relative;
-    margin-top: -32px;
-    font-size: 4.8rem;
-    max-width: 520px;
-  }
+  // .post-title {
+  //   position: relative;
+  //   margin-top: -32px;
+  //   font-size: 4.8rem;
+  //   max-width: 520px;
+  // }
 
-  .post-excerpt {
-    max-width: 620px;
-  }
-}
+  // .post-excerpt {
+  //   max-width: 620px;
+  // }
+// }
 
 
-.petites-parentheses-card {
-  margin: 32px auto;
-  position: relative;
-  width: 80%;
+// .petites-parentheses-card {
+//   margin: 32px auto;
+//   position: relative;
+//   width: 80%;
 
-  .meta-informations {
-    font-family: $accent-font;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: $old-pink;
-    margin: 0;
-  }
+//   .meta-informations {
+//     font-family: $accent-font;
+//     font-size: 1.2rem;
+//     font-weight: 300;
+//     color: $old-pink;
+//     margin: 0;
+//   }
 
-  .post-title {
-    position: absolute;
-    top: 16px;
-    left: 0;
-    font-size: 14rem;
-    color: lighten($old-pink, 15%);
-    margin: 0;
-  }
+//   .post-title {
+    // position: absolute;
+    // top: 16px;
+    // left: 0;
+    // font-size: 14rem;
+    // color: lighten($old-pink, 15%);
+    // margin: 0;
+//   }
 
-  .post-excerpt {
-    position: relative;
-    margin-top: 0.4rem;
-    margin-bottom: 1.8rem;
-  }
-}
+//   .post-excerpt {
+    // position: relative;
+    // margin-top: 0.4rem;
+    // margin-bottom: 1.8rem;
+//   }
+// }
 
 // homepage : last post card
 
@@ -80,40 +80,40 @@
 } // end of sm-screen - 768px
 
 @media (min-width: $md-screen) {
-  .blog-card  {
-    margin: 122px 0;
+  // .blog-card  {
+  //   margin: 122px 0;
 
-    .meta-informations {
-      margin-right: 8%;
-    }
+    // .meta-informations {
+    //   margin-right: 8%;
+    // }
 
-    .featured-image-container {
-      width: 84%;
-      margin: auto;
-    }
+    // .featured-image-container {
+    //   width: 84%;
+    //   margin: auto;
+    // }
 
-    .featured-image {
-      max-height: 600px;
-      width: 100%;
-    }
+    // .featured-image {
+    //   max-height: 600px;
+    //   width: 100%;
+    // }
 
-    .post-title {
-      width: 60%;
-      margin-left: 0;
-      margin-top: -42px;
-      font-size: 5.2rem;
-    }
+    // .post-title {
+    //   width: 60%;
+    //   margin-left: 0;
+    //   margin-top: -42px;
+    //   font-size: 5.2rem;
+    // }
 
-    .post-excerpt {
-      width: 60%;
-      margin-left: 12%;
-    }
+    // .post-excerpt {
+    //   width: 60%;
+    //   margin-left: 12%;
+    // }
 
-    .button-block {
-      margin-left: 12%;
-    }
+  //   .button-block {
+  //     margin-left: 12%;
+  //   }
 
-  }
+  // }
 
   .blog-card.last {
     .post-title {

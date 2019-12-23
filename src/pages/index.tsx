@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import HomepagePostCard from "../components/post-cards/homepage-post-card";
 import PetitesParenthesesCard from "../components/post-cards/petites-parentheses-card";
 import AboutContainer from "../components/about-container";
-
+import LastPostCard from "../components/post-cards/last-post-card";
 
 class BlogIndex extends React.Component {
 
@@ -34,12 +34,14 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    console.log(posts)
+
     return (
       <Layout location={this.props.location} pageName={"homepage"} title={siteTitle}>
         <SEO title="All posts" />
 
         <div className="main-container posts-container homepage-section">
-          <HomepagePostCard postIndex="last"/>
+          <LastPostCard postIndex="last"/>
           <HomepagePostCard postIndex="second"/>
           <HomepagePostCard postIndex="third"/>
           <HomepagePostCard postIndex="fourth"/>
