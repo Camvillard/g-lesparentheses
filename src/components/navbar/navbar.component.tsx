@@ -4,7 +4,19 @@ import { Link, graphql } from "gatsby"
 // import BlobMenu from "./blob_3.svg"
 // import BlobSocial from "./blob_2.svg"
 import { INavbarState, INavbarProps } from "./navbar.model"
-import { NavbarContainer, NavbarListItem, MenuContainer, MenuItem, BlobMenuContainer, MenuOpen, CloseMenu, SocialMenuContainer, SocialMenuItem, BlobSocialContainer } from "./navbar.style"
+import {
+  NavbarContainer,
+  NavbarListItem,
+  MenuContainer,
+  MenuItem,
+  BlobMenuContainer,
+  MenuOpen,
+  CloseMenu,
+  SocialMenuContainer,
+  SocialMenuItem,
+  BlobSocialContainer,
+  CategoriesMenu
+} from "./navbar.style"
 import { BlobMenu, BlobSocial } from "./blobs"
 
 
@@ -14,21 +26,23 @@ const BlogMenu = (props) => {
     <MenuOpen>
       <MenuContainer>
         <CloseMenu onClick={toggleMenu}>fermer</CloseMenu>
-        <MenuItem>
-          <Link to="#">histoires</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="#">vie</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="#">voyages</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="#">food</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link to="#">et caetera</Link>
-        </MenuItem>
+        <CategoriesMenu>
+          <MenuItem>
+            <Link to="#">histoires</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">vie</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">voyages</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">food</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">et caetera</Link>
+          </MenuItem>
+        </CategoriesMenu>
         <MenuItem>
           <Link to="#">à propos</Link>
         </MenuItem>

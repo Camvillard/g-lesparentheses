@@ -52,7 +52,12 @@ export const CloseMenu = styled.p`
   color: white;
 `
 
+export const CategoriesMenu = styled.div`
+  margin-bottom: 48px;
+`
+
 export const MenuItem = styled.p`
+  margin-bottom: 2px;
   a {
     color: white;
     font-family: ${europaFont};
@@ -71,8 +76,9 @@ export const BlobMenuContainer = styled.div`
 
 export const SocialMenuContainer = styled.div`
   position: fixed;
-  bottom: 16px;
-  left: 68px;
+  text-align: right;
+  bottom: 156px;
+  right: 88px;
 `
 
 export const SocialMenuItem = styled.p`
@@ -82,9 +88,9 @@ export const SocialMenuItem = styled.p`
 `
 
 export const BlobSocialContainer = styled.div`
-  bottom: -36px;
+  top: 130px;
   position: fixed;
-  width: 570px;
-  left: -80px;
+  width: 440px;
+  left: 12px;
   z-index: -1;
 `
