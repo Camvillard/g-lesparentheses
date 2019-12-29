@@ -1,58 +1,58 @@
 /*----- LAYOUTS : MAIN ----- */
 
 
-:root {
-  font-size: 62.5%;
+// :root {
+//   font-size: 62.5%;
 
-  body {
-    margin: 0;
-    word-wrap: break-word;
-    font-kerning: normal;
-    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-    font-feature-settings: "kern", "liga", "clig", "calt";
-  }
-}
+//   body {
+//     margin: 0;
+//     word-wrap: break-word;
+//     font-kerning: normal;
+//     -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+//     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+//     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+//     font-feature-settings: "kern", "liga", "clig", "calt";
+//   }
+// }
 
 
-html {
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
+// html {
+//   box-sizing: border-box;
+//   overflow-y: scroll;
+// }
 
-* {
-  box-sizing: border-box;
-}
+// * {
+//   box-sizing: border-box;
+// }
 
-*:before {
-  box-sizing: border-box;
-}
+// *:before {
+//   box-sizing: border-box;
+// }
 
-*:after {
-  box-sizing: border-box;
-}
+// *:after {
+//   box-sizing: border-box;
+// }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
+// article,
+// aside,
+// details,
+// figcaption,
+// figure,
+// footer,
+// header,
+// main,
+// menu,
+// nav,
+// section,
+// summary {
+//   display: block;
+// }
 
-img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
+// img {
+//   max-width: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
 
 
 

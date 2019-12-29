@@ -8,7 +8,12 @@ import SEO from "../components/seo"
 import HomepagePostCard from "../components/post-cards/homepage-post-card";
 import PetitesParenthesesCard from "../components/post-cards/petites-parentheses-card";
 import AboutContainer from "../components/about-container";
-
+import LastPostCard from "../components/post-cards/last-post-card";
+import SecondPostCard from "../components/post-cards/second-post-card";
+import ThirdPostCard from "../components/post-cards/third-post-card";
+import FourthPostCard from "../components/post-cards/fourth-post-card";
+import { HomepageSection } from "../components/containers/homepage-containers";
+import { ButtonReadMore } from "../components/buttons/button-more";
 
 class BlogIndex extends React.Component {
 
@@ -34,33 +39,36 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
+    console.log(posts)
+
     return (
       <Layout location={this.props.location} pageName={"homepage"} title={siteTitle}>
         <SEO title="All posts" />
 
-        <div className="main-container posts-container homepage-section">
-          <HomepagePostCard postIndex="last"/>
-          <HomepagePostCard postIndex="second"/>
-          <HomepagePostCard postIndex="third"/>
-          <HomepagePostCard postIndex="fourth"/>
-        </div>
+        <HomepageSection>
+          <LastPostCard />
+          <SecondPostCard />
+          <ThirdPostCard />
+          <FourthPostCard />
+        </HomepageSection>
 
-        <div className="button-typo read-more">
-          <Link to="/">lire plus d'articles</Link>
-        </div>
-
+        <ButtonReadMore />
+        
         <AboutContainer />
 
         <div className="main-container petites-parentheses-container homepage-section">
 
-          <h2 className="section-title">les petites parenthèses</h2>
+          <h2 className="section-title column full-width">les petites parenthèses</h2>
           <p className="description">
           les petites parenthèses, ce sont tous ces petits textes sans forcément d'image ni même de ponctuation, mais qui en avaient marre de sommeiller dans mes petits carnets.
           </p>
 
-          <PetitesParenthesesCard />
-          <PetitesParenthesesCard />
-          <PetitesParenthesesCard />
+          <div className="petites-parentheses-content grid">
+            <PetitesParenthesesCard />
+            <PetitesParenthesesCard />
+            <PetitesParenthesesCard />
+          </div>
+
 
         </div>
 

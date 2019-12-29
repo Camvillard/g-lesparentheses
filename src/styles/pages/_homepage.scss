@@ -14,9 +14,12 @@
 
 .about-container {
   padding: 24px 0;
+  width: 90vw;
+  margin: 48px auto;
 
   h3 {
-    padding-left: 8vw;
+    padding-left: 12px;
+    margin-bottom: 24px;
   }
 
   .about-content {
@@ -36,7 +39,7 @@
   padding: 16px;
   width: 92vw;
   background: $old-pink;
-  margin-bottom: 450px;
+  margin-bottom: 54px;
   margin-top: 56px;
 
   .section-title {
@@ -55,20 +58,43 @@
   // post section
 
   .read-more {
+    width: 68%;
     margin: auto;
+    transition: 0.4s;
     a {
+      display: block;
+      width: 100%;
       background: $old-pink;
-      padding: 24px 48px;
+      padding-top:18px;
+      padding-bottom:18px;
       color: white;
       font-size: 8.8rem;
+      transition: 0.4s;
     }
+
+    &:hover {
+      width: 100%;
+      a {
+        font-size: 9.2rem;
+      }
+    }
+  }
+
+  .about-container {
+    margin: 124px auto;
+    width: 62%;
   }
 
 } // end of md-screen - 992px
 
 @media (min-width: $lg-screen) {
-  // petites parentheses
 
+  .about-container {
+    margin: 124px auto;
+    width: 52%;
+  }
+
+  // petites parentheses
   .petites-parentheses-container {
     .description {
       color: $medium-gray;
