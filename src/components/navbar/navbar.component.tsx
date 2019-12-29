@@ -4,12 +4,12 @@ import { Link, graphql } from "gatsby"
 // import BlobMenu from "./blob_3.svg"
 // import BlobSocial from "./blob_2.svg"
 import { INavbarState, INavbarProps } from "./navbar.model"
-import { NavbarContainer, NavbarListItem, MenuContainer, MenuItem, BlobMenuContainer, MenuOpen, CloseMenu } from "./navbar.style"
-import { BlobMenu } from "./blobs"
+import { NavbarContainer, NavbarListItem, MenuContainer, MenuItem, BlobMenuContainer, MenuOpen, CloseMenu, SocialMenuContainer, SocialMenuItem, BlobSocialContainer } from "./navbar.style"
+import { BlobMenu, BlobSocial } from "./blobs"
 
 
 const BlogMenu = (props) => {
-  const { toggleMenu} = props
+  const { toggleMenu } = props
   return(
     <MenuOpen>
       <MenuContainer>
@@ -38,46 +38,41 @@ const BlogMenu = (props) => {
         <MenuItem>
           <Link to="#">e-shop</Link>
         </MenuItem>
-        <BlobMenuContainer>
-          <BlobMenu />
-        </BlobMenuContainer>
-
-        {/* <div className="menu-open"> */}
-          {/* <div className="columns blog-menu"> */}
-            {/* <ul className="sub-navigation is-one-half">
-              <li className="sub-nav-item"></li>
-              <li className="sub-nav-item"><Link to="#">vie</Link></li>
-              <li className="sub-nav-item"><Link to="#">voyages</Link></li>
-              <li className="sub-nav-item"><Link to="#">food</Link></li>
-              <li className="sub-nav-item"><Link to="#">et caetera</Link></li>
-            </ul> */}
-            {/* <ul className="sub-navigation is-one-half">
-              <li className="sub-nav-item"><Link to="#">à propos</Link></li>
-              <li className="sub-nav-item"><Link to="#">- portfolio</Link></li>
-              <li className="sub-nav-item"><Link to="#">- e-shop</Link></li>
-            </ul> */}
-          {/* </div> */}
-          {/* <BlobMenu id="blob-menu" className="blobs fixed"/> */}
-        {/* </div> */}
       </MenuContainer>
+      <BlobMenuContainer>
+        <BlobMenu />
+      </BlobMenuContainer>
     </MenuOpen>
   )
 }
 
-const SocialMenu = () => {
+const SocialMenu = (props) => {
+  const { toggleSocial } = props
   return(
-    <React.Fragment>
-      <div className="columns blog-menu menu-open">
-        <ul className="sub-navigation is-one-half">
-          <li className="sub-nav-item"><Link to="#">instagram</Link></li>
-          <li className="sub-nav-item"><Link to="#">twitter</Link></li>
-          <li className="sub-nav-item"><Link to="#">linkedin</Link></li>
-          <li className="sub-nav-item"><Link to="#">behance</Link></li>
-          <li className="sub-nav-item"><Link to="#">dribbble</Link></li>
-        </ul>
-        {/* <BlobSocial id="blob-social" className="blobs fixed"/> */}
-      </div>
-    </React.Fragment>
+      <MenuOpen>
+        <SocialMenuContainer>
+          <CloseMenu onClick={toggleSocial}>fermer</CloseMenu>
+          <MenuItem>
+            <Link to="#">instagram</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">twitter</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">linkedin</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">behance</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="#">dribble</Link>
+          </MenuItem>
+
+        </SocialMenuContainer>
+        <BlobSocialContainer>
+            <BlobSocial />
+        </BlobSocialContainer>
+      </MenuOpen>
   )
 }
 
@@ -92,33 +87,32 @@ class Navbar extends React.Component<INavbarProps, INavbarState> {
 
   toggleMenu = (e) => {
     // e.target.classList.toggle('active');
+    console.log("salut")
     this.setState({
-      socialIsOpen: false,
       menuIsOpen: !this.state.menuIsOpen
     })
   };
 
   toggleSocial= (e) => {
     // e.target.classList.toggle('active');
+    console.log("hello")
     this.setState({
-      menuIsOpen: false,
       socialIsOpen: !this.state.socialIsOpen
     })
   }
 
   render() {
+    const { menuIsOpen, socialIsOpen } = this.state
     return (
       <React.Fragment>
-        {this.state.menuIsOpen ? <BlogMenu toggleMenu={this.toggleMenu} /> : <Fragment />}
-        {this.state.socialIsOpen ? <SocialMenu /> : <Fragment />}
+        { menuIsOpen && <BlogMenu toggleMenu={this.toggleMenu} /> }
+        { socialIsOpen && <SocialMenu toggleSocial={this.toggleSocial} /> }
         <NavbarContainer>
-
           <NavbarListItem onClick={this.toggleMenu}>
             menu
-            {/* {this.state.menuIsOpen ? 'fermer' : 'menu'} */}
           </NavbarListItem>
           <NavbarListItem onClick={this.toggleSocial}>
-            {this.state.socialIsOpen ? 'fermer' : 'social'}
+            social
           </NavbarListItem>
           <NavbarListItem>
             <Link to="#">contact</Link>

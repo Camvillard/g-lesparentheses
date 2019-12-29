@@ -38,7 +38,7 @@ export const MenuOpen = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(200,200,200);
+  background: white;
   z-index: 10000000000000;
 `
 
@@ -62,6 +62,26 @@ export const MenuItem = styled.p`
 `
 
 export const BlobMenuContainer = styled.div`
+  bottom: -36px;
+  position: fixed;
+  width: 570px;
+  left: -80px;
+  z-index: -1;
+`
+
+export const SocialMenuContainer = styled.div`
+  position: fixed;
+  bottom: 16px;
+  left: 68px;
+`
+
+export const SocialMenuItem = styled.p`
+  a {
+    color: red;
+  }
+`
+
+export const BlobSocialContainer = styled.div`
   bottom: -36px;
   position: fixed;
   width: 570px;

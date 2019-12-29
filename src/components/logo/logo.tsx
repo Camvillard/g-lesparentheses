@@ -29,7 +29,7 @@ const LogoContainer = styled.header`
     width: 32%;
   }
   @media(min-width: ${lgScreen}) {
-    width: 22%;
+    width: 28%;
   }
 `
 
