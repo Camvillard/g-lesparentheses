@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import SEO from "./seo"
-import Navbar from "./navbar"
+import Navbar from "./navbar/navbar.component"
 import Header from "./header"
 import Footer from "./footer"
 import { GlobalStyle } from "../theme/globalstyle"

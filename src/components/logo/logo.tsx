@@ -29,14 +29,14 @@ const LogoContainer = styled.header`
     width: 32%;
   }
   @media(min-width: ${lgScreen}) {
-    width: 22%;
+    width: 28%;
   }
 `
 
 const LogoTagline = styled(Accent)`
   position: absolute;
-  bottom: 20px;
-  right: 52px;
+  bottom: 16px;
+  right: 38px;
   color: 
 `
 
