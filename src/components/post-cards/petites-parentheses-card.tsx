@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components';
 import { themeColors } from "../../theme/style-variables";
 import { themeBreakpoints } from "../../theme/style-breakpoints";
-import { CardMeta } from "./cards";
+import { CardMeta } from "./post-cards";
 
 const { lightPink, oldPink} = themeColors;
 

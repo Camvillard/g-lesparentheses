@@ -9,6 +9,11 @@ import HomepagePostCard from "../components/post-cards/homepage-post-card";
 import PetitesParenthesesCard from "../components/post-cards/petites-parentheses-card";
 import AboutContainer from "../components/about-container";
 import LastPostCard from "../components/post-cards/last-post-card";
+import SecondPostCard from "../components/post-cards/second-post-card";
+import ThirdPostCard from "../components/post-cards/third-post-card";
+import FourthPostCard from "../components/post-cards/fourth-post-card";
+import { HomepageSection } from "../components/containers/homepage-containers";
+import { ButtonReadMore } from "../components/buttons/button-more";
 
 class BlogIndex extends React.Component {
 
@@ -40,17 +45,15 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} pageName={"homepage"} title={siteTitle}>
         <SEO title="All posts" />
 
-        <div className="main-container posts-container homepage-section">
-          <LastPostCard postIndex="last"/>
-          <HomepagePostCard postIndex="second"/>
-          <HomepagePostCard postIndex="third"/>
-          <HomepagePostCard postIndex="fourth"/>
-        </div>
+        <HomepageSection>
+          <LastPostCard />
+          <SecondPostCard />
+          <ThirdPostCard />
+          <FourthPostCard />
+        </HomepageSection>
 
-        <div className="button-typo read-more">
-          <Link to="/" className="button-block">lire plus d'articles</Link>
-        </div>
-
+        <ButtonReadMore />
+        
         <AboutContainer />
 
         <div className="main-container petites-parentheses-container homepage-section">
