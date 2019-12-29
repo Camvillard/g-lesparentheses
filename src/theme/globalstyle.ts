@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components'
-import { themeColors } from './style-variables';
-import { themeFonts } from './style-fonts';
-import { themeBreakpoints } from './style-breakpoints';
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from './style-variables';
 
 const {
   lightPink,

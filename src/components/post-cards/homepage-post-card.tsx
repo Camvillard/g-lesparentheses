@@ -1,8 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import { ButtonSimple } from "../buttons/buttons";
-import { themeColors } from "../../theme/style-variables";
-import { themeBreakpoints } from "../../theme/style-breakpoints";
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from '../../theme/style-variables';
 import {
   CardMeta,
   BlogCardContainer,
