@@ -15,7 +15,12 @@ import FourthPostCard from "../components/post-cards/fourth-post-card";
 import { HomepageSection } from "../components/containers/homepage-containers";
 import { ButtonReadMore } from "../components/buttons/button-more";
 
-class BlogIndex extends React.Component {
+interface IProps{
+  data: any;
+}
+interface IState{}
+
+class BlogIndex extends React.Component <IProps, IState>{
 
   onInputChange = (e) => {
     const elementToToggle = e.target.dataset.toggle
@@ -38,8 +43,6 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-
-    console.log(posts)
 
     return (
       <Layout location={this.props.location} pageName={"homepage"} title={siteTitle}>

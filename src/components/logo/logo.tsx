@@ -35,8 +35,8 @@ const LogoContainer = styled.header`
 
 const LogoTagline = styled(Accent)`
   position: absolute;
-  bottom: 20px;
-  right: 52px;
+  bottom: 16px;
+  right: 38px;
   color: 
 `
 
