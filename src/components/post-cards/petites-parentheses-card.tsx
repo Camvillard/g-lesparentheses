@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components';
-import { themeColors } from "../../theme/style-variables";
-import { themeBreakpoints } from "../../theme/style-breakpoints";
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from '../../theme/style-variables';
 import { CardMeta } from "./post-cards";
 
 const { lightPink, oldPink} = themeColors;

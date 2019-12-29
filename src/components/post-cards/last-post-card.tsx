@@ -3,8 +3,12 @@ import { Link } from "gatsby"
 import styled from 'styled-components';
 import { Accent } from "../../theme/globalstyle";
 import { ButtonSimple, Button, ButtonBlock } from "../buttons/buttons";
-import { themeColors } from "../../theme/style-variables";
-import { themeBreakpoints } from "../../theme/style-breakpoints";
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from '../../theme/style-variables';
+
 import { MainContainer } from "../containers/main-container";
 import {
   CardMeta,

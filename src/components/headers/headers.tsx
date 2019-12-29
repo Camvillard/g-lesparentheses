@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-import { themeColors } from '../../theme/style-variables';
-import { themeBreakpoints } from '../../theme/style-breakpoints';
-import { themeFonts } from '../../theme/style-fonts';
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from '../../theme/style-variables';
 
 
 const {

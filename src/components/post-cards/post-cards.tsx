@@ -1,6 +1,9 @@
 import styled from 'styled-components';
-import { themeColors } from '../../theme/style-variables';
-import { themeBreakpoints } from '../../theme/style-breakpoints';
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from '../../theme/style-variables';
 import { Accent } from '../../theme/globalstyle';
 import { MainContainer } from '../containers/main-container';
 import { ButtonBlock } from '../buttons/buttons';

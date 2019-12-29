@@ -6,24 +6,23 @@ import Navbar from "./navbar"
 import Header from "./header"
 import Footer from "./footer"
 import { GlobalStyle } from "../theme/globalstyle"
+import Logo from "./logo/logo"
 
 // styles & assets
 
 
 class Layout extends React.Component {
   render() {
-    const {children, pageName } = this.props
+    const { children } = this.props
     return (
       <React.Fragment>
         <GlobalStyle />
-        <div className={`page ${pageName}`}>
-          <Header />
+          <Logo />
           <Navbar />
 
           <main>{children}</main>
 
           <Footer />
-        </div>
       </React.Fragment>
     )
   }

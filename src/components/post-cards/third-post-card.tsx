@@ -2,9 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components';
 import { ButtonSimple} from "../buttons/buttons";
-import { themeColors } from "../../theme/style-variables";
-import { themeBreakpoints } from "../../theme/style-breakpoints";
-import { MainContainer } from "../containers/main-container";
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts
+} from '../../theme/style-variables';
+
 import {
   CardMeta,
   FeaturedImageContainer,
