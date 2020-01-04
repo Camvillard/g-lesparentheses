@@ -4,7 +4,7 @@ import { themeBreakpoints, themeColors } from "../../theme/style-variables"
 import { FromStroked } from "../forms/forms.ui"
 
 const { oldPink } = themeColors
-const { xsmScreen, smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
+const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 export const NewsletterMainContainer = styled.div`
   padding: 16px;

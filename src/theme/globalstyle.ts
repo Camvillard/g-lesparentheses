@@ -1,10 +1,6 @@
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components'
-import {
-  themeColors,
-  themeBreakpoints,
-  themeFonts
-} from './style-variables';
+import styled from "styled-components"
+import { createGlobalStyle } from "styled-components"
+import { themeColors, themeBreakpoints, themeFonts } from "./style-variables"
 
 const {
   lightPink,
@@ -13,16 +9,12 @@ const {
   lightGray,
   mediumGray,
   gray,
-  darkGray
-} = themeColors;
+  darkGray,
+} = themeColors
 
-const { europaFont, gemeliFont } = themeFonts;
+const { europaFont, gemeliFont } = themeFonts
 
-const {
-  mdScreen,
-  lgScreen
-} = themeBreakpoints;
-
+const { mdScreen, lgScreen } = themeBreakpoints
 
 export const Accent = styled.p`
   font-family: ${gemeliFont};
@@ -136,12 +128,62 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @media (min-width: ${mdScreen}) {
+
+    h1 {
+      font-size: 5.2rem;
+    }
+
+    h2 {
+      font-size: 4.4rem;
+    }
+
+    h3 {
+      font-size: 3.8rem;
+    }
+
+    h4 {
+      font-size: 3.2rem;
+    }
+
+    h5 {
+      font-size: 2.8rem;
+    }
+
+    h6 {
+      font-size: 2.4rem;
+    }
+  
     p, li, em, a {
       font-size: 1.6rem;
     }
   } 
 
   @media (min-width: ${lgScreen}) {
+
+    h1 {
+      font-size: 5.8rem;
+    }
+
+    h2 {
+      font-size: 5rem;
+    }
+
+    h3 {
+      font-size: 4.4rem;
+    }
+
+    h4 {
+      font-size: 3.8rem;
+    }
+
+    h5 {
+      font-size: 3.2rem;
+    }
+
+    h6 {
+      font-size: 2.8rem;
+    }
+
     p, li, em, a {
       font-size: 1.8rem;
     }

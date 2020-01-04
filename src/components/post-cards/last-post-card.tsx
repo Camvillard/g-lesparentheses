@@ -9,7 +9,7 @@ import {
   themeFonts
 } from '../../theme/style-variables';
 
-import { MainContainer } from "../containers/main-container";
+import { MainContainer } from "../containers/MainContainer";
 import {
   CardMeta,
   FeaturedImageContainer,

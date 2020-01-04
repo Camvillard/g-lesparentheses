@@ -1,106 +1,106 @@
-/*----- COMPONENTS : TEXT ----- */
+// /*----- COMPONENTS : TEXT ----- */
 
-body {
-  font-family: $body-font;
-  color: $gray;
-}
+// body {
+//   font-family: $body-font;
+//   color: $gray;
+// }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0.3em auto 0.1em;
-  font-family: $headers-font;
-  color: $dark-gray;
-  font-weight: 700;
-  line-height: 1.1;
-}
+// h1, h2, h3, h4, h5, h6 {
+//   margin: 0.3em auto 0.1em;
+//   font-family: $headers-font;
+//   color: $dark-gray;
+//   font-weight: 700;
+//   line-height: 1.1;
+// }
 
-p, li {
-  margin: 0.3em auto 0.8em;
-  font-family: $body-font;
-  color: $gray;
-  font-weight: 300;
-  font-size: 1.4rem;
-}
+// p, li {
+//   margin: 0.3em auto 0.8em;
+//   font-family: $body-font;
+//   color: $gray;
+//   font-weight: 300;
+//   font-size: 1.4rem;
+// }
 
-.accent-text, em, a {
-  font-family: $accent-font;
-  font-size: 1.4rem;
-}
+// .accent-text, em, a {
+//   font-family: $accent-font;
+//   font-size: 1.4rem;
+// }
 
-a {
-  text-decoration: none;
-  color: $primary-color;
-}
+// a {
+//   text-decoration: none;
+//   color: $primary-color;
+// }
 
-// sizes
+// // sizes
 
-h1 {
-  font-size: 4.2rem;
-}
+// h1 {
+//   font-size: 4.2rem;
+// }
 
-h2 {
-  font-size: 3.8rem;
-}
+// h2 {
+//   font-size: 3.8rem;
+// }
 
-h3 {
-  font-size: 3.4rem;
-}
+// h3 {
+//   font-size: 3.4rem;
+// }
 
-h4 {
-  font-size: 2.8rem;
-}
+// h4 {
+//   font-size: 2.8rem;
+// }
 
-h5 {
-  font-size: 2.4rem;
-}
+// h5 {
+//   font-size: 2.4rem;
+// }
 
-h6 {
-  font-size: 2rem;
-}
+// h6 {
+//   font-size: 2rem;
+// }
 
-// font weights
+// // font weights
 
-.text-strong {
-  font-weight: 700;
-}
+// .text-strong {
+//   font-weight: 700;
+// }
 
-.text-normal {
-  font-weight: 400;
-}
+// .text-normal {
+//   font-weight: 400;
+// }
 
-.text-light {
-  font-weight: 300;
-}
+// .text-light {
+//   font-weight: 300;
+// }
 
-// transforms
+// // transforms
 
-.text-uppercase {
-  text-transform: uppercase;
-}
+// .text-uppercase {
+//   text-transform: uppercase;
+// }
 
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
+// @media (min-width: $xsm-screen) {
+// } // end of xsm-screen - 576px
 
-@media (min-width: $sm-screen) {
-} // end of sm-screen - 768px
+// @media (min-width: $sm-screen) {
+// } // end of sm-screen - 768px
 
-@media (min-width: $md-screen) {
-  p, li, em, a {
-    font-size: 1.6rem;
-  }
-} // end of md-screen - 992px
+// @media (min-width: $md-screen) {
+//   p, li, em, a {
+//     font-size: 1.6rem;
+//   }
+// } // end of md-screen - 992px
 
-@media (min-width: $lg-screen) {
-  p, li, em, a {
-    font-size: 1.8rem;
-  }
+// @media (min-width: $lg-screen) {
+//   p, li, em, a {
+//     font-size: 1.8rem;
+//   }
 
-  p.accent-text,
-  .accent-text {
-    font-size: 1.6rem;
-  }
-} // end of lg-screen - 1200px
+//   p.accent-text,
+//   .accent-text {
+//     font-size: 1.6rem;
+//   }
+// } // end of lg-screen - 1200px
 
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
+// @media (min-width: $hg-screen) {
+// } // end of hg-screen - 1440px
 
 
