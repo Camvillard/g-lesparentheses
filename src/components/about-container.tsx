@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components';
-import { MainContainer } from "./containers/main-container";
+import { MainContainer } from "./containers/MainContainer";
 import { Accent } from "../theme/globalstyle";
 import { GreyHeader3 } from "./headers/headers";
 

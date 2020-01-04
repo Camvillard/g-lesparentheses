@@ -1,31 +1,42 @@
-const lightPink = `#f1e9e9`;
-const oldPink = `#D1BCBC`;
-const forestGreen = `#87a496`;
+const lightPink = `#f1e9e9`
+const oldPink = `#D1BCBC`
+const forestGreen = `#87a496`
 
-const lightGray = `#DFE0E3`;
-const mediumGray = `#85888F`;
-const gray = `#575A60` ;
-const darkGray = `#363A42` ;
+const lightGray = `#DFE0E3`
+const mediumGray = `#85888F`
+const gray = `#575A60`
+const darkGray = `#363A42`
 
-const europaFont = `'europa', sans-serif`;
-const gemeliFont = `'gemeli-mono', serif`;
+const europaFont = `'europa', sans-serif`
+const gemeliFont = `'gemeli-mono', serif`
 
-const xsmScreen = `576px`;
-const smScreen = `768px`;
-const mdScreen = `992px`;
-const lgScreen = `1200px`;
-const xlgScreen = `1440px`;
+// default : 375px - iPhone 8
 
+// iPad
+const smScreen = `768px`
+// iPad Pro
+const mdScreen = `1024px`
+// iMac
+const lgScreen = `1280px`
+// macbook pro
+const xlgScreen = `1440px`
+// @media (min-width: ${smScreen}) {
+// }
 
-export const themeFonts = { europaFont, gemeliFont };
+// @media (min-width: ${mdScreen}) {
+// }
+
+// @media (min-width: ${lgScreen}) {
+// }
+
+export const themeFonts = { europaFont, gemeliFont }
 
 export const themeBreakpoints = {
-  xsmScreen,
   smScreen,
   mdScreen,
   lgScreen,
-  xlgScreen
-};
+  xlgScreen,
+}
 
 export const themeColors = {
   lightPink,
@@ -34,6 +45,5 @@ export const themeColors = {
   lightGray,
   mediumGray,
   gray,
-  darkGray
-};
-
+  darkGray,
+}

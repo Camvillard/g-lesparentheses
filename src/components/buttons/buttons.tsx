@@ -15,7 +15,6 @@ const {
   darkGray} = themeColors;
 
 const {
-  xsmScreen,
   smScreen,
   mdScreen,
   lgScreen,

@@ -5,13 +5,12 @@ import {
   themeFonts
 } from '../../theme/style-variables';
 import { Accent } from '../../theme/globalstyle';
-import { MainContainer } from '../containers/main-container';
+import { MainContainer } from '../containers/MainContainer';
 import { ButtonBlock } from '../buttons/buttons';
 
 const { lightPink, oldPink, mediumGray} = themeColors;
 
 const {
-  xsmScreen,
   smScreen,
   mdScreen,
   lgScreen,

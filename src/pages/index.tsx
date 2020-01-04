@@ -12,6 +12,8 @@ import PetitesParenthesesCard from "../components/post-cards/petites-parentheses
 import SecondPostCard from "../components/post-cards/second-post-card"
 import ThirdPostCard from "../components/post-cards/third-post-card"
 import SEO from "../components/seo"
+import InstagramFooter from "../components/instagram/InstagramFooter.component"
+import HomepagePostCard from "../components/post-cards/homepage-post-card"
 
 interface IProps {
   data: any
@@ -42,6 +44,8 @@ class BlogIndex extends React.Component<IProps, IState> {
 
         <AboutContainer />
 
+        <HomepageSection>
+
         <div className="main-container petites-parentheses-container homepage-section">
           <h2 className="section-title column full-width">
             les petites parenthèses
@@ -59,8 +63,11 @@ class BlogIndex extends React.Component<IProps, IState> {
           </div>
         </div>
 
+        </HomepageSection>
+
         <NewsletterSection />
 
+        <InstagramFooter />
 
       </Layout>
     )

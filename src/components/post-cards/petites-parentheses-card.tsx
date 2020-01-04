@@ -11,7 +11,6 @@ import { CardMeta } from "./post-cards";
 const { lightPink, oldPink} = themeColors;
 
 const {
-  xsmScreen,
   smScreen,
   mdScreen,
   lgScreen,

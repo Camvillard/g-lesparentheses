@@ -10,7 +10,6 @@ import {
 } from '../../theme/style-variables';
 
 const {
-  xsmScreen,
   smScreen,
   mdScreen,
   lgScreen,

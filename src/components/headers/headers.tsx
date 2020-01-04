@@ -17,7 +17,6 @@ const {
 } = themeColors;
 
 const {
-  xsmScreen,
   smScreen,
   mdScreen,
   lgScreen,
