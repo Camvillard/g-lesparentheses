@@ -1,6 +1,7 @@
 ---
-title: cengt quatre vingt huit
+title: cent quatre vingt huit
 date: "09 décembre 2018"
+slug: cent-quatre-vingt-huit
 description: récit
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 categories: ['histoires']
