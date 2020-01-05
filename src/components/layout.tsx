@@ -17,12 +17,12 @@ class Layout extends React.Component {
     return (
       <React.Fragment>
         <GlobalStyle />
-          <Logo />
-          <Navbar />
+        <Logo />
+        <Navbar />
 
-          <main>{children}</main>
+        <main>{children}</main>
 
-          <Footer />
+        <Footer />
       </React.Fragment>
     )
   }
