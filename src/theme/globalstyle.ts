@@ -22,6 +22,7 @@ export const Accent = styled.p`
 
 export const GlobalStyle = createGlobalStyle`
   @import url("https://use.typekit.net/pjh5yca.css");
+  @import url("https://use.typekit.net/aep8mdo.css");
 
   :root {
     font-size: 62.5%;
@@ -58,7 +59,8 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0.3em auto 0.1em;
-    font-family: ${europaFont};
+    // font-family: ${europaFont};
+    font-family: futura-pt, sans-serif;
     color: ${darkGray};
     font-weight: 700;
     line-height: 1.1;
