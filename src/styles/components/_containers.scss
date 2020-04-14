@@ -1,33 +1,28 @@
 /*----- COMPONENTS : CONTAINERS ----- */
 
-
 .main-container {
   width: 90vw;
   margin: 24px auto;
 }
 
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
+@media (min-width: $xsmScreen) {
+} // end of xsmScreen - 576px
 
-@media (min-width: $sm-screen) {
-
+@media (min-width: $smScreen) {
   .main-container {
     width: 92vw;
     margin: 32px auto;
   }
+} // end of smScreen - 768px
 
-} // end of sm-screen - 768px
-
-@media (min-width: $md-screen) {
+@media (min-width: $mdScreen) {
   .main-container {
     width: 94vw;
   }
-} // end of md-screen - 992px
+} // end of mdScreen - 992px
 
-@media (min-width: $lg-screen) {
-} // end of lg-screen - 1200px
+@media (min-width: $lgScreen) {
+} // end of lgScreen - 1200px
 
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
-
-
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px

@@ -5,50 +5,49 @@ footer {
   margin: 24px 0 16px;
 
   .legal-stuff {
-    color: $old-pink;
+    color: $oldPink;
     margin-bottom: 8px;
   }
 
-  .legal-links{
+  .legal-links {
     font-size: 1.2rem;
   }
 
   .brand-stuff {
-    p, a {
+    p,
+    a {
       font-size: 1.2rem;
       margin: 0;
     }
   }
 }
 
+@media (min-width: $xsmScreen) {
+} // end of xsmScreen - 576px
 
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
+@media (min-width: $smScreen) {
+} // end of smScreen - 768px
 
-@media (min-width: $sm-screen) {
-} // end of sm-screen - 768px
-
-@media (min-width: $md-screen) {
+@media (min-width: $mdScreen) {
   footer {
     text-align: center;
     margin: 24px 0 16px;
 
-    .legal-links{
+    .legal-links {
       font-size: 1.4rem;
     }
 
     .brand-stuff {
-      p, a {
+      p,
+      a {
         font-size: 1.4rem;
       }
     }
   }
-} // end of md-screen - 992px
+} // end of mdScreen - 992px
 
-@media (min-width: $lg-screen) {
-} // end of lg-screen - 1200px
+@media (min-width: $lgScreen) {
+} // end of lgScreen - 1200px
 
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
-
-
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px

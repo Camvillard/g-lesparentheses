@@ -1,18 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 import {
   themeColors,
   themeBreakpoints,
-  themeFonts
-} from '../../theme/style-variables';
+  themeFonts,
+} from "../../theme/themeVariables"
 
-const {
-  oldPink,
-  darkGray
-} = themeColors
+const { oldPink, darkGray } = themeColors
 
-const { europaFont } = themeFonts
+const { $bodyFont } = themeFonts
 
-export const NavbarContainer  = styled.ul`
+export const NavbarContainer = styled.ul`
   position: fixed;
   top: 18vh;
   left: 0px;
@@ -23,11 +20,11 @@ export const NavbarContainer  = styled.ul`
 `
 
 export const NavbarListItem = styled.li`
-  background: ${oldPink};  
+  background: ${oldPink};
   color: ${darkGray};
   padding: 1px 4px;
   a {
-    color: ${darkGray}
+    color: ${darkGray};
   }
 `
 
@@ -60,7 +57,7 @@ export const MenuItem = styled.p`
   margin-bottom: 2px;
   a {
     color: white;
-    font-family: ${europaFont};
+    font-family: ${$bodyFont};
     font-weight: 700;
     font-size: 3.2rem;
   }

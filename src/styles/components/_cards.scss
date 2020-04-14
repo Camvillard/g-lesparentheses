@@ -1,44 +1,41 @@
 /*----- COMPONENTS : CARDS ----- */
 
-
-
 // general for post cards
 
 // .blog-card {
-  // margin: 48px 0;
+// margin: 48px 0;
 
-  // .meta-informations {
-  //   font-family: $accent-font;
-  //   font-size: 1.2rem;
-  //   font-weight: 300;
-  //   text-align: right;
-  // }
-
-  // .featured-image-container {
-  //   position: relative;
-  // }
-
-  // .image-overlay {
-  //   background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3) 94%) ;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  // }
-
-  // .post-title {
-  //   position: relative;
-  //   margin-top: -32px;
-  //   font-size: 4.8rem;
-  //   max-width: 520px;
-  // }
-
-  // .post-excerpt {
-  //   max-width: 620px;
-  // }
+// .meta-informations {
+//   font-family: $accentFont;
+//   font-size: 1.2rem;
+//   font-weight: 300;
+//   text-align: right;
 // }
 
+// .featured-image-container {
+//   position: relative;
+// }
+
+// .image-overlay {
+//   background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3) 94%) ;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+// }
+
+// .post-title {
+//   position: relative;
+//   margin-top: -32px;
+//   font-size: 4.8rem;
+//   max-width: 520px;
+// }
+
+// .post-excerpt {
+//   max-width: 620px;
+// }
+// }
 
 // .petites-parentheses-card {
 //   margin: 32px auto;
@@ -46,68 +43,66 @@
 //   width: 80%;
 
 //   .meta-informations {
-//     font-family: $accent-font;
+//     font-family: $accentFont;
 //     font-size: 1.2rem;
 //     font-weight: 300;
-//     color: $old-pink;
+//     color: $oldPink;
 //     margin: 0;
 //   }
 
 //   .post-title {
-    // position: absolute;
-    // top: 16px;
-    // left: 0;
-    // font-size: 14rem;
-    // color: lighten($old-pink, 15%);
-    // margin: 0;
+// position: absolute;
+// top: 16px;
+// left: 0;
+// font-size: 14rem;
+// color: lighten($oldPink, 15%);
+// margin: 0;
 //   }
 
 //   .post-excerpt {
-    // position: relative;
-    // margin-top: 0.4rem;
-    // margin-bottom: 1.8rem;
+// position: relative;
+// margin-top: 0.4rem;
+// margin-bottom: 1.8rem;
 //   }
 // }
 
 // homepage : last post card
 
+@media (min-width: $xsmScreen) {
+} // end of xsmScreen - 576px
 
+@media (min-width: $smScreen) {
+} // end of smScreen - 768px
 
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
-
-@media (min-width: $sm-screen) {
-} // end of sm-screen - 768px
-
-@media (min-width: $md-screen) {
+@media (min-width: $mdScreen) {
   // .blog-card  {
   //   margin: 122px 0;
 
-    // .meta-informations {
-    //   margin-right: 8%;
-    // }
+  // .meta-informations {
+  //   margin-right: 8%;
+  // }
 
-    // .featured-image-container {
-    //   width: 84%;
-    //   margin: auto;
-    // }
+  // .featured-image-container {
+  //   width: 84%;
+  //   margin: auto;
+  // }
 
-    // .featured-image {
-    //   max-height: 600px;
-    //   width: 100%;
-    // }
+  // .featured-image {
+  //   max-height: 600px;
+  //   width: 100%;
+  // }
 
-    // .post-title {
-    //   width: 60%;
-    //   margin-left: 0;
-    //   margin-top: -42px;
-    //   font-size: 5.2rem;
-    // }
+  // .post-title {
+  //   width: 60%;
+  //   margin-left: 0;
+  //   margin-top: -42px;
+  //   font-size: 5.2rem;
+  // }
 
-    // .post-excerpt {
-    //   width: 60%;
-    //   margin-left: 12%;
-    // }
+  // .post-excerpt {
+  //   width: 60%;
+  //   margin-left: 12%;
+  // }
 
   //   .button-block {
   //     margin-left: 12%;
@@ -123,7 +118,7 @@
     }
   }
 
-  .blog-card.second  {
+  .blog-card.second {
     width: 80%;
     margin-left: 3%;
   }
@@ -156,10 +151,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-} // end of md-screen - 992px
+} // end of mdScreen - 992px
 
-@media (min-width: $lg-screen) {
-
+@media (min-width: $lgScreen) {
   .blog-card.last {
     width: 80%;
     margin: auto;
@@ -188,10 +182,7 @@
   .blog-card.third {
     margin-left: 34%;
   }
+} // end of lgScreen - 1200px
 
-} // end of lg-screen - 1200px
-
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
-
-
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px

@@ -3,7 +3,7 @@ import {
   themeFonts,
   themeBreakpoints,
   themeColors,
-} from "../../theme/style-variables"
+} from "../../theme/themeVariables"
 
 const {
   lightPink,
@@ -14,7 +14,7 @@ const {
   gray,
   darkGray,
 } = themeColors
-const { europaFont, gemeliFont } = themeFonts
+const { $bodyFont, $accentFont } = themeFonts
 
 const { mdScreen } = themeBreakpoints
 
@@ -34,12 +34,12 @@ export const FromStroked = styled.form`
     padding: 4px 8px;
     border-bottom: 1px solid ${darkGray};
     width: 100%;
-    font-family: ${gemeliFont};
+    font-family: ${$accentFont};
 
     ::placeholder {
       color: ${darkGray};
       opacity: 1;
-      font-family: ${gemeliFont};
+      font-family: ${$accentFont};
     }
   }
 

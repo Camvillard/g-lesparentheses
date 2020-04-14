@@ -1,33 +1,28 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import styled from 'styled-components';
-import { Accent } from "../../theme/globalstyle";
+import styled from "styled-components"
+import { Accent } from "../../theme/globalstyle"
 import {
   themeColors,
   themeBreakpoints,
-  themeFonts
-} from '../../theme/style-variables';
+  themeFonts,
+} from "../../theme/themeVariables"
 
-const {
-  smScreen,
-  mdScreen,
-  lgScreen,
-  xlgScreen
-} = themeBreakpoints;
+const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 const LogoContainer = styled.header`
   width: 72%;
   margin: 24px auto;
   position: relative;
-  @media(min-width: ${smScreen}) {
+  @media (min-width: ${smScreen}) {
     width: 42%;
     margin-top: 32px;
   }
-  @media(min-width: ${mdScreen}) {
+  @media (min-width: ${mdScreen}) {
     width: 32%;
   }
-  @media(min-width: ${lgScreen}) {
+  @media (min-width: ${lgScreen}) {
     width: 28%;
   }
 `
@@ -36,21 +31,21 @@ const LogoTagline = styled(Accent)`
   position: absolute;
   bottom: 16px;
   right: 38px;
-  color: 
+  color: ;
 `
 
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: {eq: "lesparentheses_logo.png"}) {
-         id
-          childImageSharp {
-            id
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+      file(relativePath: { eq: "lesparentheses_logo.png" }) {
+        id
+        childImageSharp {
+          id
+          fluid {
+            ...GatsbyImageSharpFluid
           }
-       }
+        }
+      }
     }
   `)
   return (
@@ -60,9 +55,7 @@ const Logo = () => {
         alt="Gatsby Docs are awesome"
         className="logo-image"
       />
-      <LogoTagline>
-      histoires & ponctuation
-      </LogoTagline>
+      <LogoTagline>histoires & ponctuation</LogoTagline>
     </LogoContainer>
   )
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { themeColors, themeBreakpoints } from "../../theme/style-variables"
+import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 import { FlexboxContainer } from "../containers/FlexboxContainer"
 
 const {

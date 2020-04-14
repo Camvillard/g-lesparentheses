@@ -1,6 +1,6 @@
 /*----- LAYOUTS : SINGLE POST ----- */
 
-.single-post--section  {
+.single-post--section {
   margin-bottom: 2.4rem;
 }
 
@@ -8,19 +8,17 @@
   margin-bottom: 0.6rem;
 }
 
+@media (min-width: $xsmScreen) {
+} // end of xsmScreen - 576px
 
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
+@media (min-width: $smScreen) {
+} // end of smScreen - 768px
 
-@media (min-width: $sm-screen) {
-} // end of sm-screen - 768px
+@media (min-width: $mdScreen) {
+} // end of mdScreen - 992px
 
-@media (min-width: $md-screen) {
-} // end of md-screen - 992px
+@media (min-width: $lgScreen) {
+} // end of lgScreen - 1200px
 
-@media (min-width: $lg-screen) {
-} // end of lg-screen - 1200px
-
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
-
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px

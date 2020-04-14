@@ -1,51 +1,44 @@
-import { graphql } from "gatsby"
 import React from "react"
+import { graphql } from "gatsby"
 
-import AboutContainer from "../components/about-container"
-import { ButtonReadMore } from "../components/buttons/button-more"
 import { HomepageSection } from "../components/containers/homepage-containers"
-import Layout from "../components/layout"
 import NewsletterSection from "../components/newsletter/newsletter.component"
-import FourthPostCard from "../components/post-cards/fourth-post-card"
-import LastPostCard from "../components/post-cards/last-post-card"
-import PetitesParenthesesCard from "../components/post-cards/petites-parentheses-card"
-import SecondPostCard from "../components/post-cards/second-post-card"
-import ThirdPostCard from "../components/post-cards/third-post-card"
 import SEO from "../components/seo"
 import InstagramFooter from "../components/instagram/InstagramFooter.component"
-import HomepagePostCard from "../components/post-cards/homepage-post-card"
+import Layout from "../components/Layout/Layout.component"
+import LastPost from "../components/Posts/LastPost/LastPost.component"
+import SecondPost from "../components/Posts/SecondPost/SecondPost.component"
+import ThirdPost from "../components/Posts/ThirdPost/ThirdPost.component"
+import FourthPost from "../components/Posts/FourthPost/FourthPost.component"
+import PetitesParenthesesCard from "../components/Posts/PetitesParentheses/PetitesParenthesesCard.component"
+import ReadMoreButton from "../components/ReadMoreButton/ReadMoreButton.component"
+import AboutSection from "../components/AboutSection/AboutSection.component"
 
 interface IProps {
   data: any
+  location: any
 }
 interface IState {}
 
-class BlogIndex extends React.Component<IProps, IState> {
-  public render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+const BlogIndex = (props: IProps) => {
+  const { data } = props
+  const { title } = data.site.siteMetadata
+  return (
+    <Layout location={props.location} pageName={"homepage"} title={title}>
+      <SEO title="All posts" />
 
-    return (
-      <Layout
-        location={this.props.location}
-        pageName={"homepage"}
-        title={siteTitle}
-      >
-        <SEO title="All posts" />
+      <HomepageSection>
+        <LastPost />
+        <SecondPost />
+        <ThirdPost />
+        <FourthPost />
+      </HomepageSection>
 
-        <HomepageSection>
-          <LastPostCard />
-          <SecondPostCard />
-          <ThirdPostCard />
-          <FourthPostCard />
-        </HomepageSection>
+      <ReadMoreButton />
 
-        <ButtonReadMore />
+      <AboutSection />
 
-        <AboutContainer />
-
-        <HomepageSection>
-
+      <HomepageSection>
         <div className="main-container petites-parentheses-container homepage-section">
           <h2 className="section-title column full-width">
             les petites parenthèses
@@ -62,18 +55,13 @@ class BlogIndex extends React.Component<IProps, IState> {
             <PetitesParenthesesCard />
           </div>
         </div>
+      </HomepageSection>
 
-        </HomepageSection>
+      <NewsletterSection />
 
-        <NewsletterSection />
-
-        <InstagramFooter />
-
-      </Layout>
-    )
-  }
-
-
+      <InstagramFooter />
+    </Layout>
+  )
 }
 
 export default BlogIndex

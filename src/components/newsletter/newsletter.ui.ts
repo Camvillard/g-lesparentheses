@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { SectionTitle } from "../../pages/ui/index.ui"
-import { themeBreakpoints, themeColors } from "../../theme/style-variables"
+import { themeBreakpoints, themeColors } from "../../theme/themeVariables"
 import { FromStroked } from "../forms/forms.ui"
 
 const { oldPink } = themeColors

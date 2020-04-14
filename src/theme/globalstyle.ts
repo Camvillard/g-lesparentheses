@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
-import { themeColors, themeBreakpoints, themeFonts } from "./style-variables"
+import { themeColors, themeBreakpoints, themeFonts } from "./themeVariables"
 
 const {
   lightPink,
@@ -12,12 +12,12 @@ const {
   darkGray,
 } = themeColors
 
-const { europaFont, gemeliFont } = themeFonts
+const { $bodyFont, $accentFont } = themeFonts
 
 const { mdScreen, lgScreen } = themeBreakpoints
 
 export const Accent = styled.p`
-  font-family: ${gemeliFont};
+  font-family: ${$accentFont};
 `
 
 export const GlobalStyle = createGlobalStyle`
@@ -35,11 +35,11 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  
+
   *:before {
     box-sizing: border-box;
   }
-  
+
   *:after {
     box-sizing: border-box;
   }
@@ -52,13 +52,13 @@ export const GlobalStyle = createGlobalStyle`
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
-    font-family: ${europaFont};
+    font-family: ${$bodyFont};
     color: ${gray};
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0.3em auto 0.1em;
-    font-family: ${europaFont};
+    font-family: ${$bodyFont};
     color: ${darkGray};
     font-weight: 700;
     line-height: 1.1;
@@ -90,14 +90,14 @@ export const GlobalStyle = createGlobalStyle`
 
   p, li {
     margin: 0.3em auto 0.8em;
-    font-family: ${europaFont};
+    font-family: ${$bodyFont};
     color: ${gray};
     font-weight: 300;
     font-size: 1.4rem;
   }
 
   em, a {
-    font-family: ${gemeliFont};
+    font-family: ${$accentFont};
     font-size: 1.4rem;
   }
 
@@ -120,11 +120,12 @@ export const GlobalStyle = createGlobalStyle`
   summary {
     display: block;
   }
-  
+
   img {
     max-width: 100%;
     margin: 0;
     padding: 0;
+    object-fit: cover;
   }
 
   @media (min-width: ${mdScreen}) {
@@ -152,11 +153,11 @@ export const GlobalStyle = createGlobalStyle`
     h6 {
       font-size: 2.4rem;
     }
-  
+
     p, li, em, a {
       font-size: 1.6rem;
     }
-  } 
+  }
 
   @media (min-width: ${lgScreen}) {
 
@@ -187,12 +188,12 @@ export const GlobalStyle = createGlobalStyle`
     p, li, em, a {
       font-size: 1.8rem;
     }
-  
+
     p.accent-text,
     .accent-text {
       font-size: 1.6rem;
     }
-  } 
+  }
 
 
 

@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 import {
   themeColors,
   themeBreakpoints,
-  themeFonts
-} from '../../theme/style-variables';
+  themeFonts,
+} from "../../theme/themeVariables"
 
 const {
   lightPink,
@@ -12,31 +12,19 @@ const {
   lightGray,
   mediumGray,
   gray,
-  darkGray} = themeColors;
+  darkGray,
+} = themeColors
 
-const {
-  smScreen,
-  mdScreen,
-  lgScreen,
-  xlgScreen
-} = themeBreakpoints;
+const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
-const { europaFont, gemeliFont} = themeFonts;
+const { $bodyFont, $accentFont } = themeFonts
 
 interface IButtonSimpleProps {
-  fontColor?: string;
+  fontColor?: string
 }
 
 interface IButtonPlainProps {
-  bgColor: string;
-}
-
-interface IButtonBlockProps {
-  top: string;
-  right: string;
-  bottom: string;
-  left: string;
-
+  bgColor: string
 }
 
 export const ButtonBlock = styled.div`
@@ -47,7 +35,7 @@ export const ButtonPlain = styled.a`
   background: ${(props: IButtonPlainProps) => props.bgColor};
   text-align: center;
   color: white;
-  font-family: ${europaFont};
+  font-family: ${$bodyFont};
   text-transform: uppercase;
   padding: 4px 24px;
 `
@@ -58,7 +46,7 @@ export const Button = styled.a`
 
 export const ButtonSimple = styled(Button)`
   text-transform: uppercase;
-  font-family: ${europaFont};
+  font-family: ${$bodyFont};
   font-size: 1.4rem;
   position: relative;
   color: ${(props: IButtonSimpleProps) => props.fontColor || oldPink};
@@ -78,7 +66,7 @@ export const ButtonSimple = styled(Button)`
     width: 100%;
   }
 
-  @media(min-width: ${smScreen}) {
+  @media (min-width: ${smScreen}) {
     font-size: 1.6rem;
 
     &:after {
@@ -86,7 +74,7 @@ export const ButtonSimple = styled(Button)`
     }
   }
 
-  @media(min-width: ${lgScreen}) {
+  @media (min-width: ${lgScreen}) {
     font-size: 1.8rem;
 
     &:after {

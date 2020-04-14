@@ -1,6 +1,5 @@
 /*----- COMPONENTS : FORMS ----- */
 
-
 input,
 label,
 ::placeholder {
@@ -8,12 +7,12 @@ label,
 }
 
 ::placeholder {
-  font-family: $accent-font;
-  color: $dark-gray;
+  font-family: $accentFont;
+  color: $darkGray;
   opacity: 1;
 }
 
-.form-row  {
+.form-row {
   display: flex;
 }
 
@@ -21,41 +20,37 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
-
 .form-stroke {
-  font-family: $accent-font;
+  font-family: $accentFont;
 
   input {
     border: none;
     background: none;
     padding: 6px;
-    font-family: $accent-font;
+    font-family: $accentFont;
   }
-
 }
 
 .form-stroke.dark {
   input {
     border-top: 2px solid transparent;
-    border-bottom: 2px solid $dark-gray;
-    color: $dark-gray;
+    border-bottom: 2px solid $darkGray;
+    color: $darkGray;
   }
 
   input:active,
   input:focus,
   input:hover {
     outline: none;
-    border: 2px solid $dark-gray;
+    border: 2px solid $darkGray;
     padding-left: 4px;
   }
 
   input.validated {
-    border: 2px solid $dark-gray;
+    border: 2px solid $darkGray;
     padding-left: 4px;
   }
 }
-
-
 
 .magic-form {
   position: relative;
@@ -64,7 +59,7 @@ input[type="submit"]:hover {
     width: 70%;
   }
 
-  input[type="submit"]  {
+  input[type="submit"] {
     width: 30%;
     text-align: left;
     position: absolute;
@@ -78,7 +73,6 @@ input[type="submit"]:hover {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
-
 }
 
 @keyframes moveInput {
@@ -94,7 +88,6 @@ input[type="submit"]:hover {
   }
 }
 
-
 // animation-name,
 // animation-duration,
 // animation-timing-function,
@@ -104,13 +97,13 @@ input[type="submit"]:hover {
 // animation-fill-mode,
 // animation-play-state.
 
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
+@media (min-width: $xsmScreen) {
+} // end of xsmScreen - 576px
 
-@media (min-width: $sm-screen) {
-} // end of sm-screen - 768px
+@media (min-width: $smScreen) {
+} // end of smScreen - 768px
 
-@media (min-width: $md-screen) {
+@media (min-width: $mdScreen) {
   .magic-form {
     position: relative;
 
@@ -118,18 +111,15 @@ input[type="submit"]:hover {
       width: 80%;
     }
 
-    input[type="submit"]  {
+    input[type="submit"] {
       width: 20%;
       right: 80%;
     }
-
   }
-} // end of md-screen - 992px
+} // end of mdScreen - 992px
 
-@media (min-width: $lg-screen) {
-} // end of lg-screen - 1200px
+@media (min-width: $lgScreen) {
+} // end of lgScreen - 1200px
 
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
-
-
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px

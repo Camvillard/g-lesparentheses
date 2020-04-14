@@ -41,7 +41,6 @@ categories: template
     </p>
   </div>
 
-
   <div class="single-post--section">
     <p class="single-post--text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a.

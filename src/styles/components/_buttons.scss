@@ -1,6 +1,5 @@
 /*----- COMPONENTS : BUTTONS ----- */
 
-
 @import "../variables/index";
 @import "../mixins/buttons";
 
@@ -18,7 +17,7 @@
 
 // .button-simple {
 //   text-transform: uppercase;
-//   font-family: $headers-font;
+//   font-family: $headersFont;
 //   font-size: 1.4rem;
 //   position: relative;
 //   transition: 0.3s;
@@ -34,26 +33,26 @@
 //   }
 
 //   &.secondary {
-//     color: $dark-green;
+//     color: $forestGreen;
 
 //     &:after {
-//       background: $dark-green;
+//       background: $forestGreen;
 //     }
 //   }
 
 //   &.primary {
-//     color: $old-pink;
+//     color: $oldPink;
 
 //     &:after {
-//       background: $old-pink;
+//       background: $oldPink;
 //     }
 //   }
 
 //   &.accent {
-//     color: $dark-gray;
+//     color: $darkGray;
 
 //     &:after {
-//       background: $dark-gray;
+//       background: $darkGray;
 //     }
 //   }
 
@@ -71,19 +70,19 @@
 // }
 
 // .button-pink {
-//   background: $old-pink;
+//   background: $oldPink;
 //   text-align: center;
 //   color: white;
-//   font-family: $headers-font;
+//   font-family: $headersFont;
 //   text-transform: uppercase;
 //   padding: 4px 24px;
 // }
 
 // .button-blue {
-//   background: $dark-gray;
+//   background: $darkGray;
 //   text-align: center;
 //   color: white;
-//   font-family: $headers-font;
+//   font-family: $headersFont;
 //   text-transform: uppercase;
 //   padding: 4px 24px;
 // }
@@ -91,18 +90,15 @@
 // .button-typo {
 //   a {
 //     font-size: 4.8rem;
-//     font-family: $headers-font;
+//     font-family: $headersFont;
 //     font-weight: 700;
 //   }
 // }
 
+@media (min-width: $xsmScreen) {
+} // end of xsmScreen - 576px
 
-
-@media (min-width: $xsm-screen) {
-} // end of xsm-screen - 576px
-
-@media (min-width: $sm-screen) {
-
+@media (min-width: $smScreen) {
   // .button-simple {
   //   font-size: 1.6rem;
 
@@ -110,13 +106,12 @@
   //     width: 32px;
   //   }
   // }
+} // end of smScreen - 768px
 
-} // end of sm-screen - 768px
+@media (min-width: $mdScreen) {
+} // end of mdScreen - 992px
 
-@media (min-width: $md-screen) {
-} // end of md-screen - 992px
-
-@media (min-width: $lg-screen) {
+@media (min-width: $lgScreen) {
   // .button-simple {
   //   font-size: 1.8rem;
 
@@ -124,11 +119,7 @@
   //     width: 34px;
   //   }
   // }
-} // end of lg-screen - 1200px
+} // end of lgScreen - 1200px
 
-@media (min-width: $hg-screen) {
-} // end of hg-screen - 1440px
-
-
-
-
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px
