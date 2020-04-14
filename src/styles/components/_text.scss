@@ -1,104 +1,150 @@
 // /*----- COMPONENTS : TEXT ----- */
 
-// body {
-//   font-family: $bodyFont;
-//   color: $gray;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.3em auto 0.1em;
+  font-family: $bodyFont;
+  color: $darkGray;
+  font-weight: 700;
+  line-height: 1.05;
+}
 
-// h1, h2, h3, h4, h5, h6 {
-//   margin: 0.3em auto 0.1em;
-//   font-family: $headersFont;
-//   color: $darkGray;
-//   font-weight: 700;
-//   line-height: 1.1;
-// }
+h1 {
+  font-size: 4.2rem;
+}
 
-// p, li {
-//   margin: 0.3em auto 0.8em;
-//   font-family: $bodyFont;
-//   color: $gray;
-//   font-weight: 300;
-//   font-size: 1.4rem;
-// }
+h2 {
+  font-size: 3.8rem;
+}
 
-// .accent-text, em, a {
-//   font-family: $accentFont;
-//   font-size: 1.4rem;
-// }
+h3 {
+  font-size: 3.4rem;
+}
 
-// a {
-//   text-decoration: none;
-//   color: $primary-color;
-// }
+h4 {
+  font-size: 2.8rem;
+}
 
-// // sizes
+h5 {
+  font-size: 2.4rem;
+}
 
-// h1 {
-//   font-size: 4.2rem;
-// }
+h6 {
+  font-size: 2rem;
+}
 
-// h2 {
-//   font-size: 3.8rem;
-// }
+p,
+li {
+  margin: 0.3em auto 0.8em;
+  font-family: $bodyFont;
+  color: $gray;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
 
-// h3 {
-//   font-size: 3.4rem;
-// }
+em,
+a,
+.accent-text {
+  font-family: $accentFont;
+  font-size: 1.4rem;
+}
 
-// h4 {
-//   font-size: 2.8rem;
-// }
+a {
+  text-decoration: none;
+  color: $oldPink;
+}
 
-// h5 {
-//   font-size: 2.4rem;
-// }
+// font weights
 
-// h6 {
-//   font-size: 2rem;
-// }
+.text-strong {
+  font-weight: 700;
+}
 
-// // font weights
+.text-normal {
+  font-weight: 400;
+}
 
-// .text-strong {
-//   font-weight: 700;
-// }
-
-// .text-normal {
-//   font-weight: 400;
-// }
-
-// .text-light {
-//   font-weight: 300;
-// }
+.text-light {
+  font-weight: 300;
+}
 
 // // transforms
 
-// .text-uppercase {
-//   text-transform: uppercase;
-// }
+.text-uppercase {
+  text-transform: uppercase;
+}
 
-// @media (min-width: $xsmScreen) {
-// } // end of xsmScreen - 576px
+@media (min-width: $mdScreen) {
+  h1 {
+    font-size: 5.2rem;
+  }
 
-// @media (min-width: $smScreen) {
-// } // end of smScreen - 768px
+  h2 {
+    font-size: 4.4rem;
+  }
 
-// @media (min-width: $mdScreen) {
-//   p, li, em, a {
-//     font-size: 1.6rem;
-//   }
-// } // end of mdScreen - 992px
+  h3 {
+    font-size: 3.8rem;
+  }
 
-// @media (min-width: $lgScreen) {
-//   p, li, em, a {
-//     font-size: 1.8rem;
-//   }
+  h4 {
+    font-size: 3.2rem;
+  }
 
-//   p.accent-text,
-//   .accent-text {
-//     font-size: 1.6rem;
-//   }
-// } // end of lgScreen - 1200px
+  h5 {
+    font-size: 2.8rem;
+  }
 
-// @media (min-width: $xlgScreen) {
-// } // end of xlgScreen - 1440px
+  h6 {
+    font-size: 2.4rem;
+  }
+
+  p,
+  li,
+  em,
+  a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: $lgScreen) {
+  h1 {
+    font-size: 5.8rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 4.4rem;
+  }
+
+  h4 {
+    font-size: 3.8rem;
+  }
+
+  h5 {
+    font-size: 3.2rem;
+  }
+
+  h6 {
+    font-size: 2.8rem;
+  }
+
+  p,
+  li,
+  em,
+  a {
+    font-size: 1.8rem;
+  }
+
+  p.accent-text,
+  .accent-text {
+    font-size: 1.6rem;
+  }
+}

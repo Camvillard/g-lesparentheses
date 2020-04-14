@@ -3,9 +3,30 @@
 // regular grid
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  &.gallery {
+  grid-gap: 8px;
+  &.columns-2 {
     grid-template-columns: 1fr 1fr;
+  }
+  &.columns-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &.columns-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.grid-element {
+  &.one {
+    grid-column: span 1;
+  }
+  &.two {
+    grid-column: span 2;
+  }
+  &.three {
+    grid-column: span 3;
+  }
+  &.four {
+    grid-column: span 4;
   }
 }
 

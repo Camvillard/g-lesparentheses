@@ -1,5 +1,6 @@
 import React, { Fragment, ReactNode } from "react"
 import { GlobalStyle } from "../../theme/globalstyle"
+import Header from "../Header/Header.component"
 
 type LayoutProps = {
   location: string
@@ -12,6 +13,7 @@ const Layout = (props: LayoutProps) => {
   return (
     <Fragment>
       <GlobalStyle />
+      <Header />
       <main>{children}</main>
     </Fragment>
   )

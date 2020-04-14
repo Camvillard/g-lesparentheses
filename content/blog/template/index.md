@@ -9,23 +9,51 @@ categories: template
 
 <div class="main-container">
 
-  <div class="single-post--section">
+  <section class="single-post--section">
     <p class="single-post--text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a.
     </p>
       <p class="single-post--text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a.
     </p>
-  </div>
+  </section>
 
-  <div class="single-post--image gallery grid">
+  <section class="single-post--image grid columns-2">
+    <div class="grid-element one">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+    </div>
+    <div class="grid-element one">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="single-post--image grid columns-3">
+    <div class="grid-element one">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+    </div>
+    <div class="grid-element one">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
+    </div>
+    <div class="grid-element one">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="single-post--image grid columns-4">
     <div class="is-one-half">
       <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
     </div>
     <div class="is-one-half">
       <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
     </div>
-  </div>
+    <div class="is-one-half">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+    </div>
+    <div class="is-one-half">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
+    </div>
+
+  </section>
 
   <div class="single-post--image carrousel">
     <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
@@ -54,6 +82,10 @@ categories: template
 
 </div>
 
-<div class="single-post--image fullwidth">
-  <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+<div class="fullwidth-container">
+
+  <div class="single-post--image fullwidth">
+    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+  </div>
+
 </div>

@@ -9,6 +9,7 @@ import "../styles/main.scss"
 import Layout from "../components/Layout/Layout.component"
 
 import "../styles/main.scss"
+import { SinglePostTitle } from "../components/SinglePost/SinglePostSections.ui"
 
 type PostTemplateProps = {
   location: string
@@ -21,6 +22,7 @@ const PostTemplate = (props: PostTemplateProps) => {
   const { location, pageContext } = props
   const { siteTitle } = data.site.siteMetadata
   const { frontmatter, html, htmlAst, excerpt, id } = data.markdownRemark
+  const { title } = frontmatter
   const { previous, next } = pageContext
 
   return (
@@ -29,7 +31,8 @@ const PostTemplate = (props: PostTemplateProps) => {
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
       />
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <SinglePostTitle>{title}</SinglePostTitle>
+      <article dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }

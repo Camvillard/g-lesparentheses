@@ -3,9 +3,10 @@ import styled from "styled-components"
 export const SinglePostSection = styled.div`
   margin-bottom: 2.4rem;
 `
-export const SinglePostSmallSection = styled.div`
-  width: 80%;
-  margin: auto;
+export const SinglePostTitle = styled.h1`
+  margin-left: auto;
+  margin-right: auto;
+  width: 92vw;
 `
 export const SinglePostText = styled.p`
   border: 3px solid red;
