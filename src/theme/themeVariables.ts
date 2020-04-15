@@ -10,9 +10,9 @@ const darkGray = `#363A42`
 const europaFont = `'europa', sans-serif`
 const gemeliFont = `'gemeli-mono', serif`
 
-const $bodyFont = europaFont
+const bodyFont = europaFont
 const headersFont = europaFont
-const $accentFont = gemeliFont
+const accentFont = gemeliFont
 
 // default : 375px - iPhone 8
 
@@ -28,7 +28,7 @@ const lgScreen = `1280px`
 // macbook pro
 const xlgScreen = `1440px`
 
-export const themeFonts = { $bodyFont, $accentFont }
+export const themeFonts = { bodyFont, accentFont }
 
 export const themeBreakpoints = {
   smScreen,
