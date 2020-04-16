@@ -4,7 +4,6 @@ import {
   NewsletterSectionTitle,
   NewsletterForm,
 } from "./newsletter.ui"
-import { TitleDescription } from "../../pages/ui/index.ui"
 import { Input } from "../forms/forms.ui"
 
 class NewsletterSection extends Component {
@@ -12,12 +11,10 @@ class NewsletterSection extends Component {
     return (
       <NewsletterMainContainer>
         <NewsletterSectionTitle>infolettre.</NewsletterSectionTitle>
-        <TitleDescription>
-          l’infolettre des parenthèses, c’est un peu comme une pochette
-          surprise, parce que mon rythme de publication est 100% aléatoire. en
-          revanche, je n’envoie jamais de spams. les spams sont, à l'instar des
-          salades de betteraves, le premier fléau de l’humanité.
-        </TitleDescription>
+        l’infolettre des parenthèses, c’est un peu comme une pochette surprise,
+        parce que mon rythme de publication est 100% aléatoire. en revanche, je
+        n’envoie jamais de spams. les spams sont, à l'instar des salades de
+        betteraves, le premier fléau de l’humanité.
         <NewsletterForm
           action=""
           onSubmit={this.onFormSubmit}
@@ -43,7 +40,6 @@ class NewsletterSection extends Component {
 
   private onInputChange = e => {
     const elementToToggle = e.target.dataset.toggle
-    console.log(elementToToggle)
     document.querySelector(elementToToggle).classList.add("move-input")
   }
 

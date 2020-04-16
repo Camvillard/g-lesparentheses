@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
-import { FlexboxContainer } from "../containers/FlexboxContainer"
+import { Flexbox } from "../Containers/Flexbox.ui"
 
 const {
   lightPink,
@@ -30,7 +30,7 @@ export const InstagramContainer = styled.div`
   @media (min-width: ${lgScreen}) {
   }
 `
-export const InstagramImages = styled(FlexboxContainer)`
+export const InstagramImages = styled(Flexbox)`
   flex-wrap: wrap;
 
   a {

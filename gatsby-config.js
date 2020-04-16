@@ -5,12 +5,12 @@ module.exports = {
     description: `histoires & ponctuation.`,
     siteUrl: `https://www.les-parentheses.com`,
     social: {
-      twitter: 'camvillard',
-      instagram:  'camvillard',
-      linkedin: 'camillevillard',
-      behance: 'camille villard',
-      dribbble:  'camille villard'
-    }
+      twitter: "camvillard",
+      instagram: "camvillard",
+      linkedin: "camillevillard",
+      behance: "camille villard",
+      dribbble: "camille villard",
+    },
   },
   plugins: [
     {
@@ -66,9 +66,9 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-         include: /images/
-        }
-      }
+          include: /images/,
+        },
+      },
     },
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
@@ -95,5 +95,11 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: true,
+      },
+    },
   ],
 }

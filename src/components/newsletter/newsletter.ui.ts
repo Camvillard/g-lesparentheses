@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { SectionTitle } from "../../pages/ui/index.ui"
 import { themeBreakpoints, themeColors } from "../../theme/themeVariables"
 import { FromStroked } from "../forms/forms.ui"
 
@@ -23,7 +22,7 @@ export const NewsletterMainContainer = styled.div`
   }
 `
 
-export const NewsletterSectionTitle = styled(SectionTitle)`
+export const NewsletterSectionTitle = styled.p`
   margin-top: -40px;
   @media (min-width: ${smScreen}) {
   }

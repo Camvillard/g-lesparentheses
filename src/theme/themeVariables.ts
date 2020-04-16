@@ -6,6 +6,7 @@ const lightGray = `#DFE0E3`
 const mediumGray = `#85888F`
 const gray = `#575A60`
 const darkGray = `#363A42`
+const offWhite = `#F9F8F8`
 
 const europaFont = `'europa', sans-serif`
 const gemeliFont = `'gemeli-mono', serif`
@@ -45,4 +46,5 @@ export const themeColors = {
   mediumGray,
   gray,
   darkGray,
+  offWhite,
 }

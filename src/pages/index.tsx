@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { HomepageSection } from "../components/containers/homepage-containers"
+import { HomepageSection } from "../components/Containers/homepage-containers"
 import NewsletterSection from "../components/newsletter/newsletter.component"
-import SEO from "../components/seo"
 import InstagramFooter from "../components/instagram/InstagramFooter.component"
 import Layout from "../components/Layout/Layout.component"
 import LastPost from "../components/Posts/LastPost/LastPost.component"
@@ -13,6 +12,7 @@ import FourthPost from "../components/Posts/FourthPost/FourthPost.component"
 import PetitesParenthesesCard from "../components/Posts/PetitesParentheses/PetitesParenthesesCard.component"
 import ReadMoreButton from "../components/ReadMoreButton/ReadMoreButton.component"
 import AboutSection from "../components/AboutSection/AboutSection.component"
+import SEO from "../components/SEO/SEO.component"
 
 interface IProps {
   data: any

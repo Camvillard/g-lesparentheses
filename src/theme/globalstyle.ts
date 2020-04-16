@@ -12,12 +12,12 @@ const {
   darkGray,
 } = themeColors
 
-const { $bodyFont, $accentFont } = themeFonts
+const { bodyFont, accentFont } = themeFonts
 
 const { mdScreen, lgScreen } = themeBreakpoints
 
 export const Accent = styled.p`
-  font-family: ${$accentFont};
+  font-family: ${accentFont};
 `
 
 export const GlobalStyle = createGlobalStyle`
@@ -52,13 +52,13 @@ export const GlobalStyle = createGlobalStyle`
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
-    font-family: ${$bodyFont};
+    font-family: ${bodyFont};
     color: ${gray};
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0.3em auto 0.1em;
-    font-family: ${$bodyFont};
+    font-family: ${bodyFont};
     color: ${darkGray};
     font-weight: 700;
     line-height: 1.1;
@@ -90,14 +90,14 @@ export const GlobalStyle = createGlobalStyle`
 
   p, li {
     margin: 0.3em auto 0.8em;
-    font-family: ${$bodyFont};
+    font-family: ${bodyFont};
     color: ${gray};
     font-weight: 300;
     font-size: 1.4rem;
   }
 
   em, a {
-    font-family: ${$accentFont};
+    font-family: ${bodyFont};
     font-size: 1.4rem;
   }
 

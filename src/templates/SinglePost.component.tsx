@@ -1,15 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-// internal stuff
-import SEO from "../components/seo"
-
 // styles & assets
 import "../styles/main.scss"
 import Layout from "../components/Layout/Layout.component"
-
-import "../styles/main.scss"
 import { SinglePostTitle } from "../components/SinglePost/SinglePostSections.ui"
+import SEO from "../components/SEO/SEO.component"
 
 type PostTemplateProps = {
   location: string

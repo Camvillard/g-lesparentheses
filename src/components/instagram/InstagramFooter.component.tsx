@@ -5,9 +5,8 @@ import {
   InstagramPic,
   InstagramImages,
 } from "./InstagramFooter.ui"
-import { SectionTitle } from "../../pages/ui/index.ui"
 import { IInstagramData } from "./InstagramFooter.model"
-import { MainContainer } from "../containers/MainContainer.ui"
+import { MainContainer } from "../Containers/MainContainer.ui"
 
 const InstagramFooter = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +29,7 @@ const InstagramFooter = () => {
   return (
     <MainContainer>
       <InstagramContainer>
-        <SectionTitle>sur instagram.</SectionTitle>
+        sur instagram.
         <InstagramImages flexJustify="center">
           {instagramData.map((ig: IInstagramData) => (
             <a

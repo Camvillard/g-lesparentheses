@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { MainContainer } from "../containers/MainContainer.ui"
+import { MainContainer } from "../Containers/MainContainer.ui"
 import { DarkHeader3 } from "../Headers/Headers.ui"
 import { Accent } from "../../theme/globalstyle"
 import { Link } from "gatsby"
