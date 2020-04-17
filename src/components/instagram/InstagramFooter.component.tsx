@@ -30,7 +30,7 @@ const InstagramFooter = () => {
     <MainContainer>
       <InstagramContainer>
         sur instagram.
-        <InstagramImages flexJustify="center">
+        <InstagramImages justify="center">
           {instagramData.map((ig: IInstagramData) => (
             <a
               href={`https://www.instagram.com/p/${ig.node.id}/`}

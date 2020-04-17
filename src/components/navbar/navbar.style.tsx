@@ -7,7 +7,7 @@ import {
 
 const { oldPink, darkGray } = themeColors
 
-const { $bodyFont } = themeFonts
+const { bodyFont } = themeFonts
 
 export const NavbarContainer = styled.ul`
   position: fixed;

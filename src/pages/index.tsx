@@ -13,6 +13,7 @@ import PetitesParenthesesCard from "../components/Posts/PetitesParentheses/Petit
 import ReadMoreButton from "../components/ReadMoreButton/ReadMoreButton.component"
 import AboutSection from "../components/AboutSection/AboutSection.component"
 import SEO from "../components/SEO/SEO.component"
+import { Nav } from "../components/Nav/Nav.component"
 
 interface IProps {
   data: any
@@ -26,6 +27,8 @@ const BlogIndex = (props: IProps) => {
   return (
     <Layout location={props.location} pageName={"homepage"} title={title}>
       <SEO title="All posts" />
+
+      <Nav />
 
       <HomepageSection>
         <LastPost />

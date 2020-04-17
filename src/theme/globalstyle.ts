@@ -21,7 +21,6 @@ export const Accent = styled.p`
 `
 
 export const GlobalStyle = createGlobalStyle`
-  @import url("https://use.typekit.net/pjh5yca.css");
 
   :root {
     font-size: 62.5%;
