@@ -8,6 +8,7 @@ import {
   OpenMenuWrapper,
   MenuOpenExtLink,
 } from "./Nav.ui"
+import { BlobMenu } from "./Blobs.component"
 
 const { oldPink, darkGray, offWhite, lightPink, forestGreen } = themeColors
 
@@ -72,6 +73,7 @@ const Menu = () => {
       <MenuOpenItem>
         <MenuOpenLink to={"/"}>e-shop</MenuOpenLink>
       </MenuOpenItem>
+      <BlobMenu />
     </OpenMenuWrapper>
   )
 }

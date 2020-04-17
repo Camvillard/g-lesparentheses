@@ -18,7 +18,7 @@ export const NavWrapper = styled.ul`
   padding: 8px 0;
   margin: 0;
   background: ${(props: NavWrapperProps) =>
-    props.open ? "white" : forestGreen};
+    props.open ? "none" : forestGreen};
   list-style: none;
   justify-content: space-around;
 `
@@ -42,7 +42,7 @@ export const OpenMenuWrapper = styled.ul`
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10000000;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: center;
