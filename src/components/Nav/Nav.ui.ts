@@ -31,6 +31,7 @@ export const NavbarListItem = styled.li`
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
+  text-align: center;
   a {
     color: ${darkGray};
   }

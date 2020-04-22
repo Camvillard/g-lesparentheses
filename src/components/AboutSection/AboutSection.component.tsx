@@ -17,8 +17,8 @@ const AboutSection = (props: AboutSectionProps) => {
   return (
     <AboutSectionWrapper>
       <AboutHeader>à propos.</AboutHeader>
-      <Grid columns={"repeat(4, 1fr)"}>
-        <GridElement columns={" 1 / span 3"}>
+      <Grid columns={{ default: "repeat(4, 1fr)" }}>
+        <GridElement columns={{ default: "repeat(4, 1fr)" }}>
           <AboutContent>
             je m’appelle camille, j’ai trente et quelques années et mon
             acceptation de cet âge est environ égal à mon dégoût des betteraves
@@ -37,7 +37,7 @@ const AboutSection = (props: AboutSectionProps) => {
             penser le contraire).
           </AboutContent>
         </GridElement>
-        <GridElement columns={" 2 / span 3"}>
+        <GridElement columns={{ default: "repeat(4, 1fr)" }}>
           <AboutContent>
             j’habite à Montréal depuis quelques années et pour l’instant, j’aime
             suffisamment la neige pour avoir envie d’y rester, et comme on parle
