@@ -7,8 +7,14 @@ import {
   NavbarListItem,
   OpenMenuWrapper,
   MenuOpenExtLink,
+  MenuOpenToggleLink,
+  CategoryLink,
+  CategoryCount,
+  CategoriesListWrapper,
 } from "./Nav.ui"
-import { BlobMenu } from "./Blobs.component"
+import { BlobMenu, BlobSocial } from "./Blobs.component"
+import { Link } from "gatsby"
+import { Category, fakeCats } from "../../types/Category.type"
 
 const { oldPink, darkGray, offWhite, lightPink, forestGreen } = themeColors
 
@@ -20,6 +26,7 @@ const Social = () => {
           href="https://www.instagram.com/cam_villard/"
           target="_blank"
           rel="noopener noreferrer"
+          color={"white"}
         >
           instagram
         </MenuOpenExtLink>
@@ -29,6 +36,7 @@ const Social = () => {
           href="https://twitter.com/cam_villard"
           target="_blank"
           rel="noopener noreferrer"
+          color={"white"}
         >
           twitter
         </MenuOpenExtLink>
@@ -38,6 +46,7 @@ const Social = () => {
           href="https://twitter.com/cam_villard"
           target="_blank"
           rel="noopener noreferrer"
+          color={"white"}
         >
           behance
         </MenuOpenExtLink>
@@ -47,19 +56,41 @@ const Social = () => {
           href="https://twitter.com/cam_villard"
           target="_blank"
           rel="noopener noreferrer"
+          color={"white"}
         >
           github
         </MenuOpenExtLink>
       </MenuOpenItem>
+      <BlobSocial />
     </OpenMenuWrapper>
   )
 }
+type CategoriesProps = {
+  categories: Category[]
+}
 
-const Menu = () => {
+const CategoriesList = ({ categories }: CategoriesProps) => {
+  return (
+    <CategoriesListWrapper>
+      {categories.map(cat => (
+        <CategoryLink to={"/" + cat.slug} key={cat.slug}>
+          {cat.name}
+          <CategoryCount>{"(" + cat.articles + ")"}</CategoryCount>
+        </CategoryLink>
+      ))}
+    </CategoriesListWrapper>
+  )
+}
+
+const Menu = ({ categories }: CategoriesProps) => {
+  const [isOpen, openCategories] = useState(false)
   return (
     <OpenMenuWrapper>
       <MenuOpenItem>
-        <MenuOpenLink to={"/"}>catégories</MenuOpenLink>
+        {isOpen && <CategoriesList categories={categories} />}
+        <MenuOpenToggleLink onClick={() => openCategories(!isOpen)}>
+          catégories
+        </MenuOpenToggleLink>
       </MenuOpenItem>
       <MenuOpenItem>
         <MenuOpenLink to={"/"}>à propos</MenuOpenLink>
@@ -103,7 +134,7 @@ export const Nav = () => {
         </NavbarListItem>
         <NavbarListItem>contact</NavbarListItem>
       </NavWrapper>
-      {menuOpen && <Menu />}
+      {menuOpen && <Menu categories={fakeCats} />}
       {socialOpen && <Social />}
     </Fragment>
   )

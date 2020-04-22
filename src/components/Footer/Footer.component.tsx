@@ -51,8 +51,8 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <FooterLegal>
-        <FooterLink to={"#"}>mentions legales</FooterLink>
-        <FooterLink to={"#"}>confidentialité</FooterLink>
+        <FooterLink to={"/"}>mentions legales</FooterLink>
+        <FooterLink to={"/"}>confidentialité</FooterLink>
       </FooterLegal>
       <FooterBrand>
         <BrandText>© {new Date().getFullYear()} - les parenthèses</BrandText>

@@ -35,6 +35,7 @@ const InstagramFooter = () => {
             <a
               href={`https://www.instagram.com/p/${ig.node.id}/`}
               target="_blank"
+              key={ig.node.id}
             >
               <InstagramPic
                 key={ig.node.id}

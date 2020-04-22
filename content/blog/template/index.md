@@ -4,7 +4,7 @@ date: "2015-05-01T22:12:03.284Z"
 description: template
 slug: template
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
-categories: template
+categories: template, histoires, voyages
 ---
 
 <div class="main-container">

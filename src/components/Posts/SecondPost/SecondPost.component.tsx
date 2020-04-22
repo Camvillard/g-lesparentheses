@@ -39,7 +39,7 @@ const SecondPost = (props: SecondPostProps) => {
         porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit, in.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit..
       </PostExcerpt>
-      <MoreButton href={``} fontColor={forestGreen}>
+      <MoreButton to={`/#`} fontcolor={forestGreen}>
         lire la suite
       </MoreButton>
     </PostContainer>

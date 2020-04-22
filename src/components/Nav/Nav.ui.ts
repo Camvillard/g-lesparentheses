@@ -61,6 +61,8 @@ export const SocialWrapper = styled(OpenMenuWrapper)`
 
 export const MenuOpenItem = styled.li`
   margin: 0;
+  width: 100%;
+  position: relative;
 `
 
 export const MenuOpenLink = styled(Link)`
@@ -68,8 +70,37 @@ export const MenuOpenLink = styled(Link)`
   font-weight: 800;
   font-size: 4.2rem;
 `
-export const MenuOpenExtLink = styled.a`
+
+export const MenuOpenToggleLink = styled.span`
   color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
+`
+
+type MenuExtLinkProps = {
+  color?: string
+}
+export const MenuOpenExtLink = styled.a`
+  color: ${(props: MenuExtLinkProps) => props.color || darkGray};
+  font-weight: 800;
+  font-size: 4.2rem;
+`
+
+export const CategoryLink = styled(Link)`
+  font-size: 2.2rem;
+  margin-right: 16px;
+`
+
+export const CategoryCount = styled.span`
+  font-size: 0.5em;
+  position: relative;
+  top: -0.8em;
+`
+
+export const CategoriesListWrapper = styled.div`
+  position: absolute;
+  top: -92px;
+  left: 0;
+  max-width: 310px;
+  word-break: break-all;
 `

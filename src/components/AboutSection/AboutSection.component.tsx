@@ -51,8 +51,8 @@ const AboutSection = (props: AboutSectionProps) => {
           </AboutContent>
         </GridElement>
       </Grid>
-      <AboutLinkWrapper to={"/about"}>
-        <AboutLink fontColor={forestGreen}>
+      <AboutLinkWrapper>
+        <AboutLink fontcolor={forestGreen} to={"/about"}>
           lire toute l'autobiographie.
         </AboutLink>
       </AboutLinkWrapper>

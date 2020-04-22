@@ -17,6 +17,6 @@ export const AboutHeader = styled(DarkHeader3)`
 
 export const AboutContent = styled(Accent)``
 
-export const AboutLinkWrapper = styled(Link)``
+export const AboutLinkWrapper = styled.div``
 
 export const AboutLink = styled(ButtonSimple)``

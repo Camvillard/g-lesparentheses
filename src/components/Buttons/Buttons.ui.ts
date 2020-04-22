@@ -4,6 +4,7 @@ import {
   themeBreakpoints,
   themeFonts,
 } from "../../theme/themeVariables"
+import { Link } from "gatsby"
 
 const {
   lightPink,
@@ -17,10 +18,10 @@ const {
 
 const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
-const { $bodyFont, $accentFont } = themeFonts
+const { bodyFont, accentFont } = themeFonts
 
 interface IButtonSimpleProps {
-  fontColor?: string
+  fontcolor?: string
 }
 
 interface IButtonPlainProps {
@@ -31,25 +32,25 @@ export const ButtonBlock = styled.div`
   display: block;
 `
 
-export const ButtonPlain = styled.a`
+export const Button = styled(Link)`
+  transition: 0.3s;
+`
+
+export const ButtonPlain = styled(Button)`
   background: ${(props: IButtonPlainProps) => props.bgColor};
   text-align: center;
   color: white;
-  font-family: ${$bodyFont};
+  font-family: ${bodyFont};
   text-transform: uppercase;
   padding: 4px 24px;
 `
 
-export const Button = styled.a`
-  transition: 0.3s;
-`
-
 export const ButtonSimple = styled(Button)`
   text-transform: uppercase;
-  font-family: ${$bodyFont};
+  font-family: ${bodyFont};
   font-size: 1.4rem;
   position: relative;
-  color: ${(props: IButtonSimpleProps) => props.fontColor || oldPink};
+  color: ${(props: IButtonSimpleProps) => props.fontcolor || oldPink};
 
   &:after {
     transition: 0.3s;
@@ -59,7 +60,7 @@ export const ButtonSimple = styled(Button)`
     content: "";
     width: 28px;
     height: 3px;
-    background: ${(props: IButtonSimpleProps) => props.fontColor || oldPink};
+    background: ${(props: IButtonSimpleProps) => props.fontcolor || oldPink};
   }
 
   &:hover:after {
