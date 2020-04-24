@@ -61,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin: 0.3em auto 0.1em;
+    margin: 0.3em 0 0.1em 0;
     font-family: ${bodyFont};
     color: ${darkGray};
     font-weight: 700;
