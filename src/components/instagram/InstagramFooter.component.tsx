@@ -1,12 +1,23 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import {
-  InstagramContainer,
-  InstagramPic,
-  InstagramImages,
-} from "./InstagramFooter.ui"
-import { IInstagramData } from "./InstagramFooter.model"
-import { MainContainer } from "../Containers/MainContainer.ui"
+import { useStaticQuery, graphql } from "gatsby"
+import { InstagramContainer, InstagramPic } from "./InstagramFooter.ui"
+import { WideContainer, MainContainer } from "../Containers/MainContainer.ui"
+import { HomepageSectionTitle } from "../Headers/Headers.ui"
+
+export type InstagramData = {
+  node: InstagramDataNode
+}
+
+type InstagramDataNode = {
+  original: string
+  id: string
+  caption: string
+  localFile: InstragmLocalFiles
+}
+
+type InstragmLocalFiles = {
+  url: string
+}
 
 const InstagramFooter = () => {
   const data = useStaticQuery(graphql`
@@ -27,26 +38,29 @@ const InstagramFooter = () => {
   `)
   const instagramData = data.allInstaNode.edges
   return (
-    <MainContainer>
-      <InstagramContainer>
-        sur instagram.
-        <InstagramImages justify="center">
-          {instagramData.map((ig: IInstagramData) => (
-            <a
-              href={`https://www.instagram.com/p/${ig.node.id}/`}
-              target="_blank"
+    <WideContainer>
+      <MainContainer>
+        <HomepageSectionTitle>sur instagram.</HomepageSectionTitle>
+      </MainContainer>
+      <InstagramContainer
+        columns={{ default: "repeat(3, 1fr)", sm: "repeat(6, 1fr)" }}
+      >
+        {instagramData.map((ig: InstagramData) => (
+          <a
+            href={`https://www.instagram.com/p/${ig.node.id}/`}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={ig.node.id}
+          >
+            <InstagramPic
               key={ig.node.id}
-            >
-              <InstagramPic
-                key={ig.node.id}
-                src={ig.node.original}
-                alt={ig.node.caption}
-              />
-            </a>
-          ))}
-        </InstagramImages>
+              src={ig.node.original}
+              alt={ig.node.caption}
+            />
+          </a>
+        ))}
       </InstagramContainer>
-    </MainContainer>
+    </WideContainer>
   )
 }
 

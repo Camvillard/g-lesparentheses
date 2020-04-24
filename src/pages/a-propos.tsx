@@ -1,7 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout/Layout.component"
 import SEO from "../components/SEO/SEO.component"
+import { GlobalStyle } from "../theme/globalstyle"
+import { Header1 } from "../components/Headers/Headers.ui"
+import { AboutPageContainer } from "../components/AboutPage/AboutPage.ui"
 
 type AboutProps = {
   data: any
@@ -13,11 +15,15 @@ const AboutPage = (props: AboutProps) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={props.location} title={siteTitle} pageName={"à propos"}>
-      <SEO title="404: Not Found" />
-      <h1>Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
+    <AboutPageContainer>
+      <GlobalStyle />
+      <SEO title="a propos" />
+      <Header1 color={"white"}>à propos de moi-même</Header1>
+
+      <p>les infos générales</p>
+      <p>les trucs pros</p>
+      <p>fun facts</p>
+    </AboutPageContainer>
   )
 }
 

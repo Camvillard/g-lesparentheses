@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ButtonBlock } from "../Buttons/Buttons.ui"
+import { ButtonLinkBlock } from "../Buttons/Buttons.ui"
 import { Link } from "gatsby"
 import {
   themeFonts,
@@ -11,7 +11,7 @@ const { $bodyFont } = themeFonts
 const { oldPink } = themeColors
 const { smScreen } = themeBreakpoints
 
-export const ReadMoreButtonContainer = styled(ButtonBlock)`
+export const ReadMoreButtonContainer = styled(ButtonLinkBlock)`
   text-align: center;
   width: 100%;
   margin: 48px auto 64px;

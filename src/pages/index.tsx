@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { HomepageSection } from "../components/Containers/homepage-containers"
+import { HomepageSection } from "../components/Containers/HomepageContainers.component"
 import NewsletterSection from "../components/newsletter/newsletter.component"
 import InstagramFooter from "../components/instagram/InstagramFooter.component"
 import Layout from "../components/Layout/Layout.component"
@@ -14,6 +14,8 @@ import ReadMoreButton from "../components/ReadMoreButton/ReadMoreButton.componen
 import AboutSection from "../components/AboutSection/AboutSection.component"
 import SEO from "../components/SEO/SEO.component"
 import { Nav } from "../components/Nav/Nav.component"
+import { HomepageSectionTitle } from "../components/Headers/Headers.ui"
+import { Grid } from "../components/Grid/Grid.ui"
 
 interface IProps {
   data: any
@@ -39,25 +41,30 @@ const BlogIndex = (props: IProps) => {
 
       <ReadMoreButton />
 
-      <AboutSection />
+      <HomepageSection>
+        <AboutSection />
+      </HomepageSection>
 
       <HomepageSection>
-        <div className="main-container petites-parentheses-container homepage-section">
-          <h2 className="section-title column full-width">
-            les petites parenthèses
-          </h2>
-          <p className="description">
-            les petites parenthèses, ce sont tous ces petits textes sans
-            forcément d'image ni même de ponctuation, mais qui en avaient marre
-            de sommeiller dans mes petits carnets.
-          </p>
+        <HomepageSectionTitle>les petites parenthèses</HomepageSectionTitle>
+        <p className="description">
+          les petites parenthèses, ce sont tous ces petits textes sans forcément
+          d'image ni même de ponctuation, mais qui en avaient marre de
+          sommeiller dans mes petits carnets.
+        </p>
 
-          <div className="petites-parentheses-content grid">
-            <PetitesParenthesesCard />
-            <PetitesParenthesesCard />
-            <PetitesParenthesesCard />
-          </div>
-        </div>
+        <Grid
+          columns={{
+            default: "1fr",
+            sm: "1fr 1fr",
+            md: "1fr 1fr 1fr",
+            lg: "repeat(4, 1fr)",
+          }}
+        >
+          <PetitesParenthesesCard />
+          <PetitesParenthesesCard />
+          <PetitesParenthesesCard />
+        </Grid>
       </HomepageSection>
 
       <NewsletterSection />

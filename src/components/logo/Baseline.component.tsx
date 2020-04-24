@@ -1,7 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import { themeFonts, themeColors } from "../../theme/themeVariables"
+import {
+  themeFonts,
+  themeColors,
+  themeBreakpoints,
+} from "../../theme/themeVariables"
 
+const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 const { accentFont } = themeFonts
 const { oldPink, mediumGray, gray } = themeColors
 
@@ -12,6 +17,17 @@ const BaselineText = styled.h4`
   bottom: 12px;
   right: 22%;
   color: ${gray};
+  @media (min-width: ${smScreen}) {
+    font-size: 1.4rem;
+    bottom: 24px;
+    right: 22%;
+  }
+  @media (min-width: ${mdScreen}) {
+  }
+  @media (min-width: ${lgScreen}) {
+  }
+  @media (min-width: ${xlgScreen}) {
+  }
 `
 const Baseline = () => {
   return <BaselineText>histoires & ponctuation</BaselineText>

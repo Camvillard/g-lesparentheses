@@ -8,8 +8,8 @@ const { oldPink, darkGray } = themeColors
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Logo width={"80%"} fillColor={darkGray} />
-      <Baseline />
+      <Logo width={{ default: "70%", sm: "42%" }} fillColor={darkGray} />
+      {/* <Baseline /> */}
     </HeaderWrapper>
   )
 }

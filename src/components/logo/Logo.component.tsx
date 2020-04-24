@@ -1,21 +1,20 @@
 import React from "react"
-import styled from "styled-components"
 import { LogoWrapper } from "./Logo.ui"
 import { themeColors } from "../../theme/themeVariables"
+import { Breakpoint } from "../../types/Breakpoint.type"
 
 const { darkGray } = themeColors
 
 type LogoProps = {
   fillColor?: string
   strokeColor?: string
-  width?: string
-  height?: string
+  width: Breakpoint
 }
 
 const Logo = (props: LogoProps) => {
-  const { width, height, fillColor, strokeColor } = props
+  const { width, fillColor, strokeColor } = props
   return (
-    <LogoWrapper width={width || "100%"} height={height || "auto"}>
+    <LogoWrapper width={width}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"

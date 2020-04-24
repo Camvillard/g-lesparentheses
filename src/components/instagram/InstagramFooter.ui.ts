@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 import { Flexbox } from "../Containers/Flexbox.ui"
+import { Grid } from "../Grid/Grid.ui"
 
 const {
   lightPink,
@@ -14,11 +15,7 @@ const {
 
 const { smScreen, mdScreen, lgScreen } = themeBreakpoints
 
-export const InstagramContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+export const InstagramContainer = styled(Grid)`
   @media (min-width: ${smScreen}) {
   }
 
@@ -56,7 +53,7 @@ export const InstagramImages = styled(Flexbox)`
 
 export const InstagramPic = styled.img`
   width: 100%;
-  border: 2px solid ${lightPink};
+  border: 0px solid ${lightPink};
   @media (min-width: ${mdScreen}) {
     border: none;
   }

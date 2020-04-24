@@ -45,18 +45,21 @@ const LastPost = (props: LastPostProps) => {
         top={{
           default: "-32px",
           sm: "-48px",
-          md: "0",
+          md: "-64px",
           lg: "54px",
           xlg: "56px",
         }}
         left={{
           default: "0",
           sm: "2vw",
+          md: "2vw",
         }}
       >
         <Link to={`/#`}>deux mille dix-huit, deux mille dix-neuf.</Link>
       </PostTitle>
-      <GridElement columns={{ default: "span 4", sm: "2 / span 5" }}>
+      <GridElement
+        columns={{ default: "span 4", sm: "2 / span 5", md: "2 / span 4" }}
+      >
         <PostExcerpt>
           abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor,

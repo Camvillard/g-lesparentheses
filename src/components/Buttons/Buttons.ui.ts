@@ -20,24 +20,23 @@ const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 const { bodyFont, accentFont } = themeFonts
 
-interface IButtonSimpleProps {
+interface IButtonLinkSimpleProps {
   fontcolor?: string
 }
 
-interface IButtonPlainProps {
-  bgColor: string
-}
-
-export const ButtonBlock = styled.div`
+export const ButtonLinkBlock = styled(Link)`
   display: block;
 `
 
-export const Button = styled(Link)`
+export const ButtonLink = styled(Link)`
   transition: 0.3s;
 `
 
-export const ButtonPlain = styled(Button)`
-  background: ${(props: IButtonPlainProps) => props.bgColor};
+type IButtonLinkPlainProps = {
+  bgColor: string
+}
+export const ButtonLinkPlain = styled(ButtonLink)`
+  background: ${(props: IButtonLinkPlainProps) => props.bgColor};
   text-align: center;
   color: white;
   font-family: ${bodyFont};
@@ -45,12 +44,12 @@ export const ButtonPlain = styled(Button)`
   padding: 4px 24px;
 `
 
-export const ButtonSimple = styled(Button)`
+export const ButtonLinkSimple = styled(ButtonLink)`
   text-transform: uppercase;
   font-family: ${bodyFont};
   font-size: 1.4rem;
   position: relative;
-  color: ${(props: IButtonSimpleProps) => props.fontcolor || oldPink};
+  color: ${(props: IButtonLinkSimpleProps) => props.fontcolor || oldPink};
 
   &:after {
     transition: 0.3s;
@@ -60,7 +59,8 @@ export const ButtonSimple = styled(Button)`
     content: "";
     width: 28px;
     height: 3px;
-    background: ${(props: IButtonSimpleProps) => props.fontcolor || oldPink};
+    background: ${(props: IButtonLinkSimpleProps) =>
+      props.fontcolor || oldPink};
   }
 
   &:hover:after {

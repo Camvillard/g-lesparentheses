@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Accent } from "../../theme/globalstyle"
 import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 import { Grid, GridElement, GridElementProps } from "../Grid/Grid.ui"
-import { ButtonSimple } from "../Buttons/Buttons.ui"
+import { ButtonLinkSimple } from "../Buttons/Buttons.ui"
 import { Breakpoint } from "../../types/Breakpoint.type"
 
 const { mediumGray, darkGray } = themeColors
@@ -14,7 +14,7 @@ export const PostContainer = styled(Grid)`
 `
 
 type CardMetaProps = {
-  columns: Breakpoint
+  columns?: Breakpoint
 }
 
 export const CardMeta = styled(Accent)`
@@ -65,8 +65,8 @@ interface PostTitleProps extends GridElementProps {
 
 export const PostTitle = styled.h2`
   position: relative;
-  margin-top: ${(props: PostTitleProps) => props.top?.default || "0"};
-  margin-left: ${(props: PostTitleProps) => props.left?.default || "0"};
+  margin-top: ${(props: PostTitleProps) => props.top?.default};
+  margin-left: ${(props: PostTitleProps) => props.left?.default};
   line-height: 1.05;
   grid-column: ${(props: PostTitleProps) => props.columns.default};
   a {
@@ -76,18 +76,17 @@ export const PostTitle = styled.h2`
 
   @media (min-width: ${smScreen}) {
     grid-column: ${(props: PostTitleProps) => props.columns.sm};
-    margin-top: ${(props: PostTitleProps) => props.top?.sm || "0"};
-    margin-left: ${(props: PostTitleProps) => props.left?.sm || "0"};
+    margin-top: ${(props: PostTitleProps) => props.top?.sm};
+    margin-left: ${(props: PostTitleProps) => props.left?.sm};
     a {
       font-size: 1.6em;
     }
   }
 
   @media (min-width: ${mdScreen}) {
-    grid-column: ${(props: PostTitleProps) => props.columns.sm};
-    width: 60%;
-    margin-left: 0;
-    margin-top: -42px;
+    grid-column: ${(props: PostTitleProps) => props.columns.md};
+    margin-top: ${(props: PostTitleProps) => props.top?.md};
+    margin-left: ${(props: PostTitleProps) => props.left?.md};
     font-size: 5.2rem;
   }
 
@@ -102,6 +101,6 @@ export const PostTitle = styled.h2`
 export const PostExcerpt = styled.p`
   word-break: break-word;
 `
-export const MoreButton = styled(ButtonSimple)`
+export const MoreButton = styled(ButtonLinkSimple)`
   display: block;
 `

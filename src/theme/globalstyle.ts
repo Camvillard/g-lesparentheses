@@ -18,6 +18,11 @@ const { mdScreen, lgScreen } = themeBreakpoints
 
 export const Accent = styled.p`
   font-family: ${accentFont};
+  font-size: 1.2rem;
+
+  @media (min-width: ${mdScreen}) {
+    font-size: 1.4rem;
+  }
 `
 
 export const GlobalStyle = createGlobalStyle`
@@ -184,13 +189,9 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 2.8rem;
     }
 
-    p, li, em, a {
-      font-size: 1.8rem;
-    }
-
     p.accent-text,
     .accent-text {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
   }
 
