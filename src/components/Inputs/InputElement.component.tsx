@@ -11,12 +11,12 @@ type InputElementProps = {
   placeholder?: string
   label?: string
   type?: string
+  onInputBlur: (e: React.FocusEvent<HTMLInputElement>) => void
 }
 
 export const InputElement = (props: InputElementProps) => {
-  const { placeholder, label, type } = props
+  const { placeholder, label, type, onInputBlur } = props
   const inputRef = useRef(null)
-  console.log(inputRef.current)
   const [isValidated, setValidated] = useState(false)
   const [hasError, setError] = useState("")
   const validatesInput = (event: FocusEvent<HTMLInputElement>) => {
@@ -35,6 +35,7 @@ export const InputElement = (props: InputElementProps) => {
           ? setValidated(true)
           : setError("ceci ne ressemle pas à une url, petit coquin.")
     }
+    props.onInputBlur(event)
   }
   return (
     <InputGroupWrapper>

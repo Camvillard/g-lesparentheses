@@ -11,6 +11,7 @@ type LogoProps = {
   width: Breakpoint
 }
 
+// TODO : add ratio to width / height
 const Logo = (props: LogoProps) => {
   const { width, fillColor, strokeColor } = props
   return (
@@ -18,7 +19,7 @@ const Logo = (props: LogoProps) => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
-        height="auto"
+        height="100%"
         viewBox="0 0 647.84 271.28"
       >
         <title>lesparentheses_logo</title>

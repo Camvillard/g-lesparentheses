@@ -5,7 +5,7 @@ const { darkGray, gray, mediumGray, lightGray, oldPink } = themeColors
 const { accentFont, bodyFont } = themeFonts
 
 export const InputGroupWrapper = styled.div`
-  margin: 24px 0;
+  margin: 16px 0;
 `
 
 export const InputWrapper = styled.div`
@@ -18,16 +18,18 @@ type InputProps = {
   isValidated: boolean
 }
 export const Input = styled.input`
+  font-size: 1.4rem;
   flex-grow: 1;
   border: none;
   display: block;
   padding-left: 8px;
   margin-left: 4px;
   color: white;
-  background: ${(props: InputProps) => (props.isValidated ? darkGray : "none")};
+  background: ${(props: InputProps) => (props.isValidated ? darkGray : "red")};
   font-weight: 300;
   font-family: ${bodyFont};
   ::placeholder {
+    font-size: 1.2rem;
     font-weight: 400;
     font-family: ${accentFont};
     color: ${mediumGray};

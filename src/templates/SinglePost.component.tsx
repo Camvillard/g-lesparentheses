@@ -6,6 +6,7 @@ import "../styles/main.scss"
 import Layout from "../components/Layout/Layout.component"
 import { SinglePostTitle } from "../components/SinglePost/SinglePostSections.ui"
 import SEO from "../components/SEO/SEO.component"
+import { SinglePostCommentForm } from "../components/SinglePost/SinglePostCommentForm.component"
 
 type PostTemplateProps = {
   location: string
@@ -29,6 +30,7 @@ const PostTemplate = (props: PostTemplateProps) => {
       />
       <SinglePostTitle>{title}</SinglePostTitle>
       <article dangerouslySetInnerHTML={{ __html: html }} />
+      <SinglePostCommentForm />
     </Layout>
   )
 }
