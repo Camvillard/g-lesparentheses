@@ -5,6 +5,7 @@ import {
   isEmpty,
   validatesEmail,
   validatesUrl,
+  validatesInput,
 } from "../../shared/input.helpers"
 
 type InputElementProps = {
@@ -19,23 +20,9 @@ export const InputElement = (props: InputElementProps) => {
   const inputRef = useRef(null)
   const [isValidated, setValidated] = useState(false)
   const [hasError, setError] = useState("")
-  const validatesInput = (event: FocusEvent<HTMLInputElement>) => {
-    const { value, type } = event.target
-    setError("")
-    if (isEmpty(value.trim())) {
-      return setError("le champ ne peut pas être vide.")
-    }
-    switch (type) {
-      case "email":
-        return validatesEmail(value)
-          ? setValidated(true)
-          : setError("ceci n'est pas un email, petit coquin.")
-      case "url":
-        return validatesUrl(value)
-          ? setValidated(true)
-          : setError("ceci ne ressemle pas à une url, petit coquin.")
-    }
-    props.onInputBlur(event)
+  const getValidation = (event: FocusEvent<HTMLInputElement>) => {
+    validatesInput(event, setError, setValidated)
+    onInputBlur(event)
   }
   return (
     <InputGroupWrapper>
@@ -44,7 +31,7 @@ export const InputElement = (props: InputElementProps) => {
         <Input
           isValidated={isValidated}
           placeholder={placeholder}
-          onBlur={validatesInput}
+          onBlur={getValidation}
           ref={inputRef}
           type={type || "text"}
         />

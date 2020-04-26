@@ -17,6 +17,8 @@ const PostTemplate = (props: PostTemplateProps) => {
   const { data } = props
 
   const { location, pageContext } = props
+  console.log("all props", props)
+
   const { siteTitle } = data.site.siteMetadata
   const { frontmatter, html, htmlAst, excerpt, id } = data.markdownRemark
   const { title } = frontmatter
@@ -30,7 +32,7 @@ const PostTemplate = (props: PostTemplateProps) => {
       />
       <SinglePostTitle>{title}</SinglePostTitle>
       <article dangerouslySetInnerHTML={{ __html: html }} />
-      <SinglePostCommentForm />
+      <SinglePostCommentForm postId={id} />
     </Layout>
   )
 }
@@ -38,14 +40,14 @@ const PostTemplate = (props: PostTemplateProps) => {
 export default PostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!, $id: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       id
       html
       htmlAst
@@ -53,6 +55,23 @@ export const pageQuery = graphql`
         title
         date
         description
+      }
+    }
+    allAirtable(
+      filter: { table: { eq: "commentaires" }, data: { postId: { eq: $id } } }
+    ) {
+      edges {
+        node {
+          id
+          data {
+            commentaire
+            date(formatString: "DD MM YYYY")
+            email
+            nom
+            postId
+          }
+          table
+        }
       }
     }
   }
