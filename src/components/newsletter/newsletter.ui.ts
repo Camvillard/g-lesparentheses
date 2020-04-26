@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { themeBreakpoints, themeColors } from "../../theme/themeVariables"
-import { FromStroked } from "../forms/forms.ui"
 
 const { oldPink } = themeColors
 const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
@@ -34,19 +33,19 @@ export const NewsletterSectionTitle = styled.p`
   }
 `
 
-export const NewsletterForm = styled(FromStroked)`
-  input[type="submit"] {
-    margin-left: calc(100% - 77px);
-    text-align: right;
-    border-bottom: 0;
-    margin-top: 1rem;
-  }
-  @media (min-width: ${smScreen}) {
-  }
+// export const NewsletterForm = styled(FromStroked)`
+//   input[type="submit"] {
+//     margin-left: calc(100% - 77px);
+//     text-align: right;
+//     border-bottom: 0;
+//     margin-top: 1rem;
+//   }
+//   @media (min-width: ${smScreen}) {
+//   }
 
-  @media (min-width: ${mdScreen}) {
-  }
+//   @media (min-width: ${mdScreen}) {
+//   }
 
-  @media (min-width: ${lgScreen}) {
-  }
-`
+//   @media (min-width: ${lgScreen}) {
+//   }
+// `

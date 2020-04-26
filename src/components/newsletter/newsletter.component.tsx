@@ -2,9 +2,7 @@ import React, { Component } from "react"
 import {
   NewsletterMainContainer,
   NewsletterSectionTitle,
-  NewsletterForm,
 } from "./newsletter.ui"
-import { Input } from "../forms/forms.ui"
 
 class NewsletterSection extends Component {
   public render() {
@@ -15,25 +13,24 @@ class NewsletterSection extends Component {
         parce que mon rythme de publication est 100% aléatoire. en revanche, je
         n’envoie jamais de spams. les spams sont, à l'instar des salades de
         betteraves, le premier fléau de l’humanité.
-        <NewsletterForm
+        {/* <NewsletterForm
           action=""
           onSubmit={this.onFormSubmit}
           className="form-stroke dark magic-form"
-        >
-          <Input
+        > */}
+        {/* <Input
             type="text"
             placeholder="adresse email /"
             onClick={this.onInputChange}
             onBlur={this.onInputValidation}
             data-toggle="#newsletter-email-input"
-          />
-
-          <input
+          /> */}
+        {/* <input
             type="submit"
             value="/ s'abonner"
             id="newsletter-email-input"
           />
-        </NewsletterForm>
+        </NewsletterForm> */}
       </NewsletterMainContainer>
     )
   }

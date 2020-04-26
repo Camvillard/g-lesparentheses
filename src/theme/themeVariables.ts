@@ -3,7 +3,7 @@ const oldPink = `#B08C8C`
 const forestGreen = `#87a496`
 
 const lightGray = `#DFE0E3`
-const mediumGray = `#85888F`
+const mediumGray = `#A4A7AE`
 const gray = `#575A60`
 const darkGray = `#363A42`
 const offWhite = `#F9F8F8`
