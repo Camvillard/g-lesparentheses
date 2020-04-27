@@ -7,6 +7,9 @@ import Layout from "../components/Layout/Layout.component"
 import { SinglePostTitle } from "../components/SinglePost/SinglePostSections.ui"
 import SEO from "../components/SEO/SEO.component"
 import { SinglePostCommentForm } from "../components/SinglePost/SinglePostCommentForm.component"
+import { convertNodesInComments } from "../shared/comments/comments.helpers"
+import { SinglePostComments } from "../components/SinglePost/SinglePostComments.component"
+import { MainContainer } from "../components/Containers/MainContainer.ui"
 
 type PostTemplateProps = {
   location: string
@@ -15,14 +18,13 @@ type PostTemplateProps = {
 }
 const PostTemplate = (props: PostTemplateProps) => {
   const { data } = props
-
   const { location, pageContext } = props
-  console.log("all props", props)
-
   const { siteTitle } = data.site.siteMetadata
   const { frontmatter, html, htmlAst, excerpt, id } = data.markdownRemark
   const { title } = frontmatter
   const { previous, next } = pageContext
+
+  const allComments = convertNodesInComments(data.allAirtable.edges)
 
   return (
     <Layout location={location} title={siteTitle} pageName="single-post">
@@ -31,7 +33,13 @@ const PostTemplate = (props: PostTemplateProps) => {
         description={frontmatter.description || excerpt}
       />
       <SinglePostTitle>{title}</SinglePostTitle>
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <MainContainer>
+        <article dangerouslySetInnerHTML={{ __html: html }} />
+        <p>
+          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+        </p>
+      </MainContainer>
+      <SinglePostComments allComments={allComments} />
       <SinglePostCommentForm postId={id} />
     </Layout>
   )
@@ -65,10 +73,11 @@ export const pageQuery = graphql`
           id
           data {
             commentaire
-            date(formatString: "DD MM YYYY")
+            date(locale: "fr", formatString: "Do MMMM YYYY")
             email
             nom
             postId
+            url
           }
           table
         }

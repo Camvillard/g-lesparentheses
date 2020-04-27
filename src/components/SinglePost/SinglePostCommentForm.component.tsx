@@ -1,47 +1,80 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import Airtable from "airtable"
 import { InputElement } from "../Inputs/InputElement.component"
 import { MainContainer } from "../Containers/MainContainer.ui"
 import { TextareaElement } from "../Inputs/TextareaElement.component"
+import { ButtonSimple } from "../Buttons/Buttons.ui"
+import {
+  CommentSuccessWrapper,
+  CommentSuccesTitle,
+  CommentSuccessText,
+} from "./SinglePostCommentForm.ui"
+import { CloseIcon } from "../Icons/CloseIcon.component"
+import { CommentObject } from "../../shared/comments/Comment.model"
 
 type CommentFormProps = {
   postId: string
 }
-type Comment = {
-  postId: string
-  nom: string
-  email: String
-  url?: string
-  commentaire: string
-}
 
-const sendComment = (comment: Comment) => {
+const sendComment = (
+  comment: CommentObject,
+  setPostedComment: any,
+  formRef: any
+) => {
   const base = new Airtable({
     apiKey: process.env.AIRTABLE_API_KEY,
   }).base("app45GbA2JUHNzpjq")
 
-  base("commentaires").create([
-    {
-      fields: comment,
-    },
-  ])
+  base("commentaires")
+    .create([
+      {
+        fields: comment,
+      },
+    ])
+    .then((r: any) => {
+      if (r) {
+        setPostedComment(true)
+        formRef.current.reset()
+      }
+    })
 }
 
 export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
   const [name, setName] = useState("")
+  const formRef = useRef<HTMLFormElement>(null)
   const [email, setEmail] = useState("")
   const [url, setUrl] = useState("")
   const [message, setMessage] = useState("")
+  const [commentIsPosted, setPostedComment] = useState(false)
   const submitForm = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const comment = { postId, nom: name, email, url, commentaire: message }
-    sendComment(comment)
+    const comment = {
+      postId,
+      nom: name,
+      email,
+      url,
+      commentaire: message,
+    }
+    sendComment(comment, setPostedComment, formRef)
   }
 
   return (
     <MainContainer>
       <h3>COMMENTAIRES</h3>
-      <form action="" onSubmit={submitForm}>
+      {commentIsPosted && (
+        <CommentSuccessWrapper>
+          <CloseIcon
+            color={"white"}
+            ratio={1}
+            onCloseClick={() => setPostedComment(false)}
+          />
+          <CommentSuccesTitle>fantastique</CommentSuccesTitle>
+          <CommentSuccessText>
+            le commentaire a bien été posté, il s'affichera dare-dare.
+          </CommentSuccessText>
+        </CommentSuccessWrapper>
+      )}
+      <form action="" onSubmit={submitForm} ref={formRef}>
         <InputElement
           label={"nom, prénom"}
           placeholder={"hermione"}
@@ -70,7 +103,7 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
           }
         />
 
-        <button>envoyer</button>
+        <ButtonSimple>envoyer le commentaire</ButtonSimple>
       </form>
     </MainContainer>
   )

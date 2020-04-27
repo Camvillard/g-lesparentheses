@@ -12,11 +12,12 @@ type TextareaProps = {
   placeholder?: string
   label?: string
   name?: string
+  inputRef?: any
   onTextareaBlur: (e: React.FocusEvent<HTMLTextAreaElement>) => void
 }
 
 export const TextareaElement = (props: TextareaProps) => {
-  const { placeholder, label, onTextareaBlur } = props
+  const { placeholder, label, onTextareaBlur, inputRef } = props
   const [isValidated, setValidated] = useState(false)
   const [hasError, setError] = useState("")
   const getValidation = (event: React.FocusEvent<HTMLTextAreaElement>) => {
@@ -31,6 +32,7 @@ export const TextareaElement = (props: TextareaProps) => {
           placeholder={placeholder}
           isValidated={isValidated}
           onBlur={getValidation}
+          ref={inputRef}
         />
       </TextareaWrapper>
       {hasError && <InputError>(oups, {hasError})</InputError>}

@@ -1,8 +1,13 @@
 import styled from "styled-components"
-import { themeColors, themeFonts } from "../../theme/themeVariables"
+import {
+  themeColors,
+  themeFonts,
+  themeBreakpoints,
+} from "../../theme/themeVariables"
 
 const { darkGray, gray, mediumGray, lightGray, oldPink } = themeColors
 const { accentFont, bodyFont } = themeFonts
+const { smScreen, mdScreen } = themeBreakpoints
 
 export const InputGroupWrapper = styled.div`
   margin: 16px 0;
@@ -20,7 +25,7 @@ export const TextareaWrapper = styled.div``
 
 export const Textarea = styled.textarea`
   display: block;
-  min-height: 12vh;
+  min-height: 24vh;
   width: 100%;
   border: none;
   border-bottom: 2px solid ${darkGray};
@@ -36,11 +41,16 @@ export const Textarea = styled.textarea`
     font-family: ${accentFont};
     color: ${mediumGray};
   }
+
+  @media (min-width: ${smScreen}) {
+    min-height: 12vh;
+  }
 `
 
 type InputProps = {
   isValidated: boolean
 }
+
 export const Input = styled.input`
   font-size: 1.4rem;
   flex-grow: 1;
