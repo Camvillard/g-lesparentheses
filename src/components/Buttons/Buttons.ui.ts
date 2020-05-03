@@ -86,6 +86,9 @@ export const ButtonLinkSimple = styled(ButtonLink)`
 `
 
 export const ButtonSimple = styled.button`
+  webkit-appareance: none;
+  background: none;
+  border: none;
   text-transform: uppercase;
   font-family: ${bodyFont};
   font-size: 1.4rem;
@@ -112,6 +115,10 @@ export const ButtonSimple = styled.button`
 
   @media (min-width: ${smScreen}) {
     font-size: 1.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &:after {
       width: 32px;

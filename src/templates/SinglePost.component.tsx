@@ -32,8 +32,8 @@ const PostTemplate = (props: PostTemplateProps) => {
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
       />
-      <SinglePostTitle>{title}</SinglePostTitle>
       <MainContainer>
+        <SinglePostTitle>{title}</SinglePostTitle>
         <article dangerouslySetInnerHTML={{ __html: html }} />
         <p>
           abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz

@@ -23,12 +23,15 @@ export const CommentsTitle = styled(Header3)`
 
 export const CommentWrapper = styled.div`
   margin: 24px 0;
+  max-width: 724px;
 `
 
 export const CommentHeader = styled.div`
   display: flex;
   align-items: flex-end;
 `
+
+export const NoComment = styled.p``
 
 export const CommentAuthor = styled.a`
   h5 {

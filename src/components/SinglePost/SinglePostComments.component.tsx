@@ -8,6 +8,7 @@ import {
   CommentHeader,
   CommentDate,
   CommentsTitle,
+  NoComment,
 } from "./SinglePostComments.ui"
 import { UpperCounter } from "../Counter/UpperCounter.ui"
 
@@ -21,7 +22,11 @@ export const SinglePostComments = (props: SinglePostComments) => {
       <CommentsTitle>
         commentaires.<UpperCounter>({allComments.length})</UpperCounter>
       </CommentsTitle>
-      {allComments.length === 0 && <p>pas de commentaire</p>}
+      {allComments.length === 0 && (
+        <NoComment>
+          il n'y a pas encore de commentaire sur cet article.
+        </NoComment>
+      )}
       {allComments.map(comment => {
         const { commentaire, date, nom, id, url } = comment
         return (

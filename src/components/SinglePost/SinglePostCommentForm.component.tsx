@@ -8,9 +8,11 @@ import {
   CommentSuccessWrapper,
   CommentSuccesTitle,
   CommentSuccessText,
+  CommentForm,
 } from "./SinglePostCommentForm.ui"
 import { CloseIcon } from "../Icons/CloseIcon.component"
 import { CommentObject } from "../../shared/comments/Comment.model"
+import { CommentsTitle } from "./SinglePostComments.ui"
 
 type CommentFormProps = {
   postId: string
@@ -60,7 +62,7 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
 
   return (
     <MainContainer>
-      <h3>COMMENTAIRES</h3>
+      <CommentsTitle>laisser un commentaire</CommentsTitle>
       {commentIsPosted && (
         <CommentSuccessWrapper>
           <CloseIcon
@@ -74,7 +76,7 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
           </CommentSuccessText>
         </CommentSuccessWrapper>
       )}
-      <form action="" onSubmit={submitForm} ref={formRef}>
+      <CommentForm action="" onSubmit={submitForm} ref={formRef}>
         <InputElement
           label={"nom, prénom"}
           placeholder={"hermione"}
@@ -104,7 +106,7 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
         />
 
         <ButtonSimple>envoyer le commentaire</ButtonSimple>
-      </form>
+      </CommentForm>
     </MainContainer>
   )
 }

@@ -40,3 +40,7 @@ export const CommentSuccessText = styled.p`
   max-width: 170px;
   margin-left: 0;
 `
+
+export const CommentForm = styled.form`
+  max-width: 764px;
+`
