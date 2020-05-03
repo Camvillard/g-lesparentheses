@@ -4,16 +4,21 @@ import { Link, graphql } from "gatsby"
 // styles & assets
 import "../styles/main.scss"
 import Layout from "../components/Layout/Layout.component"
-import { SinglePostTitle } from "../components/SinglePost/SinglePostSections.ui"
+import {
+  SinglePostTitle,
+  SinglePostThumbnail,
+} from "../components/SinglePost/SinglePostSections.ui"
 import SEO from "../components/SEO/SEO.component"
 import { SinglePostCommentForm } from "../components/SinglePost/SinglePostCommentForm.component"
 import { convertNodesInComments } from "../shared/comments/comments.helpers"
 import { SinglePostComments } from "../components/SinglePost/SinglePostComments.component"
 import { MainContainer } from "../components/Containers/MainContainer.ui"
+import { SinglePostMeta } from "../components/SinglePost/SinglePostMeta.component"
+import { ISinglePostData } from "../types/BlogPost.type"
 
 type PostTemplateProps = {
   location: string
-  data: any
+  data: ISinglePostData
   pageContext: any
 }
 const PostTemplate = (props: PostTemplateProps) => {
@@ -21,15 +26,9 @@ const PostTemplate = (props: PostTemplateProps) => {
   console.log(data)
 
   const { location, pageContext } = props
-  const { siteTitle } = data.site.siteMetadata
+  const { title: siteTitle } = data.site.siteMetadata
   const { frontmatter, html, htmlAst, excerpt, id } = data.markdownRemark
-  const {
-    title,
-    image_url: imageUrl,
-    categories,
-    description,
-    date,
-  } = frontmatter
+  const { title, image_url: imageUrl, description } = frontmatter
   const { previous, next } = pageContext
 
   const imagePlaceholder = `https://images.unsplash.com/photo-1567147220783-b84e25517cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80`
@@ -40,10 +39,11 @@ const PostTemplate = (props: PostTemplateProps) => {
     <Layout location={location} title={siteTitle} pageName="single-post">
       <SEO title={title} description={description || excerpt} />
       <MainContainer>
-        <img src={imageUrl || imagePlaceholder} alt={title} />
+        <SinglePostThumbnail src={imageUrl || imagePlaceholder} alt={title} />
         <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
       </MainContainer>
       <article dangerouslySetInnerHTML={{ __html: html }} />
+      <SinglePostMeta meta={frontmatter} />
       <SinglePostComments allComments={allComments} />
       <SinglePostCommentForm postId={id} />
     </Layout>

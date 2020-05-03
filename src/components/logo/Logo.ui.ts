@@ -9,7 +9,6 @@ type WrapperProps = {
 }
 
 export const LogoWrapper = styled.div`
-  width: 100%;
   margin: 24px 4vw 48px;
   position: relative;
   svg {

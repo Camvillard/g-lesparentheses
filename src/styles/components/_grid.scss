@@ -3,7 +3,7 @@
 // regular grid
 .grid {
   display: grid;
-  grid-gap: 8px;
+  grid-gap: 16px;
   &.columns-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -28,6 +28,39 @@
   &.four {
     grid-column: span 4;
   }
+
+  &.align-end {
+    align-self: end;
+  }
+
+  &.align-start {
+    align-self: start;
+  }
+
+  &.align-center {
+    align-self: center;
+  }
+
+  &.align-stretch {
+    align-self: stretch;
+    background: red;
+  }
+
+  &.justify-end {
+    justify-self: end;
+  }
+
+  &.justify-start {
+    justify-self: start;
+  }
+
+  &.justify-center {
+    justify-self: center;
+  }
+
+  &.justify-stretch {
+    justify-self: stretch;
+  }
 }
 
 .column {
@@ -41,8 +74,7 @@
 
 @media (min-width: $smScreen) {
   .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap: 16px;
   }
 } // end of smScreen - 768px
 

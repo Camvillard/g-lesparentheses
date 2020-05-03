@@ -1,6 +1,6 @@
 ---
 title: template
-date: "2015-05-01T22:12:03.284Z"
+date: "12 octobre 2019"
 description: template
 slug: template
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
@@ -44,25 +44,11 @@ container: full
   </section>
 
   <section class="single-post--image grid columns-4">
-    <div class="is-one-half">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
-    </div>
-    <div class="is-one-half">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
-    </div>
-    <div class="is-one-half">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
-    </div>
-    <div class="is-one-half">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
-    </div>
-
+    <img class="grid-element two" src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+    <img class="grid-element one align-stretch" src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
+    <img class="grid-element one" src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
+    <img class="grid-element four" src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
   </section>
-
-  <div class="single-post--image carrousel">
-    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
-    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
-  </div>
 
   <div class="single-post--section">
     <p class="single-post--text">

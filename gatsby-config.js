@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `les  parentheses`,
+    title: `les parentheses`,
     author: `camille villard`,
     description: `histoires & ponctuation.`,
     siteUrl: `https://www.les-parentheses.com`,

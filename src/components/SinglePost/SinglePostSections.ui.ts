@@ -7,12 +7,20 @@ const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 export const SinglePostSection = styled.div`
   margin-bottom: 2.4rem;
 `
+
+export const SinglePostThumbnail = styled.img`
+  @media (min-width: ${smScreen}) {
+    width: 90%;
+    margin-left: 5%;
+  }
+`
 export const SinglePostTitle = styled(Header1)`
   font-size: 4.2rem;
   margin-top: 0.1em;
   margin-bottom: 0.6em;
   @media (min-width: ${smScreen}) {
     font-size: 6.4rem;
+    margin-top: -0.65em;
   }
   @media (min-width: ${mdScreen}) {
     font-size: 8rem;
