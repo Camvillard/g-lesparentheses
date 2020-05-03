@@ -3,8 +3,8 @@ title: deux mille dix neuf, deux mille vingt
 slug: deux-mille-dix-neuf
 date: "26 décembre 2019"
 description: récit
-image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_100.jpg"
-categories: ["histoires"]
+categories: template, histoires, voyages
+image_alt: ""
 ---
 
 j'ai passé l'année à travailler sur une nouvelle version du blog et bien évidemment, rien n'est prêt. Je voulais absolument publier mon bilan de l'année, parce que deux mille dix neuf fera probablement partie des années marquantes, dans ma vie, pas juste parce que j'ai adopté mon petit chat d'amour.

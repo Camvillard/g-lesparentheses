@@ -18,27 +18,32 @@ type PostTemplateProps = {
 }
 const PostTemplate = (props: PostTemplateProps) => {
   const { data } = props
+  console.log(data)
+
   const { location, pageContext } = props
   const { siteTitle } = data.site.siteMetadata
   const { frontmatter, html, htmlAst, excerpt, id } = data.markdownRemark
-  const { title } = frontmatter
+  const {
+    title,
+    image_url: imageUrl,
+    categories,
+    description,
+    date,
+  } = frontmatter
   const { previous, next } = pageContext
+
+  const imagePlaceholder = `https://images.unsplash.com/photo-1567147220783-b84e25517cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80`
 
   const allComments = convertNodesInComments(data.allAirtable.edges)
 
   return (
     <Layout location={location} title={siteTitle} pageName="single-post">
-      <SEO
-        title={frontmatter.title}
-        description={frontmatter.description || excerpt}
-      />
+      <SEO title={title} description={description || excerpt} />
       <MainContainer>
-        <SinglePostTitle>{title}</SinglePostTitle>
-        <article dangerouslySetInnerHTML={{ __html: html }} />
-        <p>
-          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-        </p>
+        <img src={imageUrl || imagePlaceholder} alt={title} />
+        <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
       </MainContainer>
+      <article dangerouslySetInnerHTML={{ __html: html }} />
       <SinglePostComments allComments={allComments} />
       <SinglePostCommentForm postId={id} />
     </Layout>
@@ -63,6 +68,8 @@ export const pageQuery = graphql`
         title
         date
         description
+        image_url
+        categories
       }
     }
     allAirtable(

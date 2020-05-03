@@ -4,10 +4,12 @@ slug: deux-mille-dix-nuit-dix-neuf
 date: "20 septembre 2019"
 description: récit
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_100.jpg"
-categories: ["histoires"]
+categories: template, histoires, voyages
 extrait: Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages.
-container: full
+image_alt: ""
 ---
+
+<div class="main-container">
 
   <div class="single-post--section">
     <p class="single-post--text">
@@ -118,3 +120,5 @@ container: full
       C’est bien tout ce que je nous souhaite.
     </p>
   </div>
+
+</div>

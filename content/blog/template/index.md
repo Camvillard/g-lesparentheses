@@ -5,15 +5,19 @@ description: template
 slug: template
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 categories: template, histoires, voyages
+container: full
 ---
 
 <div class="main-container">
 
   <section class="single-post--section">
     <p class="single-post--text">
+      abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </p>
+    <p class="single-post--text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a.
     </p>
-      <p class="single-post--text">
+    <p class="single-post--text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sit perspiciatis saepe amet magni error. Non reiciendis, totam cum temporibus hic, ut. Rem minus tempore odio necessitatibus laboriosam pariatur a.
     </p>
   </section>

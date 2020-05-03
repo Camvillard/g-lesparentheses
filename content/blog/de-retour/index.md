@@ -5,6 +5,7 @@ slug: de-retour
 description: template
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 categories: template
+image_alt: ""
 ---
 
 <div class="main-container">

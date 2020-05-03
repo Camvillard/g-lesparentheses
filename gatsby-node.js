@@ -36,9 +36,6 @@ exports.createPages = ({ graphql, actions }) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
 
-      console.log("post", post)
-      console.log("post", post.node.frontmatter.slug)
-
       createPage({
         path: post.node.frontmatter.slug,
         component: blogPost,

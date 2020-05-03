@@ -9,6 +9,8 @@ export const SinglePostSection = styled.div`
 `
 export const SinglePostTitle = styled(Header1)`
   font-size: 4.2rem;
+  margin-top: 0.1em;
+  margin-bottom: 0.6em;
   @media (min-width: ${smScreen}) {
     font-size: 6.4rem;
   }

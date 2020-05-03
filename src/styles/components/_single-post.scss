@@ -1,8 +1,11 @@
-/*----- LAYOUTS : COLUMNS ----- */
+/*----- LAYOUTS : SINGLE POST ----- */
 
-.columns {
-  display: flex;
-  flex-direction: column;
+.single-post--section {
+  margin-bottom: 32px;
+}
+
+.single-post--text {
+  margin-bottom: 0.6rem;
 }
 
 @media (min-width: $xsmScreen) {
@@ -12,18 +15,19 @@
 } // end of smScreen - 768px
 
 @media (min-width: $mdScreen) {
-  .columns {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .single-post--container {
+    max-width: 564px;
   }
 
-  .is-one-half {
-    flex: 0 0 50%;
+  .single-post--section {
+    margin-bottom: 36px;
   }
 } // end of mdScreen - 992px
 
 @media (min-width: $lgScreen) {
+  .single-post--section {
+    margin-bottom: 42px;
+  }
 } // end of lgScreen - 1200px
 
 @media (min-width: $xlgScreen) {
