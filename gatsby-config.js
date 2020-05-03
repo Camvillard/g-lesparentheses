@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `les  parentheses`,
@@ -21,13 +25,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `cam_villard`,
-        maxPosts: 12,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
@@ -39,6 +36,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/images`,
         name: `images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `cam_villard`,
+        maxPosts: 12,
       },
     },
     {
@@ -100,6 +104,23 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         displayName: true,
+      },
+    },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY, // may instead specify via env, see below
+        concurrency: 5, // default, see using markdown and attachments for more information
+        tables: [
+          {
+            baseId: `app45GbA2JUHNzpjq`,
+            tableName: `commentaires`,
+          },
+          {
+            baseId: `app45GbA2JUHNzpjq`,
+            tableName: `contact`,
+          },
+        ],
       },
     },
   ],

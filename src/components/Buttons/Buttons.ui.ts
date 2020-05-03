@@ -35,6 +35,7 @@ export const ButtonLink = styled(Link)`
 type IButtonLinkPlainProps = {
   bgColor: string
 }
+
 export const ButtonLinkPlain = styled(ButtonLink)`
   background: ${(props: IButtonLinkPlainProps) => props.bgColor};
   text-align: center;
@@ -69,6 +70,55 @@ export const ButtonLinkSimple = styled(ButtonLink)`
 
   @media (min-width: ${smScreen}) {
     font-size: 1.6rem;
+
+    &:after {
+      width: 32px;
+    }
+  }
+
+  @media (min-width: ${lgScreen}) {
+    font-size: 1.8rem;
+
+    &:after {
+      width: 34px;
+    }
+  }
+`
+
+export const ButtonSimple = styled.button`
+  webkit-appareance: none;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-family: ${bodyFont};
+  font-size: 1.4rem;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  color: ${(props: IButtonLinkSimpleProps) => props.fontcolor || oldPink};
+
+  &:after {
+    transition: 0.3s;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 28px;
+    height: 3px;
+    background: ${(props: IButtonLinkSimpleProps) =>
+      props.fontcolor || oldPink};
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  @media (min-width: ${smScreen}) {
+    font-size: 1.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &:after {
       width: 32px;

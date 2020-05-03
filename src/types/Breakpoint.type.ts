@@ -5,3 +5,11 @@ export type Breakpoint = {
   lg?: string
   xlg?: string
 }
+
+export type BreakpointRatio = {
+  default: number
+  sm?: number
+  md?: number
+  lg?: number
+  xlg?: number
+}

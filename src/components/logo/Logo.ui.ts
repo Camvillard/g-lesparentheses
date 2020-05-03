@@ -9,11 +9,13 @@ type WrapperProps = {
 }
 
 export const LogoWrapper = styled.div`
-  width: ${(props: WrapperProps) => props.width.default};
-  margin: 32px 0 32px 4vw;
+  width: 100%;
+  margin: 24px 4vw 48px;
   position: relative;
+  svg {
+    max-width: 100%;
+  }
   @media (min-width: ${smScreen}) {
-    width: ${(props: WrapperProps) => props.width.sm};
   }
   @media (min-width: ${mdScreen}) {
   }
@@ -22,3 +24,4 @@ export const LogoWrapper = styled.div`
   @media (min-width: ${xlgScreen}) {
   }
 `
+export const LogoElement = styled.svg``
