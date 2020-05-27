@@ -7,7 +7,7 @@ import {
   themeBreakpoints,
 } from "../../theme/themeVariables"
 
-const { $bodyFont } = themeFonts
+const { bodyFont } = themeFonts
 const { oldPink } = themeColors
 const { smScreen } = themeBreakpoints
 
@@ -24,7 +24,7 @@ export const ReadMoreButtonContainer = styled(ButtonLinkBlock)`
 export const ReadMoreLink = styled(Link)`
   font-size: 7.2rem;
   line-height: 1.05;
-  font-family: ${$bodyFont};
+  font-family: ${bodyFont};
   font-weight: 800;
   -webkit-text-stroke: 1px ${oldPink};
   -webkit-text-fill-color: white;
@@ -35,11 +35,4 @@ export const ReadMoreLink = styled(Link)`
     -webkit-text-fill-color: ${oldPink};
     outline: none;
   }
-
-  // @media (min-width: ${smScreen}) {
-  //   a {
-  //     font-size: 7.8rem;
-  //     color: ${oldPink};
-  //   }
-  // }
 `

@@ -1,5 +1,5 @@
 import React from "react"
-import { IFrontmatter } from "../../types/BlogPost.type"
+import { Frontmatter } from "../../types/BlogPost.type"
 import {
   SinglePostMetaFooter,
   MetaContent,
@@ -8,7 +8,7 @@ import {
 } from "./SinglePostMeta.ui"
 
 type TSinglePostMetaProps = {
-  meta: IFrontmatter
+  meta: Frontmatter
 }
 export const SinglePostMeta = ({ meta }: TSinglePostMetaProps) => {
   const { date, categories } = meta

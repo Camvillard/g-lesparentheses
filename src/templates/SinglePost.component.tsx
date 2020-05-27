@@ -14,11 +14,11 @@ import { convertNodesInComments } from "../shared/comments/comments.helpers"
 import { SinglePostComments } from "../components/SinglePost/SinglePostComments.component"
 import { MainContainer } from "../components/Containers/MainContainer.ui"
 import { SinglePostMeta } from "../components/SinglePost/SinglePostMeta.component"
-import { ISinglePostData } from "../types/BlogPost.type"
+import { SinglePostData } from "../types/BlogPost.type"
 
 type PostTemplateProps = {
   location: string
-  data: ISinglePostData
+  data: SinglePostData
   pageContext: any
 }
 const PostTemplate = (props: PostTemplateProps) => {

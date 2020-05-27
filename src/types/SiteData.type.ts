@@ -1,8 +1,8 @@
-export type TSiteData = {
-  siteMetadata: TSiteMetadata
+export type SiteData = {
+  siteMetadata: SiteMetadata
 }
 
-export type TSiteMetadata = {
+export type SiteMetadata = {
   author: string
   title: string
 }

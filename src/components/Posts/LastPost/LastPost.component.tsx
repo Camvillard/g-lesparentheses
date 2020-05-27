@@ -12,11 +12,20 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
+import { NodePost } from "../../../types/Page.type"
 
 const { forestGreen } = themeColors
 
-type LastPostProps = {}
-const LastPost = (props: LastPostProps) => {
+type LastPostProps = {
+  post: NodePost
+}
+
+const LastPost = ({ post }: LastPostProps) => {
+  console.log("post", post)
+  const { node } = post
+  const { frontmatter, html } = node
+  const { title, categories, date, image_url } = frontmatter
+
   return (
     <PostContainer
       columns={{
@@ -31,7 +40,7 @@ const LastPost = (props: LastPostProps) => {
           sm: "span 8",
         }}
       >
-        histoire publiée le 12 janvier 2018
+        histoire publiée le {date}
       </CardMeta>
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 7" }}
@@ -61,11 +70,7 @@ const LastPost = (props: LastPostProps) => {
         columns={{ default: "span 4", sm: "2 / span 5", md: "2 / span 4" }}
       >
         <PostExcerpt>
-          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor,
-          quia, temporibus nisi nulla eius dolore dolores illo cumque similique
-          porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit,
-          in. Lorem ipsum dolor sit amet, consectetur adipisicing elit..
+          <span dangerouslySetInnerHTML={{ __html: html }} />
         </PostExcerpt>
         <MoreButton to={`/#`} fontcolor={forestGreen}>
           lire la suite

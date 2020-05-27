@@ -1,20 +1,24 @@
-import { TSiteData } from "./SiteData.type"
+import { SiteData } from "./SiteData.type"
 
-export interface IPostTemplateData {
-  markdownRemark: any
-  site: TSiteData
+export type PostTemplateData = {
+  markdownRemark: MarkdownRemark
+  site: SiteData
 }
 
-export interface IFrontmatter {
+export type MarkdownRemark = {
+  frontmatter: Frontmatter
+  html: string
+}
+
+export type Frontmatter = {
   title: string
   categories: string
   date: string
-  description: string
   image_url: string
 }
 
-export interface ISinglePostData {
+export type SinglePostData = {
   allAirtable: any
-  markdownRemark: any
-  site: TSiteData
+  markdownRemark: MarkdownRemark
+  site: SiteData
 }

@@ -8,7 +8,7 @@ const { darkGray } = themeColors
 
 const FooterWrapper = styled.footer`
   width: 80vw;
-  margin: 120px auto 24px;
+  margin: 120px auto 48px;
 `
 
 const FooterLegal = styled.div`

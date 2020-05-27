@@ -3,10 +3,8 @@ import { ReadMoreButtonContainer, ReadMoreLink } from "./ReadMoreButton.ui"
 
 const ReadMoreButton = () => {
   return (
-    <ReadMoreButtonContainer>
-      <ReadMoreLink to="/articles" className="button-block">
-        lire plus d'articles
-      </ReadMoreLink>
+    <ReadMoreButtonContainer to="/articles">
+      lire plus d'articles
     </ReadMoreButtonContainer>
   )
 }

@@ -16,15 +16,22 @@ import SEO from "../components/SEO/SEO.component"
 import { Nav } from "../components/Nav/Nav.component"
 import { HomepageSectionTitle } from "../components/Headers/Headers.ui"
 import { Grid } from "../components/Grid/Grid.ui"
+import { PostTemplateData } from "../types/BlogPost.type"
+import { PageData } from "../types/Page.type"
 
 interface IProps {
-  data: any
+  data: PageData
   location: any
 }
-interface IState {}
 
 const BlogIndex = (props: IProps) => {
+  console.log(props)
+
   const { data } = props
+  const { allMarkdownRemark, site } = data
+  console.log(allMarkdownRemark)
+  const [firstPost, secondPost, thirdPost, fourthPost] = allMarkdownRemark.edges
+
   const { title } = data.site.siteMetadata
   return (
     <Layout location={props.location} pageName={"homepage"} title={title}>
@@ -33,7 +40,7 @@ const BlogIndex = (props: IProps) => {
       <Nav />
 
       <HomepageSection>
-        <LastPost />
+        <LastPost post={fourthPost} />
         <SecondPost />
         <ThirdPost />
         <FourthPost />
@@ -67,7 +74,7 @@ const BlogIndex = (props: IProps) => {
         </Grid>
       </HomepageSection>
 
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
 
       <InstagramFooter />
     </Layout>
@@ -83,15 +90,19 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 4
+    ) {
       edges {
         node {
-          excerpt
-
+          html
           frontmatter {
             date
             title
-            description
+            slug
+            categories
+            image_url
           }
         }
       }

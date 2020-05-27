@@ -1,11 +1,11 @@
 ---
 title: de retour
-date: "2020-04-14"
+date: 14 avril 2020
 slug: de-retour
-description: template
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
-categories: template
 image_alt: ""
+categories: histoires
+order: 150
 ---
 
 <div class="main-container">
@@ -23,10 +23,6 @@ image_alt: ""
 </div>
 
 Ensuite, j'ai adopté un petit chat, qui, bien entendu, a volé de nombreuses heures de ma productivité, puisqu'elle est tellement adorable que je peux passer des heures à la regarder dormir sans bouger, c'est vraiment adorable, mais cela n'arrange rien du tout de mon côté.
-
-<div class="fullwidth-container">
-  <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80" alt="little cat under blankets">
-</div>
 
 Également, nous avons déménagé, et bien entendu, comme tout déménagement, cela a pris du temps, de l'énergie et de la bonne humeur et encore une fois.
 

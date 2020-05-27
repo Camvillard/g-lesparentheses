@@ -1,11 +1,12 @@
 ---
 title: template
 date: "12 octobre 2019"
-description: template
 slug: template
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
-categories: template, histoires, voyages
-container: full
+image_alt: ""
+categories: histoires, voyages, cuisine, sport, culture
+extrait: Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages.
+order: 4
 ---
 
 <div class="main-container">
