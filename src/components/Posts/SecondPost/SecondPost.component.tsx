@@ -70,7 +70,7 @@ const SecondPost = ({ post }: BlogPostCardProps) => {
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "2 / span 5" }}>
         <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
-        <MoreButton to={`/article/${slug}`} fontcolor={forestGreen}>
+        <MoreButton to={`/article/${slug}`} textcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

@@ -13,7 +13,6 @@ type PPProps = {
   post: Post
 }
 export const PetitesParenthesesCard = ({ post }: PPProps) => {
-  console.log("post", post)
   const { frontmatter, rawMarkdownBody } = post
   const { date, title, slug } = frontmatter
 

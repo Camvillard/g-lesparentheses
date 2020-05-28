@@ -48,7 +48,6 @@ class NewsletterSection extends Component {
 
   private onFormSubmit = e => {
     e.preventDefault()
-    console.log("will validate your form")
   }
 }
 

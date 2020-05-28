@@ -20,8 +20,8 @@ const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 const { bodyFont, accentFont } = themeFonts
 
-interface IButtonLinkSimpleProps {
-  fontcolor?: string
+interface ButtonLinkSimpleProps {
+  textcolor?: string
 }
 
 export const ButtonLinkBlock = styled(Link)`
@@ -50,7 +50,7 @@ export const ButtonLinkSimple = styled(ButtonLink)`
   font-family: ${bodyFont};
   font-size: 1.4rem;
   position: relative;
-  color: ${(props: IButtonLinkSimpleProps) => props.fontcolor || oldPink};
+  color: ${props => props.textcolor || oldPink};
 
   &:after {
     transition: 0.3s;
@@ -60,8 +60,7 @@ export const ButtonLinkSimple = styled(ButtonLink)`
     content: "";
     width: 28px;
     height: 3px;
-    background: ${(props: IButtonLinkSimpleProps) =>
-      props.fontcolor || oldPink};
+    background: ${props => props.textcolor || oldPink};
   }
 
   &:hover:after {
@@ -85,7 +84,7 @@ export const ButtonLinkSimple = styled(ButtonLink)`
   }
 `
 
-export const ButtonSimple = styled.button`
+export const ButtonSimple = styled.button<ButtonLinkSimpleProps>`
   webkit-appareance: none;
   background: none;
   border: none;
@@ -95,7 +94,7 @@ export const ButtonSimple = styled.button`
   position: relative;
   padding-left: 0;
   padding-right: 0;
-  color: ${(props: IButtonLinkSimpleProps) => props.fontcolor || oldPink};
+  color: ${props => props.textcolor || oldPink};
 
   &:after {
     transition: 0.3s;
@@ -105,8 +104,7 @@ export const ButtonSimple = styled.button`
     content: "";
     width: 28px;
     height: 3px;
-    background: ${(props: IButtonLinkSimpleProps) =>
-      props.fontcolor || oldPink};
+    background: ${props => props.textcolor || oldPink};
   }
 
   &:hover:after {

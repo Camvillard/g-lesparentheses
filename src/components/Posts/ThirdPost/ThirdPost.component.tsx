@@ -76,7 +76,7 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
           porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit,
           in. Lorem ipsum dolor sit amet, consectetur adipisicing elit..
         </PostExcerpt>
-        <MoreButton to={`/#`} fontcolor={forestGreen}>
+        <MoreButton to={`/#`} textcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

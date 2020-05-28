@@ -23,7 +23,7 @@ const SEO = ({ description, lang, meta, title }: any) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: lang || "fr",
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -60,22 +60,9 @@ const SEO = ({ description, lang, meta, title }: any) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(meta || [])}
     />
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

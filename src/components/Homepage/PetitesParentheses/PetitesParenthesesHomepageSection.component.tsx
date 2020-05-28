@@ -28,7 +28,6 @@ export const PetitesParenthesesHomepageSection = () => {
       }
     }
   `)
-  console.log("data", data)
   const { allMarkdownRemark } = data
   const posts = allMarkdownRemark.edges
 
