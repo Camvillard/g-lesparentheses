@@ -1,12 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { HomepageSectionTitle } from "../../Headers/Headers.ui"
 import { Grid } from "../../Grid/Grid.ui"
-import PetitesParenthesesCard from "./PetitesParenthesesCard.component"
+import { PetitesParenthesesCard } from "../../Posts/PetitesParentheses/PetitesParenthesesCard.component"
+import { PetitesParenthesesData } from "../../../types/PetitesParentheses.type"
+import { HomepageSection, HomepageSectionTitle } from "../Homepage.ui"
 
 export const PetitesParenthesesHomepageSection = () => {
-  const data = useStaticQuery(graphql`
+  const data: PetitesParenthesesData = useStaticQuery(graphql`
     query petiteParenthesesQuery {
       allMarkdownRemark(
         sort: { fields: frontmatter___order, order: DESC }
@@ -16,13 +17,9 @@ export const PetitesParenthesesHomepageSection = () => {
         edges {
           node {
             id
+            rawMarkdownBody
             frontmatter {
-              order
-              categories
               date
-              extrait
-              image_alt
-              image_url
               slug
               title
             }
@@ -32,11 +29,13 @@ export const PetitesParenthesesHomepageSection = () => {
     }
   `)
   console.log("data", data)
+  const { allMarkdownRemark } = data
+  const posts = allMarkdownRemark.edges
 
   return (
-    <>
+    <HomepageSection>
       <HomepageSectionTitle>les petites parenthèses</HomepageSectionTitle>
-      <p className="description">
+      <p>
         les petites parenthèses, ce sont tous ces petits textes sans forcément
         d'image ni même de ponctuation, mais qui en avaient marre de sommeiller
         dans mes petits carnets.
@@ -49,10 +48,10 @@ export const PetitesParenthesesHomepageSection = () => {
           lg: "repeat(4, 1fr)",
         }}
       >
-        <PetitesParenthesesCard />
-        <PetitesParenthesesCard />
-        <PetitesParenthesesCard />
+        {posts.map(post => (
+          <PetitesParenthesesCard post={post.node} key={post.node.id} />
+        ))}
       </Grid>
-    </>
+    </HomepageSection>
   )
 }

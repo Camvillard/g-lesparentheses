@@ -4,7 +4,7 @@ date: 7 juillet 2018
 slug: des-avions-des-bus-des-trains
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 image_alt: ""
-categories: histoires, voyages
+categories: récit de voyage
 extrait: Des avions, des trains, des voitures, des bus, des escales, des retards, des douanes, des frontières, des cafés sur les aires d'autoroute, des gares un peu vides, des aéroports un peu bondés, des plages désertes et puis parfois, un peu moins désertes. Du sable brûlant, de l'eau glacée, du sable humide, des pavés parisiens, des trottoirs londoniens, des autoroutes espagnoles, des parkings tourangeaux. Des heures de voyage, des heures d'attentes, des retrouvailles, des embrassades, des larmes, des adieux, des au-revoir, des à bientôt, des à très vite, des à demain, des à tout à l'heure, des on s'oublie pas, des on essaye de pas laisser cinq, six, sept ans avant de reprendre un café. Des tu m'as manquée, des tu vas me manquer. Des tu me manques, souvent, tout le temps. Des voyages planifiés, des piques-niques improvisés, des soirées prolongées, des salles de sport testées - et approuvées -, des kilomètres les long de l'océan, sans casque, sans musique, sans chrono, et puis quelques cafés, seule, pour changer.
 order: 148
 ---

@@ -1,11 +1,11 @@
 import styled from "styled-components"
-import { ButtonLinkBlock } from "../Buttons/Buttons.ui"
+import { ButtonLinkBlock } from "../../Buttons/Buttons.ui"
 import { Link } from "gatsby"
 import {
   themeFonts,
   themeColors,
   themeBreakpoints,
-} from "../../theme/themeVariables"
+} from "../../../theme/themeVariables"
 
 const { bodyFont } = themeFonts
 const { oldPink, darkGray } = themeColors

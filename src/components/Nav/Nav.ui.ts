@@ -41,6 +41,7 @@ export const NavbarListItem = styled.li<NavWrapperProps>`
   font-weight: 600;
   text-align: center;
   a {
+    font-size: 1.2rem;
     color: ${darkGray};
   }
   @media (min-width: ${smScreen}) {

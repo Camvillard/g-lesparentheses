@@ -53,7 +53,7 @@ const PostCard = ({ post }: BlogPostCardProps) => {
         <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
       <PostTitle
-        to={`/articles/${slug}`}
+        to={`/article/${slug}`}
         columns={{ default: "span 4", sm: "2 / span 6" }}
         top={{
           default: "-40px",
@@ -70,7 +70,7 @@ const PostCard = ({ post }: BlogPostCardProps) => {
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "2 / span 5" }}>
         <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
-        <MoreButton to={`/articles/${slug}`} fontcolor={forestGreen}>
+        <MoreButton to={`/article/${slug}`} fontcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

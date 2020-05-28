@@ -53,7 +53,7 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
         />
       </FeaturedImageContainer>
       <PostTitle
-        to={`/articles/${slug}`}
+        to={`/article/${slug}`}
         columns={{ default: "span 4", sm: "3 / span 5" }}
         top={{
           default: "-40px",

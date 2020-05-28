@@ -54,7 +54,7 @@ const FourthPost = ({ post }: BlogPostCardProps) => {
         />
       </FeaturedImageContainer>
       <PostTitle
-        to={`/articles/${slug}`}
+        to={`/article/${slug}`}
         columns={{ default: "span 4", sm: "2 / span 5" }}
         top={{
           default: "-40px",
@@ -71,7 +71,7 @@ const FourthPost = ({ post }: BlogPostCardProps) => {
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "2 / span 4" }}>
         <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
-        <MoreButton to={`/articles/${slug}`} fontcolor={forestGreen}>
+        <MoreButton to={`/article/${slug}`} fontcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

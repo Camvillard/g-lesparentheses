@@ -36,9 +36,3 @@ export const Header3 = styled.h3`
 export const DarkHeader3 = styled.h3`
   color: ${darkGray};
 `
-
-export const HomepageSectionTitle = styled(Header3)`
-  font-size: 4.8rem;
-  max-width: 72vw;
-  margin-left: 0;
-`

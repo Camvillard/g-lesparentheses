@@ -3,29 +3,26 @@ import {
   PPCardContainer,
   PPCardTitle,
   PPCardExcerpt,
+  PPReadMore,
 } from "./PetitesParenthesesCard.ui"
 import { CardMeta } from "../PostCard.ui"
+import { Post } from "../../../types/BlogPost.type"
+import { createExcerpt } from "../../../shared/posts/post.helpers"
 
-type PPProps = {}
-const PetitesParenthesesCard = (props: PPProps) => {
+type PPProps = {
+  post: Post
+}
+export const PetitesParenthesesCard = ({ post }: PPProps) => {
+  console.log("post", post)
+  const { frontmatter, rawMarkdownBody } = post
+  const { date, title, slug } = frontmatter
+
   return (
     <PPCardContainer>
-      <CardMeta>12.01.2018</CardMeta>
-      <PPCardTitle>07</PPCardTitle>
-      <PPCardExcerpt>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor,
-        quia, temporibus nisi nulla eius dolore dolores illo cumque similique
-        porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit, in.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit..
-      </PPCardExcerpt>
-
-      <div className="button-block">
-        <a href="#" className="button-simple light">
-          lire la suite
-        </a>
-      </div>
+      <CardMeta>{date}</CardMeta>
+      <PPCardTitle>{title}</PPCardTitle>
+      <PPCardExcerpt>{createExcerpt(rawMarkdownBody || "", 40)}</PPCardExcerpt>
+      <PPReadMore to={`/article/${slug}`}>lire la suite</PPReadMore>
     </PPCardContainer>
   )
 }
-
-export default PetitesParenthesesCard

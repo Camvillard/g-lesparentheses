@@ -1,5 +1,5 @@
 ---
-title: #7
+title: "07"
 date: 9 juillet 2018
 slug: sept
 categories: petites parenthèses

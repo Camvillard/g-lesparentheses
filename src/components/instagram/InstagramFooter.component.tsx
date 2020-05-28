@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { InstagramContainer, InstagramPic } from "./InstagramFooter.ui"
 import { WideContainer, MainContainer } from "../Containers/MainContainer.ui"
-import { HomepageSectionTitle } from "../Headers/Headers.ui"
+import { HomepageSectionTitle } from "../Homepage/Homepage.ui"
 
 export type InstagramData = {
   node: InstagramDataNode

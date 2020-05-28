@@ -1,5 +1,5 @@
 ---
-title: #2
+title: "02"
 date: 22 janvier 2018
 slug: deux
 categories: petites parenthèses

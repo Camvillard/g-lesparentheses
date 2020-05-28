@@ -90,10 +90,10 @@ const Menu = ({ categories }: CategoriesProps) => {
         </MenuOpenToggleLink>
       </MenuOpenItem>
       <MenuOpenItem>
-        <MenuOpenLink to={"/"}>à propos</MenuOpenLink>
+        <MenuOpenLink to={"/a-propos"}>à propos</MenuOpenLink>
       </MenuOpenItem>
       <MenuOpenItem>
-        <MenuOpenLink to={"/"}>contact</MenuOpenLink>
+        <MenuOpenLink to={"/contact"}>contact</MenuOpenLink>
       </MenuOpenItem>
       <MenuOpenItem>
         <MenuOpenLink to={"/"}>portfolio</MenuOpenLink>
@@ -135,7 +135,9 @@ export const Nav = () => {
         >
           {socialOpen ? "fermer" : "social"}
         </NavbarListItem>
-        <NavbarListItem open={menuOpen || socialOpen}>contact</NavbarListItem>
+        <NavbarListItem open={menuOpen || socialOpen}>
+          <Link to={"/contact"}>contact</Link>
+        </NavbarListItem>
       </NavWrapper>
       {menuOpen && <Menu categories={fakeCats} />}
       {socialOpen && <Social />}

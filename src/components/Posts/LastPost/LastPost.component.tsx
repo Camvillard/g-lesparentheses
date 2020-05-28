@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import {
   PostContainer,
@@ -30,6 +29,17 @@ const LastPost = ({ post }: BlogPostCardProps) => {
     slug,
   } = frontmatter
 
+  const isFeminine = (category: string): boolean => {
+    if (category === "histoire" || category === "recette") {
+      return true
+    }
+    return false
+  }
+
+  const publicationDate = `${categories} publié${
+    isFeminine(categories) ? "e" : ""
+  } le ${date}`
+
   return (
     <PostContainer
       columns={{
@@ -44,7 +54,7 @@ const LastPost = ({ post }: BlogPostCardProps) => {
           sm: "span 8",
         }}
       >
-        histoire publiée le {date}
+        {publicationDate}
       </CardMeta>
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 7" }}
@@ -52,7 +62,7 @@ const LastPost = ({ post }: BlogPostCardProps) => {
         <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
       <PostTitle
-        to={`/articles/${slug}`}
+        to={`/article/${slug}`}
         columns={{ default: "span 4", sm: "span 6" }}
         top={{
           default: "-40px",
@@ -73,7 +83,7 @@ const LastPost = ({ post }: BlogPostCardProps) => {
         columns={{ default: "span 4", sm: "2 / span 5", md: "2 / span 4" }}
       >
         <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
-        <MoreButton to={`/articles/${slug}`} fontcolor={forestGreen}>
+        <MoreButton to={`/article/${slug}`} fontcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

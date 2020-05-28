@@ -1,5 +1,5 @@
 ---
-title: #6
+title: "06"
 date: 11 mai 2018
 slug: six
 categories: petites parenthèses

@@ -4,7 +4,7 @@ date: "09 décembre 2018"
 slug: cent-quatre-vingt-huit
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 image_alt: ""
-categories: template, histoires, voyages
+categories: histoire
 extrait: 1er octobre, 8h30.Autour de la grande table en bois, pas très loin des croissants et des chocolatines de bienvenue, on se j(a)uge, café fumant devant nous. Il est encore tôt et on nous a bien dit de ne pas arriver en retard, à 8h30, on ferme les portes, tant pis pour vous. Alors on est tous là, les 22 petits nouveaux, batch 188, session d'automne du Wagon Montréal.
 order: 151
 ---

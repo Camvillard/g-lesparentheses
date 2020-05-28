@@ -1,5 +1,5 @@
 import { SiteData } from "./SiteData.type"
-import { MarkdownRemark, NodePost } from "./BlogPost.type"
+import { NodePost } from "./BlogPost.type"
 import { Component } from "react"
 
 export type PageProps = {

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { themeColors, themeBreakpoints } from "../../../theme/themeVariables"
+import { ButtonLinkBlock } from "../../Buttons/Buttons.ui"
 
 const { lightPink, oldPink } = themeColors
 
@@ -28,3 +29,5 @@ export const PPCardExcerpt = styled.p`
   margin-top: 0.4rem;
   margin-bottom: 1.8rem;
 `
+
+export const PPReadMore = styled(ButtonLinkBlock)``

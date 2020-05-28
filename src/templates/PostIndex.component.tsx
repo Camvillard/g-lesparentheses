@@ -10,11 +10,8 @@ type PostIndexProps = {
 }
 const PostIndex = (props: PostIndexProps) => {
   const { data } = props
-  console.log("data", data)
-
   const posts = props.data.allMarkdownRemark.edges
   const { title } = data.site.siteMetadata
-  console.log(posts)
 
   return (
     <Layout

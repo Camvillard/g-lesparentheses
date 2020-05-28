@@ -1,6 +1,6 @@
-export const createExcerpt = (extract: string): string => {
+export const createExcerpt = (extract: string, prune?: number): string => {
   return `${extract
     .split(" ")
-    .slice(0, 72)
+    .slice(0, prune || 72)
     .join(" ")} (...)`
 }

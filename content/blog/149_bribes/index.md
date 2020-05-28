@@ -4,7 +4,7 @@ date: "26 août 2018"
 slug: bribes
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_100.jpg"
 image_alt: ""
-categories: template, histoires, voyages
+categories: histoire
 extrait: Je n’aurais pas pensé que parler de ce mois entre parenthèses aurait été si compliqué. Je n’aurais pas forcément pensé que j’allais remettre en question ce besoin d’écrire sur tout et sur n’importe quoi. Je pensais que les mots allaient glisser plus facilement, mais force est de constater que lorsque tout va bien, les mots restent bloqués*.
 order: 149
 ---

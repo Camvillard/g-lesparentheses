@@ -5,18 +5,19 @@ export type BlogPostCardProps = {
 }
 
 export type NodePost = {
-  node: MarkdownRemark
+  node: Post
 }
 
 export type PostTemplateData = {
-  markdownRemark: MarkdownRemark
+  markdownRemark: Post
   site: SiteData
 }
 
-export type MarkdownRemark = {
+export type Post = {
   id: string
   frontmatter: Frontmatter
   html: string
+  rawMarkdownBody?: string
 }
 
 export type Frontmatter = {
@@ -32,7 +33,7 @@ export type Frontmatter = {
 
 export type SinglePostData = {
   allAirtable: any
-  markdownRemark: MarkdownRemark
+  markdownRemark: Post
   site: SiteData
   contentfulBlogPost: any
 }
