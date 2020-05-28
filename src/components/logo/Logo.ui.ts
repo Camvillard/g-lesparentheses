@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Breakpoint } from "../../types/Breakpoint.type"
 import { themeBreakpoints } from "../../theme/themeVariables"
+import { Link } from "gatsby"
 
 const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
@@ -8,7 +9,8 @@ type WrapperProps = {
   width: Breakpoint
 }
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(Link)`
+  display: block;
   margin: 24px 4vw 48px;
   width: 80vw;
   position: relative;

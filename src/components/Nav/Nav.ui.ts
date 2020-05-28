@@ -1,14 +1,15 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { themeColors } from "../../theme/themeVariables"
+import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 
-const { darkGray, forestGreen } = themeColors
+const { darkGray, forestGreen, oldPink } = themeColors
+const { smScreen } = themeBreakpoints
 
 type NavWrapperProps = {
   open: boolean
 }
 
-export const NavWrapper = styled.ul`
+export const NavWrapper = styled.ul<NavWrapperProps>`
   position: fixed;
   bottom: 0vh;
   left: 0;
@@ -17,13 +18,20 @@ export const NavWrapper = styled.ul`
   display: flex;
   padding: 8px 0;
   margin: 0;
-  background: ${(props: NavWrapperProps) =>
-    props.open ? "none" : forestGreen};
+  background: white;
   list-style: none;
   justify-content: space-around;
+  @media (min-width: ${smScreen}) {
+    right: ${props => (props.open ? 0 : "auto")};
+    left: ${props => (props.open ? "auto" : 0)};
+    top: 24vh;
+    bottom: auto;
+    flex-direction: column;
+    background: none;
+  }
 `
 
-export const NavbarListItem = styled.li`
+export const NavbarListItem = styled.li<NavWrapperProps>`
   color: ${darkGray};
   width: calc(100vw / 3);
   padding: 1px 4px;
@@ -34,6 +42,11 @@ export const NavbarListItem = styled.li`
   text-align: center;
   a {
     color: ${darkGray};
+  }
+  @media (min-width: ${smScreen}) {
+    width: 72px;
+    margin: 4px 0;
+    text-align: left;
   }
 `
 
@@ -54,7 +67,11 @@ export const OpenMenuWrapper = styled.ul`
   background: white;
 `
 
-export const MenuWrapper = styled(OpenMenuWrapper)``
+export const MenuWrapper = styled(OpenMenuWrapper)`
+  @media (min-width: ${smScreen}) {
+    margin-left: 124px;
+  }
+`
 
 export const SocialWrapper = styled(OpenMenuWrapper)`
   background: white;
@@ -70,21 +87,30 @@ export const MenuOpenLink = styled(Link)`
   color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
+  @media (min-width: ${smScreen}) {
+    font-size: 6.4rem;
+  }
 `
 
 export const MenuOpenToggleLink = styled.span`
   color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
+  @media (min-width: ${smScreen}) {
+    font-size: 6.4rem;
+  }
 `
 
 type MenuExtLinkProps = {
   color?: string
 }
-export const MenuOpenExtLink = styled.a`
-  color: ${(props: MenuExtLinkProps) => props.color || darkGray};
+export const MenuOpenExtLink = styled.a<MenuExtLinkProps>`
+  color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
+  @media (min-width: ${smScreen}) {
+    font-size: 6.4rem;
+  }
 `
 
 export const CategoryLink = styled(Link)`
@@ -104,4 +130,7 @@ export const CategoriesListWrapper = styled.div`
   left: 0;
   max-width: 310px;
   word-break: break-all;
+  @media (min-width: ${smScreen}) {
+    max-width: 410px;
+  }
 `

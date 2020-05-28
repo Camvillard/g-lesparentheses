@@ -44,7 +44,7 @@ const Logo = (props: LogoProps) => {
     }
   }
   return (
-    <LogoWrapper>
+    <LogoWrapper to={"/"}>
       <svg
         width={535}
         height={224}

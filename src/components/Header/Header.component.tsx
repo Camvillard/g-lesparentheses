@@ -5,7 +5,7 @@ import { HeaderWrapper } from "./Header.ui"
 import { themeColors } from "../../theme/themeVariables"
 
 const { oldPink, darkGray } = themeColors
-const Header = () => {
+export const Header = () => {
   return (
     <HeaderWrapper>
       <Logo
@@ -16,5 +16,3 @@ const Header = () => {
     </HeaderWrapper>
   )
 }
-
-export default Header

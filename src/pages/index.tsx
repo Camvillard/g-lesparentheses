@@ -38,8 +38,6 @@ const BlogIndex = (props: IProps) => {
     <Layout location={props.location} pageName={"homepage"} title={title}>
       <SEO title="All posts" />
 
-      <Nav />
-
       <HomepageSection>
         <LastPost post={firstPost} />
         <SecondPost post={secondPost} />

@@ -6,6 +6,7 @@ import {
   NavWrapper,
   NavbarListItem,
   OpenMenuWrapper,
+  MenuWrapper,
   MenuOpenExtLink,
   MenuOpenToggleLink,
   CategoryLink,
@@ -26,7 +27,6 @@ const Social = () => {
           href="https://www.instagram.com/cam_villard/"
           target="_blank"
           rel="noopener noreferrer"
-          color={"white"}
         >
           instagram
         </MenuOpenExtLink>
@@ -36,7 +36,6 @@ const Social = () => {
           href="https://twitter.com/cam_villard"
           target="_blank"
           rel="noopener noreferrer"
-          color={"white"}
         >
           twitter
         </MenuOpenExtLink>
@@ -46,7 +45,6 @@ const Social = () => {
           href="https://twitter.com/cam_villard"
           target="_blank"
           rel="noopener noreferrer"
-          color={"white"}
         >
           behance
         </MenuOpenExtLink>
@@ -56,12 +54,11 @@ const Social = () => {
           href="https://twitter.com/cam_villard"
           target="_blank"
           rel="noopener noreferrer"
-          color={"white"}
         >
           github
         </MenuOpenExtLink>
       </MenuOpenItem>
-      <BlobSocial />
+      {/* <BlobSocial /> */}
     </OpenMenuWrapper>
   )
 }
@@ -85,7 +82,7 @@ const CategoriesList = ({ categories }: CategoriesProps) => {
 const Menu = ({ categories }: CategoriesProps) => {
   const [isOpen, openCategories] = useState(false)
   return (
-    <OpenMenuWrapper>
+    <MenuWrapper>
       <MenuOpenItem>
         {isOpen && <CategoriesList categories={categories} />}
         <MenuOpenToggleLink onClick={() => openCategories(!isOpen)}>
@@ -104,8 +101,8 @@ const Menu = ({ categories }: CategoriesProps) => {
       <MenuOpenItem>
         <MenuOpenLink to={"/"}>e-shop</MenuOpenLink>
       </MenuOpenItem>
-      <BlobMenu />
-    </OpenMenuWrapper>
+      {/* <BlobMenu /> */}
+    </MenuWrapper>
   )
 }
 
@@ -126,13 +123,19 @@ export const Nav = () => {
   return (
     <Fragment>
       <NavWrapper open={menuOpen || socialOpen}>
-        <NavbarListItem onClick={() => toggle("menu")}>
+        <NavbarListItem
+          onClick={() => toggle("menu")}
+          open={menuOpen || socialOpen}
+        >
           {menuOpen ? "fermer" : "menu"}
         </NavbarListItem>
-        <NavbarListItem onClick={() => toggle("social")}>
+        <NavbarListItem
+          onClick={() => toggle("social")}
+          open={menuOpen || socialOpen}
+        >
           {socialOpen ? "fermer" : "social"}
         </NavbarListItem>
-        <NavbarListItem>contact</NavbarListItem>
+        <NavbarListItem open={menuOpen || socialOpen}>contact</NavbarListItem>
       </NavWrapper>
       {menuOpen && <Menu categories={fakeCats} />}
       {socialOpen && <Social />}

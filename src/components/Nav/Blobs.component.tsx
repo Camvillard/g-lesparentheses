@@ -1,5 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import { themeBreakpoints } from "../../theme/themeVariables"
+
+const { smScreen } = themeBreakpoints
 
 const BlobMenuWrapper = styled.svg`
   position: fixed;
@@ -8,6 +11,11 @@ const BlobMenuWrapper = styled.svg`
   z-index: -1;
   width: 124vw;
   height: auto;
+  @media (min-width: ${smScreen}) {
+    left: -44px;
+    bttom: 0;
+    width: 692px;
+  }
 `
 
 export const BlobMenu = () => {

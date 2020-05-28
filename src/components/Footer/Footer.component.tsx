@@ -47,7 +47,7 @@ const DesignText = styled.p`
   }
 `
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterLegal>
@@ -66,5 +66,3 @@ const Footer = () => {
     </FooterWrapper>
   )
 }
-
-export default Footer
