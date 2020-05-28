@@ -17,7 +17,7 @@ import { BlogPostCardProps } from "../../../types/BlogPost.type"
 
 const { forestGreen } = themeColors
 
-const SecondPost = ({ post }: BlogPostCardProps) => {
+const PostCard = ({ post }: BlogPostCardProps) => {
   const { node } = post
   const { frontmatter } = node
   const {
@@ -78,4 +78,4 @@ const SecondPost = ({ post }: BlogPostCardProps) => {
   )
 }
 
-export default SecondPost
+export default PostCard

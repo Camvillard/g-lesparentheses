@@ -8,12 +8,9 @@ const gray = `#575A60`
 const darkGray = `#363A42`
 const offWhite = `#F9F8F8`
 
-const europaFont = `'europa', sans-serif`
-const gemeliFont = `'gemeli-mono', serif`
-
-const bodyFont = europaFont
-const headersFont = europaFont
-const accentFont = gemeliFont
+const bodyFont = `'europa', sans-serif` // 300, 400 & 700
+const headersFont = `'europa', sans-serif` // 300, 400 & 700
+const accentFont = `'attribute-mono', sans-serif` //400
 
 // default : 375px - iPhone 8
 

@@ -1,6 +1,6 @@
 ---
-title: Des avions, des bus et puis des trains.
-date: "7 juillet 2018"
+title: des avions, des bus et puis des trains.
+date: 7 juillet 2018
 slug: des-avions-des-bus-des-trains
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 image_alt: ""
