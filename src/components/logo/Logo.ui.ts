@@ -10,15 +10,22 @@ type WrapperProps = {
 
 export const LogoWrapper = styled.div`
   margin: 24px 4vw 48px;
+  width: 80vw;
   position: relative;
   svg {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
   @media (min-width: ${smScreen}) {
+    margin: 24px 11vw 48px;
+    width: 40vw;
   }
   @media (min-width: ${mdScreen}) {
+    margin: 32px 11vw 64px;
+    width: 32vw;
   }
   @media (min-width: ${lgScreen}) {
+    width: 24vw;
   }
   @media (min-width: ${xlgScreen}) {
   }

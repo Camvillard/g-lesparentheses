@@ -15,12 +15,12 @@ const BaselineText = styled.h4`
   font-size: 1.2rem;
   position: absolute;
   bottom: 12px;
-  right: 22%;
+  right: 16px;
   color: ${gray};
   @media (min-width: ${smScreen}) {
     font-size: 1.4rem;
     bottom: 24px;
-    right: 22%;
+    right: 24px;
   }
   @media (min-width: ${mdScreen}) {
   }

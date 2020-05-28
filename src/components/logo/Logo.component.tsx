@@ -46,8 +46,8 @@ const Logo = (props: LogoProps) => {
   return (
     <LogoWrapper>
       <svg
-        width={535 * deviceRatio(ratio)}
-        height={224 * deviceRatio(ratio)}
+        width={535}
+        height={224}
         viewBox="0 0 535 224"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
