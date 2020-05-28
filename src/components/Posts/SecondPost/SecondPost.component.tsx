@@ -12,11 +12,25 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
+import { createExcerpt } from "../../../shared/posts/post.helpers"
+import { BlogPostCardProps } from "../../../types/BlogPost.type"
 
 const { forestGreen } = themeColors
 
-type SecondPostProps = {}
-const SecondPost = (props: SecondPostProps) => {
+const SecondPost = ({ post }: BlogPostCardProps) => {
+  const { node } = post
+  const { frontmatter } = node
+  const {
+    title,
+    categories,
+    date,
+    image_url: imageUrl,
+    image_alt: imageAlt,
+    extrait,
+    slug,
+  } = frontmatter
+  console.log("extrait", post)
+
   return (
     <PostContainer
       columns={{
@@ -32,16 +46,15 @@ const SecondPost = (props: SecondPostProps) => {
           sm: "2 / span 6",
         }}
       >
-        histoire publiée le 12 janvier 2018
+        histoire publiée le {date}
       </CardMeta>
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 6" }}
       >
-        <FeaturedImage
-          src={`https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_5.jpg`}
-        />
+        <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
       <PostTitle
+        to={`/articles/${slug}`}
         columns={{ default: "span 4", sm: "2 / span 6" }}
         top={{
           default: "-40px",
@@ -54,19 +67,11 @@ const SecondPost = (props: SecondPostProps) => {
           default: "0",
         }}
       >
-        <Link to={"/deux-mille-dix-huit-dix-neuf/"}>
-          un autre titre un moyen long.
-        </Link>
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "2 / span 5" }}>
-        <PostExcerpt>
-          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor,
-          quia, temporibus nisi nulla eius dolore dolores illo cumque similique
-          porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit,
-          in. Lorem ipsum dolor sit amet, consectetur adipisicing elit..
-        </PostExcerpt>
-        <MoreButton to={`/#`} fontcolor={forestGreen}>
+        <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
+        <MoreButton to={`/articles/${slug}`} fontcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

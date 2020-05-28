@@ -4,6 +4,7 @@ import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 import { Grid, GridElement, GridElementProps } from "../Grid/Grid.ui"
 import { ButtonLinkSimple } from "../Buttons/Buttons.ui"
 import { Breakpoint } from "../../types/Breakpoint.type"
+import { Link } from "gatsby"
 
 const { mediumGray, darkGray } = themeColors
 
@@ -63,24 +64,21 @@ interface PostTitleProps extends GridElementProps {
   left?: Breakpoint
 }
 
-export const PostTitle = styled.h2`
+export const PostTitle = styled(Link)`
+  font-size: 4.8rem;
+  font-weight: 700;
   position: relative;
   margin-top: ${(props: PostTitleProps) => props.top?.default};
   margin-left: ${(props: PostTitleProps) => props.left?.default};
   line-height: 1.05;
   grid-column: ${(props: PostTitleProps) => props.columns.default};
-  a {
-    color: ${darkGray};
-    font-size: 1em;
-  }
+  color: ${darkGray};
 
   @media (min-width: ${smScreen}) {
     grid-column: ${(props: PostTitleProps) => props.columns.sm};
     margin-top: ${(props: PostTitleProps) => props.top?.sm};
     margin-left: ${(props: PostTitleProps) => props.left?.sm};
-    a {
-      font-size: 1.6em;
-    }
+    font-size: 1.6em;
   }
 
   @media (min-width: ${mdScreen}) {

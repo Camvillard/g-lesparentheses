@@ -23,12 +23,11 @@ type PostTemplateProps = {
 }
 const PostTemplate = (props: PostTemplateProps) => {
   const { data } = props
-  console.log(data)
 
   const { location, pageContext } = props
   const { title: siteTitle } = data.site.siteMetadata
-  const { frontmatter, html, htmlAst, excerpt, id } = data.markdownRemark
-  const { title, image_url: imageUrl, description } = frontmatter
+  const { frontmatter, html, id } = data.markdownRemark
+  const { title, image_url: imageUrl, extrait } = frontmatter
   const { previous, next } = pageContext
 
   const imagePlaceholder = `https://images.unsplash.com/photo-1567147220783-b84e25517cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80`
@@ -37,7 +36,7 @@ const PostTemplate = (props: PostTemplateProps) => {
 
   return (
     <Layout location={location} title={siteTitle} pageName="single-post">
-      <SEO title={title} description={description || excerpt} />
+      <SEO title={title} description={extrait} />
       <MainContainer>
         <SinglePostThumbnail src={imageUrl || imagePlaceholder} alt={title} />
         <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
@@ -67,7 +66,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
-        description
+        extrait
         image_url
         categories
       }

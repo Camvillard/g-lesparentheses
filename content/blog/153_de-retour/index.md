@@ -5,13 +5,14 @@ slug: de-retour
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
 image_alt: ""
 categories: histoires
-order: 150
+extrait: enfin, de retour, je ne sais pas, je n'en sais vraiment rien. J'ai voulu prendre le temps de refabriquer les parenthèses de bout en bout. Repartir de zéro, non pas au niveau des textes, je les aime bien, je crois, ces textes, mais je voulais avoir des fondations solides pour l'enveloppe, c'est à dire jque je voulais mettre à la poubelle tout ce qui avait un rapport avec Wordpress, que je hais du plus profond de mon âme, maintenant que je suis suffisamment snob pour pouvoir détester Wordpress. Sauf que forcément, et bien ça a pris un peu plus de temps.
+order: 153
 ---
 
 <div class="main-container">
   <div class="single-post--section">
     <p class="single-post--text">
-      enfin, de retour, je ne sais pas, je n'en sais vraiment rien. J'ai voulu prendre le temps de refabriquer les parenthèse de bout en bout. Repartir de zéro, non pas au niveau des textes, je les aime bien, je crois, ces textes, mais je voulais avoir des fondations solides pour l'enveloppe, c'est à dire jque je voulais mettre à la poubelle tout ce qui avait un rapport avec Wordpress, que je hais du plus profond de mon âme, maintenant que je suis suffisamment snob pour pouvoir détester Wordpress. Sauf que forcément, et bien ça a pris un peu plus de temps.
+      enfin, de retour, je ne sais pas, je n'en sais vraiment rien. J'ai voulu prendre le temps de refabriquer les parenthèses de bout en bout. Repartir de zéro, non pas au niveau des textes, je les aime bien, je crois, ces textes, mais je voulais avoir des fondations solides pour l'enveloppe, c'est à dire jque je voulais mettre à la poubelle tout ce qui avait un rapport avec Wordpress, que je hais du plus profond de mon âme, maintenant que je suis suffisamment snob pour pouvoir détester Wordpress. Sauf que forcément, et bien ça a pris un peu plus de temps.
     </p>
     <p class="single-post--text">
       Je ne vais pas rentrer dans tous les détails, parce que si je calcule bien, cela fait à peu près un an que j'ai fermé la précédente version du blog "pour quelques menus travaux de rénovation" et en fait ces quelques menus travaux se sont transformés en "on rase tout on recommence", alors forcément, il y a eu pas mal de petits empêchements en cours de route.

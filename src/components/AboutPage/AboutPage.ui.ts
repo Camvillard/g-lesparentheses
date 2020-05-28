@@ -2,12 +2,21 @@ import styled from "styled-components"
 import { WideContainer } from "../Containers/MainContainer.ui"
 import { themeColors } from "../../theme/themeVariables"
 import { Header1, Header3 } from "../Headers/Headers.ui"
+import { BackIcon } from "../Icons/BackIcon.component"
+import { Link } from "gatsby"
 
 const { darkGray } = themeColors
 
 type AboutPageTitleProps = {
   isUp: string
 }
+
+export const BackHomeIcon = styled(Link)`
+  position: fixed;
+  top: 24px;
+  right: 24px;
+`
+
 export const AboutPageTitle = styled(Header1)`
   font-size: ${(props: AboutPageTitleProps) =>
     props.isUp ? "2.4rem" : "6.2rem"};

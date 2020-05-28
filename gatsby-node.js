@@ -37,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node
 
       createPage({
-        path: post.node.frontmatter.slug,
+        path: `/articles/${post.node.frontmatter.slug}`,
         component: blogPost,
         context: {
           id: post.node.id,
@@ -49,33 +49,29 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // Create blog post list pages
-    const postsPerPage = 2
-    const numPages = Math.ceil(posts.length / postsPerPage)
+    // const postsPerPage = 2
+    // const numPages = Math.ceil(posts.length / postsPerPage)
 
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? `/articles` : `/articles/${i + 1}`,
-        component: path.resolve("./src/templates/PostIndex.component.tsx"),
-        context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          numPages,
-          currentPage: i + 1,
-        },
-      })
-    })
+    // console.log("l", posts.length)
+    // console.log("dvsdf", numPages)
+
+    // const arrayTest = Array.from({ length: numPages })
+    // console.log("array test", arrayTest)
+
+    // arrayTest.forEach((post, i) => {
+    //   console.log("creating pagimated", post)
+    //   console.log("index", i)
+
+    //   createPage({
+    //     path: i === 0 ? `/articles` : `/articles/${i + 1}`,
+    //     component: path.resolve("./src/templates/PostIndex.component.tsx"),
+    //     context: {
+    //       limit: postsPerPage,
+    //       skip: i * postsPerPage,
+    //       numPages,
+    //       currentPage: i + 1,
+    //     },
+    //   })
+    // })
   })
 }
-
-// exports.onCreateNode = ({ node, actions, getNode }) => {
-//   const { createNodeField } = actions
-
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const value = createFilePath({ node, getNode })
-//     createNodeField({
-//       name: `slug`,
-//       node,
-//       value,
-//     })
-//   }
-// }

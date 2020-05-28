@@ -12,11 +12,23 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
+import { BlogPostCardProps } from "../../../types/BlogPost.type"
+import { createExcerpt } from "../../../shared/posts/post.helpers"
 
 const { forestGreen } = themeColors
 
-type FourthPostProps = {}
-const FourthPost = (props: FourthPostProps) => {
+const FourthPost = ({ post }: BlogPostCardProps) => {
+  const { node } = post
+  const { frontmatter } = node
+  const {
+    title,
+    categories,
+    date,
+    image_url: imageUrl,
+    image_alt: imageAlt,
+    extrait,
+    slug,
+  } = frontmatter
   return (
     <PostContainer
       columns={{
@@ -32,7 +44,7 @@ const FourthPost = (props: FourthPostProps) => {
           sm: "2 / span 4",
         }}
       >
-        histoire publiée le 12 janvier 2018
+        histoire publiée le {date}
       </CardMeta>
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 4" }}
@@ -42,6 +54,7 @@ const FourthPost = (props: FourthPostProps) => {
         />
       </FeaturedImageContainer>
       <PostTitle
+        to={`/articles/${slug}`}
         columns={{ default: "span 4", sm: "2 / span 5" }}
         top={{
           default: "-40px",
@@ -54,19 +67,11 @@ const FourthPost = (props: FourthPostProps) => {
           default: "0",
         }}
       >
-        <Link to={"/deux-mille-dix-huit-dix-neuf/"}>
-          titre court et pour tester ussi.
-        </Link>
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "2 / span 4" }}>
-        <PostExcerpt>
-          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor,
-          quia, temporibus nisi nulla eius dolore dolores illo cumque similique
-          porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit,
-          in. Lorem ipsum dolor sit amet, consectetur adipisicing elit..
-        </PostExcerpt>
-        <MoreButton to={`/#`} fontcolor={forestGreen}>
+        <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
+        <MoreButton to={`/articles/${slug}`} fontcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

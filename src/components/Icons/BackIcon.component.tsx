@@ -5,7 +5,7 @@ const BackIconElement = styled.svg``
 type BackIconProps = {
   sizeRatio?: number
   color?: string
-  onClickBack: () => void
+  onClickBack?: () => void
 }
 export const BackIcon = (props: BackIconProps) => {
   const { sizeRatio, color, onClickBack } = props

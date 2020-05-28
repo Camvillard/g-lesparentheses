@@ -8,15 +8,21 @@ type PostIndexProps = {
   data: any
   location: string
 }
-export const PostIndex = (props: PostIndexProps) => {
+const PostIndex = (props: PostIndexProps) => {
   const { data } = props
-  const posts: any[] = props.data.allMarkdownRemark.edges
+  console.log("data", data)
+
+  const posts = props.data.allMarkdownRemark.edges
   const { title } = data.site.siteMetadata
+  console.log(posts)
+
   return (
-    <Layout location={props.location} title={title} pageName={"à propos"}>
-      {posts.map(post => (
-        <h1>{post.node.frontmatter.title}</h1>
-      ))}
+    <Layout
+      location={""}
+      title={"tous les articles"}
+      pageName={"tous les articles"}
+    >
+      <p>articles</p>
     </Layout>
   )
 }
@@ -24,7 +30,7 @@ export const PostIndex = (props: PostIndexProps) => {
 export const pageQuery = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___order], order: DESC }
       limit: $limit
       skip: $skip
     ) {
@@ -36,5 +42,15 @@ export const pageQuery = graphql`
         }
       }
     }
+    site {
+      siteMetadata {
+        title
+        author
+        description
+        siteUrl
+      }
+    }
   }
 `
+
+export default PostIndex

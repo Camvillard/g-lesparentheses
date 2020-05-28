@@ -54,7 +54,7 @@ const AboutSection = (props: AboutSectionProps) => {
           </AboutContent>
         </GridElement>
         <GridElement columns={{ default: "2 / span 3" }}>
-          <AboutLink fontcolor={forestGreen} to={"/about"}>
+          <AboutLink fontcolor={forestGreen} to={"/a-propos"}>
             lire toute l'autobiographie.
           </AboutLink>
         </GridElement>

@@ -13,6 +13,7 @@ import {
   AboutContentHeader,
   AboutSectionParagraph,
   TopSection,
+  BackHomeIcon,
 } from "../components/AboutPage/AboutPage.ui"
 import { BackIcon } from "../components/Icons/BackIcon.component"
 
@@ -62,6 +63,10 @@ const AboutPage = (props: AboutProps) => {
     <AboutPageContainer>
       <GlobalStyle />
       <SEO title="a propos" />
+
+      <BackHomeIcon to={"/"}>
+        <BackIcon sizeRatio={2} />
+      </BackHomeIcon>
       <AboutContentWrapper>
         <AboutContentHeader isUp={sectionIsOpen}>
           <TopSection isUp={sectionIsOpen}>

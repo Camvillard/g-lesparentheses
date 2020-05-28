@@ -12,19 +12,23 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
-import { NodePost } from "../../../types/Page.type"
+import { createExcerpt } from "../../../shared/posts/post.helpers"
+import { BlogPostCardProps } from "../../../types/BlogPost.type"
 
 const { forestGreen } = themeColors
 
-type LastPostProps = {
-  post: NodePost
-}
-
-const LastPost = ({ post }: LastPostProps) => {
-  console.log("post", post)
+const LastPost = ({ post }: BlogPostCardProps) => {
   const { node } = post
-  const { frontmatter, html } = node
-  const { title, categories, date, image_url } = frontmatter
+  const { frontmatter } = node
+  const {
+    title,
+    categories,
+    date,
+    image_url: imageUrl,
+    image_alt: imageAlt,
+    extrait,
+    slug,
+  } = frontmatter
 
   return (
     <PostContainer
@@ -45,14 +49,13 @@ const LastPost = ({ post }: LastPostProps) => {
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 7" }}
       >
-        <FeaturedImage
-          src={`https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg`}
-        />
+        <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
       <PostTitle
+        to={`/articles/${slug}`}
         columns={{ default: "span 4", sm: "span 6" }}
         top={{
-          default: "-32px",
+          default: "-40px",
           sm: "-48px",
           md: "-64px",
           lg: "54px",
@@ -64,15 +67,13 @@ const LastPost = ({ post }: LastPostProps) => {
           md: "2vw",
         }}
       >
-        <Link to={`/#`}>deux mille dix-huit, deux mille dix-neuf.</Link>
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </PostTitle>
       <GridElement
         columns={{ default: "span 4", sm: "2 / span 5", md: "2 / span 4" }}
       >
-        <PostExcerpt>
-          <span dangerouslySetInnerHTML={{ __html: html }} />
-        </PostExcerpt>
-        <MoreButton to={`/#`} fontcolor={forestGreen}>
+        <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
+        <MoreButton to={`/articles/${slug}`} fontcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

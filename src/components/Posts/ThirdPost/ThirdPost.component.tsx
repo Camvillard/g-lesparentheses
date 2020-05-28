@@ -12,11 +12,22 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
+import { BlogPostCardProps } from "../../../types/BlogPost.type"
 
 const { forestGreen } = themeColors
 
-type ThirdPostProps = {}
-const ThirdPost = (props: ThirdPostProps) => {
+const ThirdPost = ({ post }: BlogPostCardProps) => {
+  const { node } = post
+  const { frontmatter } = node
+  const {
+    title,
+    categories,
+    date,
+    image_url: imageUrl,
+    image_alt: imageAlt,
+    extrait,
+    slug,
+  } = frontmatter
   return (
     <PostContainer
       columns={{
@@ -32,7 +43,7 @@ const ThirdPost = (props: ThirdPostProps) => {
           sm: "3 / span 5",
         }}
       >
-        histoire publiée le 12 janvier 2018
+        histoire publiée le {date}
       </CardMeta>
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 3 / span 5" }}
@@ -42,6 +53,7 @@ const ThirdPost = (props: ThirdPostProps) => {
         />
       </FeaturedImageContainer>
       <PostTitle
+        to={`/articles/${slug}`}
         columns={{ default: "span 4", sm: "3 / span 5" }}
         top={{
           default: "-40px",
@@ -54,9 +66,7 @@ const ThirdPost = (props: ThirdPostProps) => {
           default: "0",
         }}
       >
-        <Link to={"/deux-mille-dix-huit-dix-neuf/"}>
-          titre court et pour tester ussi.
-        </Link>
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "3 / span 5" }}>
         <PostExcerpt>
