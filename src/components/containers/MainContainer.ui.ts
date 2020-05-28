@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
     width: 88vw;
   }
   @media (min-width: ${mdScreen}) {
-    width: 88vw;
+    width: 84vw;
   }
 `
 

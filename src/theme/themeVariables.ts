@@ -13,6 +13,7 @@ const headersFont = `'europa', sans-serif` // 300, 400 & 700
 const accentFont = `'attribute-mono', sans-serif` //400
 
 // default : 375px - iPhone 8
+const xsScreen = `40px`
 
 // iPad - 8 cols
 const smScreen = `768px`
@@ -29,6 +30,7 @@ const xlgScreen = `1440px`
 export const themeFonts = { bodyFont, accentFont }
 
 export const themeBreakpoints = {
+  xsScreen,
   smScreen,
   mdScreen,
   lgScreen,

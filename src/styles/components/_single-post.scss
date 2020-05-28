@@ -1,7 +1,7 @@
 /*----- LAYOUTS : SINGLE POST ----- */
 
 .single-post--section {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .single-post--text {
@@ -14,7 +14,7 @@
 
 @media (min-width: $smScreen) {
   .single-post--text {
-    max-width: 522px;
+    max-width: 532px;
     margin-left: 0;
   }
   .single-post--section,
@@ -35,7 +35,7 @@
 
 @media (min-width: $lgScreen) {
   .single-post--section {
-    margin-bottom: 42px;
+    margin-bottom: 32px;
   }
 } // end of lgScreen - 1200px
 

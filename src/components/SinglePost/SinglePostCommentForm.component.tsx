@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react"
 import Airtable from "airtable"
 import { InputElement } from "../Inputs/InputElement.component"
-import { MainContainer } from "../Containers/MainContainer.ui"
 import { TextareaElement } from "../Inputs/TextareaElement.component"
 import { ButtonSimple } from "../Buttons/Buttons.ui"
 import {
@@ -9,6 +8,7 @@ import {
   CommentSuccesTitle,
   CommentSuccessText,
   CommentForm,
+  CommentFormWrapper,
 } from "./SinglePostCommentForm.ui"
 import { CloseIcon } from "../Icons/CloseIcon.component"
 import { CommentObject } from "../../shared/comments/Comment.model"
@@ -61,7 +61,7 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
   }
 
   return (
-    <MainContainer>
+    <CommentFormWrapper>
       <CommentsTitle>laisser un commentaire</CommentsTitle>
       {commentIsPosted && (
         <CommentSuccessWrapper>
@@ -107,6 +107,6 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
 
         <ButtonSimple>envoyer le commentaire</ButtonSimple>
       </CommentForm>
-    </MainContainer>
+    </CommentFormWrapper>
   )
 }

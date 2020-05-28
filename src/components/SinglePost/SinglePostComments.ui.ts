@@ -3,13 +3,19 @@ import { MainContainer } from "../Containers/MainContainer.ui"
 import { Header3 } from "../Headers/Headers.ui"
 import { themeBreakpoints } from "../../theme/themeVariables"
 
-const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
+const { xsScreen, smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 export const CommentsWrapper = styled(MainContainer)`
   margin: 32px auto;
+  @media (min-width: ${mdScreen}) {
+    width: calc(84vw - 5%);
+  }
 `
 export const CommentsTitle = styled(Header3)`
-  font-size: 4.2rem;
+  font-size: 4rem;
+  @media (min-width: ${xsScreen}) {
+    font-size: 4.4rem;
+  }
   @media (min-width: ${smScreen}) {
     font-size: 6.4rem;
   }

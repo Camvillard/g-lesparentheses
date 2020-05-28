@@ -1,7 +1,15 @@
 import styled from "styled-components"
-import { themeColors } from "../../theme/themeVariables"
+import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
+import { MainContainer } from "../Containers/MainContainer.ui"
 
 const { oldPink, darkGray } = themeColors
+const { mdScreen } = themeBreakpoints
+
+export const CommentFormWrapper = styled(MainContainer)`
+  @media (min-width: ${mdScreen}) {
+    width: calc(84vw - 5%);
+  }
+`
 
 export const CommentSuccessWrapper = styled.div`
   margin: 18px 0;

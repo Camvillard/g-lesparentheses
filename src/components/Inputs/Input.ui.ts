@@ -30,6 +30,7 @@ export const Textarea = styled.textarea`
   border: none;
   border-bottom: 2px solid ${darkGray};
   font-size: 1.4rem;
+  font-family: ${bodyFont};
   color: ${(props: InputProps) => (props.isValidated ? "white" : darkGray)};
   background: ${(props: InputProps) =>
     props.isValidated ? darkGray : "white"};
@@ -40,6 +41,19 @@ export const Textarea = styled.textarea`
     font-weight: 400;
     font-family: ${accentFont};
     color: ${mediumGray};
+  }
+  &:hover {
+    background: ${(props: InputProps) =>
+      props.isValidated ? darkGray : lightGray};
+    outline: none;
+    ::placeholder {
+      color: white;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid ${lightGray};
+    outline-offset: 1px;
   }
 
   @media (min-width: ${smScreen}) {
@@ -56,7 +70,7 @@ export const Input = styled.input`
   flex-grow: 1;
   border: none;
   display: block;
-  padding-left: 8px;
+  padding: 0 0 0 8px;
   margin-left: 4px;
   color: ${(props: InputProps) => (props.isValidated ? "white" : darkGray)};
   background: ${(props: InputProps) =>
@@ -64,7 +78,7 @@ export const Input = styled.input`
   font-weight: 300;
   font-family: ${bodyFont};
   ::placeholder {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     font-family: ${accentFont};
     color: ${mediumGray};

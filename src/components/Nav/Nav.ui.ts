@@ -22,8 +22,8 @@ export const NavWrapper = styled.ul<NavWrapperProps>`
   list-style: none;
   justify-content: space-around;
   @media (min-width: ${smScreen}) {
-    right: ${props => (props.open ? 0 : "auto")};
-    left: ${props => (props.open ? "auto" : 0)};
+    left: ${props => (props.open ? 0 : "auto")};
+    right: ${props => (props.open ? "auto" : 0)};
     top: 24vh;
     bottom: auto;
     flex-direction: column;
@@ -46,8 +46,8 @@ export const NavbarListItem = styled.li<NavWrapperProps>`
   }
   @media (min-width: ${smScreen}) {
     width: 72px;
-    margin: 4px 0;
-    text-align: left;
+    margin: 4px 8px;
+    text-align: right;
   }
 `
 

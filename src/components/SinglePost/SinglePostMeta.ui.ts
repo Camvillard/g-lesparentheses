@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { themeColors } from "../../theme/themeVariables"
+import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 import { MainContainer } from "../Containers/MainContainer.ui"
 import { Accent } from "../../theme/globalstyle"
 const {
@@ -10,12 +10,16 @@ const {
   mediumGray,
   gray,
 } = themeColors
+const { mdScreen } = themeBreakpoints
 
 export const SinglePostMetaFooter = styled(MainContainer)`
   margin: 32px auto;
   border-top: 1px solid ${mediumGray};
   border-bottom: 1px solid ${mediumGray};
   padding: 12px 0;
+  @media (min-width: ${mdScreen}) {
+    width: calc(84vw - 5%);
+  }
 `
 
 export const MetaGroup = styled.div`
