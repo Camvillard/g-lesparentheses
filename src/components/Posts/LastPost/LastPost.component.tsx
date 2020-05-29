@@ -57,7 +57,12 @@ const LastPost = ({ post }: BlogPostCardProps) => {
         {publicationDate}
       </CardMeta>
       <FeaturedImageContainer
-        columns={{ default: "span 4", sm: " 2 / span 7" }}
+        columns={{
+          default: "span 4",
+          sm: " 2 / span 7",
+          md: "2 / span 9",
+          lg: "2 / span 10",
+        }}
       >
         <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
@@ -80,7 +85,12 @@ const LastPost = ({ post }: BlogPostCardProps) => {
         <span dangerouslySetInnerHTML={{ __html: title }} />
       </PostTitle>
       <GridElement
-        columns={{ default: "span 4", sm: "2 / span 5", md: "2 / span 4" }}
+        columns={{
+          default: "span 4",
+          sm: "2 / span 5",
+          md: "2 / span 4",
+          lg: "2 / span 5",
+        }}
       >
         <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
         <MoreButton to={`/article/${slug}`} textcolor={forestGreen}>

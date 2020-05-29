@@ -8,14 +8,9 @@ import LastPost from "../components/Posts/LastPost/LastPost.component"
 import SecondPost from "../components/Posts/SecondPost/SecondPost.component"
 import ThirdPost from "../components/Posts/ThirdPost/ThirdPost.component"
 import FourthPost from "../components/Posts/FourthPost/FourthPost.component"
-import PetitesParenthesesCard from "../components/Posts/PetitesParentheses/PetitesParenthesesCard.component"
 import ReadMoreButton from "../components/Homepage/ReadMoreButton/ReadMoreButton.component"
 import AboutSection from "../components/AboutSection/AboutSection.component"
 import SEO from "../components/SEO/SEO.component"
-import { Nav } from "../components/Nav/Nav.component"
-import { HomepageSectionTitle } from "../components/Headers/Headers.ui"
-import { Grid } from "../components/Grid/Grid.ui"
-import { PostTemplateData } from "../types/BlogPost.type"
 import { PageData } from "../types/Page.type"
 import { PetitesParenthesesHomepageSection } from "../components/Homepage/PetitesParentheses/PetitesParenthesesHomepageSection.component"
 
@@ -26,7 +21,7 @@ interface IProps {
 
 const BlogIndex = (props: IProps) => {
   const { data } = props
-  const { allMarkdownRemark, site } = data
+  const { allMarkdownRemark } = data
   const [firstPost, secondPost, thirdPost, fourthPost] = allMarkdownRemark.edges
 
   const { title } = data.site.siteMetadata

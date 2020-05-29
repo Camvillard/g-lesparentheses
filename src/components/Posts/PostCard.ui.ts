@@ -18,15 +18,24 @@ type CardMetaProps = {
   columns?: Breakpoint
 }
 
-export const CardMeta = styled(Accent)`
-  font-size: 1.2rem;
+export const CardMeta = styled(Accent)<CardMetaProps>`
+  font-size: 1rem;
   font-weight: 300;
   color: ${mediumGray};
   margin: 0;
-  grid-column: ${(props: CardMetaProps) => props.columns?.default || ""};
+  grid-column: ${props => props.columns?.default || ""};
   text-align: right;
   @media (min-width: ${smScreen}) {
-    grid-column: ${(props: CardMetaProps) => props.columns?.sm || ""};
+    grid-column: ${props => props.columns?.sm || ""};
+    font-size: 1.2rem;
+  }
+  @media (min-width: ${mdScreen}) {
+    grid-column: ${props => props.columns?.md || ""};
+    font-size: 1.2rem;
+  }
+  @media (min-width: ${lgScreen}) {
+    grid-column: ${props => props.columns?.lg || ""};
+    font-size: 1.2rem;
   }
 `
 
@@ -78,14 +87,14 @@ export const PostTitle = styled(Link)`
     grid-column: ${(props: PostTitleProps) => props.columns.sm};
     margin-top: ${(props: PostTitleProps) => props.top?.sm};
     margin-left: ${(props: PostTitleProps) => props.left?.sm};
-    font-size: 1.6em;
+    font-size: 5.6em;
   }
 
   @media (min-width: ${mdScreen}) {
     grid-column: ${(props: PostTitleProps) => props.columns.md};
     margin-top: ${(props: PostTitleProps) => props.top?.md};
     margin-left: ${(props: PostTitleProps) => props.left?.md};
-    font-size: 5.2rem;
+    font-size: 6.2rem;
   }
 
   @media (min-width: ${lgScreen}) {
@@ -99,6 +108,4 @@ export const PostTitle = styled(Link)`
 export const PostExcerpt = styled.p`
   word-break: break-word;
 `
-export const MoreButton = styled(ButtonLinkSimple)`
-  display: block;
-`
+export const MoreButton = styled(ButtonLinkSimple)``

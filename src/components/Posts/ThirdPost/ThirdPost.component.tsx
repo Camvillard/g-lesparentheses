@@ -13,6 +13,7 @@ import {
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
 import { BlogPostCardProps } from "../../../types/BlogPost.type"
+import { createExcerpt } from "../../../shared/posts/post.helpers"
 
 const { forestGreen } = themeColors
 
@@ -41,16 +42,21 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
         columns={{
           default: "span 4",
           sm: "3 / span 5",
+          md: "3 / span 6",
+          lg: "3 / span 8",
         }}
       >
         histoire publiée le {date}
       </CardMeta>
       <FeaturedImageContainer
-        columns={{ default: "span 4", sm: " 3 / span 5" }}
+        columns={{
+          default: "span 4",
+          sm: " 3 / span 5",
+          md: "3 / span 6",
+          lg: "3 / span 8",
+        }}
       >
-        <FeaturedImage
-          src={`https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg`}
-        />
+        <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
       <PostTitle
         to={`/article/${slug}`}
@@ -71,12 +77,9 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
       <GridElement columns={{ default: "span 4", sm: "3 / span 5" }}>
         <PostExcerpt>
           abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolor,
-          quia, temporibus nisi nulla eius dolore dolores illo cumque similique
-          porro praesentium sunt consequuntur, quas sed eum! Cupiditate velit,
-          in. Lorem ipsum dolor sit amet, consectetur adipisicing elit..
         </PostExcerpt>
-        <MoreButton to={`/#`} textcolor={forestGreen}>
+        <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
+        <MoreButton to={`/article/${slug}`} textcolor={forestGreen}>
           lire la suite
         </MoreButton>
       </GridElement>

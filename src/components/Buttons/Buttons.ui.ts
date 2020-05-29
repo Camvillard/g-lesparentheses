@@ -28,7 +28,7 @@ export const ButtonLinkBlock = styled(Link)`
   display: block;
 `
 
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled(Link)<ButtonLinkSimpleProps>`
   transition: 0.3s;
 `
 
