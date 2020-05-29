@@ -24,30 +24,30 @@ const PostIndex = (props: PostIndexProps) => {
   )
 }
 
-export const pageQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___order], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        title
-        author
-        description
-        siteUrl
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query blogListQuery($skip: Int!, $limit: Int!) {
+//     allMarkdownRemark(
+//       sort: { fields: [frontmatter___order], order: DESC }
+//       limit: $limit
+//       skip: $skip
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//           }
+//         }
+//       }
+//     }
+//     site {
+//       siteMetadata {
+//         title
+//         author
+//         description
+//         siteUrl
+//       }
+//     }
+//   }
+// `
 
 export default PostIndex
