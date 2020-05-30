@@ -19,11 +19,10 @@ export const LogoWrapper = styled(Link)`
     height: auto;
   }
   @media (min-width: ${smScreen}) {
-    margin: 24px 11vw 48px;
     width: 40vw;
   }
   @media (min-width: ${mdScreen}) {
-    margin: 32px 11vw 64px;
+    margin: 32px 4vw 64px;
     width: 32vw;
   }
   @media (min-width: ${lgScreen}) {

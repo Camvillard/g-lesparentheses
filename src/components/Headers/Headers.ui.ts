@@ -30,3 +30,6 @@ export const Header1 = styled.h1<HeaderProps>`
 export const Header3 = styled.h3<HeaderProps>`
   color: ${props => props.color};
 `
+export const PageTitle = styled(Header1)`
+  font-size: 2.2rem;
+`

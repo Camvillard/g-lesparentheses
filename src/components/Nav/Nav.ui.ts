@@ -39,13 +39,16 @@ export const NavbarListItem = styled.li<NavWrapperProps>`
   font-size: 1.2rem;
   font-weight: 600;
   text-align: right;
-  background: ${oldPink};
-  color: white;
+  // background: ${props => (props.open ? "white" : oldPink)};
+  // color: ${props => (props.open ? darkGray : "white")};
+  background: white;
+  color: ${darkGray};
   font-family: ${accentFont};
   a {
+    background: white;
+    color: ${darkGray};
     font-family: ${accentFont};
     font-size: 1.2rem;
-    color: white;
   }
   &:hover {
     cursor: pointer;
@@ -84,6 +87,14 @@ export const MenuOpenItem = styled.li`
   margin: 0;
   width: 100%;
   position: relative;
+  a {
+    color: ${darkGray};
+    font-weight: 800;
+    font-size: 4.2rem;
+    @media (min-width: ${smScreen}) {
+      font-size: 6.4rem;
+    }
+  }
 `
 
 export const MenuOpenLink = styled(Link)`
@@ -121,7 +132,10 @@ export const MenuOpenExtLink = styled.a<MenuExtLinkProps>`
 
 export const CategoryLink = styled(Link)`
   font-size: 2.2rem;
-  margin-right: 16px;
+  padding-left: 8px;
+  &:first-child {
+    padding-left: 0px;
+  }
 `
 
 export const CategoryCount = styled.span`
@@ -134,7 +148,7 @@ export const CategoriesListWrapper = styled.div`
   position: absolute;
   top: -92px;
   left: 0;
-  max-width: 310px;
+  max-width: 300px;
   word-break: break-all;
   @media (min-width: ${smScreen}) {
     max-width: 410px;

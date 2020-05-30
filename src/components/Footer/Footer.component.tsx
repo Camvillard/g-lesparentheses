@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { themeFonts, themeColors } from "../../theme/themeVariables"
+import InstagramFooter from "../instagram/InstagramFooter.component"
 
 const { bodyFont } = themeFonts
 const { darkGray } = themeColors
@@ -49,20 +50,23 @@ const DesignText = styled.p`
 
 export const Footer = () => {
   return (
-    <FooterWrapper>
-      <FooterLegal>
-        <FooterLink to={"/"}>mentions legales</FooterLink>
-        <FooterLink to={"/"}>confidentialité</FooterLink>
-      </FooterLegal>
-      <FooterBrand>
-        <BrandText>© {new Date().getFullYear()} - les parenthèses</BrandText>
-        <BrandText>
-          tout le contenu m'appartient, merci de ne rien voler.
-        </BrandText>
-        <DesignText>
-          design, developpement et ponctuation par cdlbisou (c'est moi)
-        </DesignText>
-      </FooterBrand>
-    </FooterWrapper>
+    <>
+      <InstagramFooter />
+      <FooterWrapper>
+        <FooterLegal>
+          <FooterLink to={"/"}>mentions legales</FooterLink>
+          <FooterLink to={"/"}>confidentialité</FooterLink>
+        </FooterLegal>
+        <FooterBrand>
+          <BrandText>© {new Date().getFullYear()} - les parenthèses</BrandText>
+          <BrandText>
+            tout le contenu m'appartient, merci de ne rien voler.
+          </BrandText>
+          <DesignText>
+            design, developpement et ponctuation par cdlbisou (c'est moi)
+          </DesignText>
+        </FooterBrand>
+      </FooterWrapper>
+    </>
   )
 }

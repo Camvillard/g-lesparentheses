@@ -80,14 +80,19 @@ const CategoriesList = ({ categories }: CategoriesProps) => {
 
 const Menu = ({ categories }: CategoriesProps) => {
   const [isOpen, openCategories] = useState(false)
+  const [shopStatus, showShopStatus] = useState(false)
+  const toggleShop = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault()
+    showShopStatus(!shopStatus)
+  }
   return (
     <MenuWrapper>
-      <MenuOpenItem>
+      {/* <MenuOpenItem>
         {isOpen && <CategoriesList categories={categories} />}
         <MenuOpenToggleLink onClick={() => openCategories(!isOpen)}>
           catégories
         </MenuOpenToggleLink>
-      </MenuOpenItem>
+      </MenuOpenItem> */}
       <MenuOpenItem>
         <MenuOpenLink to={"/a-propos"}>à propos</MenuOpenLink>
       </MenuOpenItem>
@@ -95,10 +100,18 @@ const Menu = ({ categories }: CategoriesProps) => {
         <MenuOpenLink to={"/contact"}>contact</MenuOpenLink>
       </MenuOpenItem>
       <MenuOpenItem>
-        <MenuOpenLink to={"/"}>portfolio</MenuOpenLink>
+        <a
+          href="https://www.behance.net/camvillard"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          portfolio
+        </a>
       </MenuOpenItem>
       <MenuOpenItem>
-        <MenuOpenLink to={"/"}>e-shop</MenuOpenLink>
+        <MenuOpenLink to={"/"} onClick={toggleShop}>
+          {shopStatus ? "bientôt !" : "e-shop"}
+        </MenuOpenLink>
       </MenuOpenItem>
     </MenuWrapper>
   )
