@@ -22,8 +22,8 @@ export const NavWrapper = styled.ul<NavWrapperProps>`
   list-style: none;
   justify-content: space-around;
   @media (min-width: ${smScreen}) {
-    left: ${props => (props.open ? 0 : "auto")};
-    right: ${props => (props.open ? "auto" : 0)};
+    left: auto;
+    right: 0;
     top: 24vh;
     bottom: auto;
     flex-direction: column;
@@ -66,17 +66,14 @@ export const OpenMenuWrapper = styled.ul`
   padding: 0 24px;
   list-style: none;
   background: white;
-`
-
-export const MenuWrapper = styled(OpenMenuWrapper)`
   @media (min-width: ${smScreen}) {
-    margin-left: 124px;
+    padding-left: 124px;
   }
 `
 
-export const SocialWrapper = styled(OpenMenuWrapper)`
-  background: white;
-`
+export const MenuWrapper = styled(OpenMenuWrapper)``
+
+export const SocialWrapper = styled(OpenMenuWrapper)``
 
 export const MenuOpenItem = styled.li`
   margin: 0;

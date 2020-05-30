@@ -9,13 +9,14 @@ import {
 
 const { bodyFont } = themeFonts
 const { oldPink, darkGray } = themeColors
-const { smScreen } = themeBreakpoints
+const { smScreen, mdScreen, lgScreen } = themeBreakpoints
 
 export const ReadMoreButtonContainer = styled(ButtonLinkBlock)`
   height: 100vh;
   background: ${oldPink};
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   width: 100%;
   margin: 24px auto;
@@ -23,7 +24,6 @@ export const ReadMoreButtonContainer = styled(ButtonLinkBlock)`
   font-weight: 700;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: ${oldPink};
-
   &:focus,
   &:active {
     outline: none;
@@ -31,7 +31,16 @@ export const ReadMoreButtonContainer = styled(ButtonLinkBlock)`
 
   @media (min-width: ${smScreen}) {
     width: 100%;
+    height: auto;
+    background: white;
+    -webkit-text-stroke: 1px ${oldPink};
+    -webkit-text-fill-color: white;
     padding: 24px 0;
+    font-size: 8.4rem;
+  }
+
+  @media (min-width: ${mdScreen}) {
+    font-size: 10.4rem;
   }
 `
 export const ReadMoreLink = styled(Link)`

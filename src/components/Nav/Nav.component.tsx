@@ -58,7 +58,6 @@ const Social = () => {
           github
         </MenuOpenExtLink>
       </MenuOpenItem>
-      {/* <BlobSocial /> */}
     </OpenMenuWrapper>
   )
 }
@@ -101,7 +100,6 @@ const Menu = ({ categories }: CategoriesProps) => {
       <MenuOpenItem>
         <MenuOpenLink to={"/"}>e-shop</MenuOpenLink>
       </MenuOpenItem>
-      {/* <BlobMenu /> */}
     </MenuWrapper>
   )
 }
