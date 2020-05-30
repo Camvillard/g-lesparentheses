@@ -1,9 +1,14 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
+import {
+  themeColors,
+  themeBreakpoints,
+  themeFonts,
+} from "../../theme/themeVariables"
 
 const { darkGray, forestGreen, oldPink } = themeColors
 const { smScreen } = themeBreakpoints
+const { accentFont } = themeFonts
 
 type NavWrapperProps = {
   open: boolean
@@ -11,43 +16,43 @@ type NavWrapperProps = {
 
 export const NavWrapper = styled.ul<NavWrapperProps>`
   position: fixed;
-  bottom: 0vh;
-  left: 0;
-  right: 0;
+  bottom: 2vh;
+  right: -1px;
   z-index: 100000000;
-  display: flex;
   padding: 8px 0;
   margin: 0;
-  background: white;
   list-style: none;
-  justify-content: space-around;
   @media (min-width: ${smScreen}) {
-    left: auto;
-    right: 0;
-    top: 24vh;
+    left: -1px;
+    right: auto;
+    top: 44vh;
     bottom: auto;
-    flex-direction: column;
-    background: none;
   }
 `
 
 export const NavbarListItem = styled.li<NavWrapperProps>`
   color: ${darkGray};
-  width: calc(100vw / 3);
   padding: 1px 4px;
-  margin: 0 24px;
+  margin: 4px 0;
+  border: 1px solid white;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
-  text-align: center;
+  text-align: right;
+  background: ${oldPink};
+  color: white;
+  font-family: ${accentFont};
   a {
+    font-family: ${accentFont};
     font-size: 1.2rem;
-    color: ${darkGray};
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
   }
   @media (min-width: ${smScreen}) {
-    width: 72px;
-    margin: 4px 8px;
-    text-align: right;
+    border: none;
+    text-align: left;
   }
 `
 
@@ -94,6 +99,9 @@ export const MenuOpenToggleLink = styled.span`
   color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: ${smScreen}) {
     font-size: 6.4rem;
   }
