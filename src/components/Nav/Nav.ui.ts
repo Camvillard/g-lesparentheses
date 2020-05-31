@@ -26,6 +26,9 @@ export const FooterNavWrapper = styled.div<FooterNavWrapperProps>`
   background: ${props => (props.isOpen ? oldPink : "white")};
   justify-items: start;
   align-items: ${props => (props.isOpen ? "start" : "center")};
+  @media (min-width: ${smScreen}) {
+    padding: 8px 32px 0;
+  }
 `
 
 export const ToggleMenu = styled.p`

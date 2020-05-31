@@ -7,12 +7,21 @@ import Layout from "../components/Layout/Layout.component"
 import {
   SinglePostTitle,
   SinglePostThumbnail,
+  SinglePostBanner,
+  SinglePostThumnbailWrapper,
+  SinglePostTitleWrapper,
+  SinglePostFeaturedImageOverlay,
+  SinglePostArticle,
 } from "../components/SinglePost/SinglePostSections.ui"
 import SEO from "../components/SEO/SEO.component"
 import { SinglePostCommentForm } from "../components/SinglePost/SinglePostCommentForm.component"
 import { convertNodesInComments } from "../shared/comments/comments.helpers"
 import { SinglePostComments } from "../components/SinglePost/SinglePostComments.component"
-import { MainContainer } from "../components/Containers/MainContainer.ui"
+import {
+  MainContainer,
+  BottomSpacing,
+  TopSpacing,
+} from "../components/Containers/MainContainer.ui"
 import { SinglePostMeta } from "../components/SinglePost/SinglePostMeta.component"
 import { SinglePostData } from "../types/BlogPost.type"
 import { Grid, GridElement } from "../components/Grid/Grid.ui"
@@ -22,6 +31,7 @@ import {
 } from "../components/Posts/PostCard.ui"
 import { GlobalStyle } from "../theme/globalstyle"
 import { Nav } from "../components/Nav/Nav.component"
+import { Footer } from "../components/Footer/Footer.component"
 
 type PostTemplateProps = {
   location: string
@@ -47,42 +57,39 @@ const PostTemplate = (props: PostTemplateProps) => {
       <GlobalStyle />
       <SEO title={title} description={extrait} />
       <Nav />
-      <MainContainer>
-        <Grid
+      <SinglePostBanner
+        columns={{
+          default: "1fr 1fr 1fr 1fr",
+          sm: "repeat(8, 1fr)",
+          md: "repeat(12, 1fr)",
+        }}
+      >
+        <SinglePostThumnbailWrapper
           columns={{
-            default: "1fr 1fr 1fr 1fr",
-            sm: "repeat(8, 1fr)",
-            md: "repeat(12, 1fr)",
+            default: "1 / span 3",
+            sm: "1 / span 5",
+            md: "1 / span 6",
           }}
         >
-          <FeaturedImageContainer
-            columns={{
-              default: "2 / span 3",
-              sm: "4 / span 5",
-              md: "7 / span 6",
-            }}
-          >
-            <FeturedImageOverlay />
-            <SinglePostThumbnail
-              src={imageUrl || imagePlaceholder}
-              alt={title}
-            />
-          </FeaturedImageContainer>
-          <GridElement
-            columns={{
-              default: "1 / span 4",
-              sm: "1 / span 7",
-              md: "1 / span 9",
-            }}
-          >
-            <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
-          </GridElement>
-        </Grid>
-      </MainContainer>
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+          <SinglePostFeaturedImageOverlay />
+          <SinglePostThumbnail src={imageUrl || imagePlaceholder} alt={title} />
+        </SinglePostThumnbailWrapper>
+        <SinglePostTitleWrapper
+          columns={{
+            default: "2 / span 3",
+            sm: "3 / span 5",
+            md: "4 / span 8",
+          }}
+        >
+          <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
+        </SinglePostTitleWrapper>
+      </SinglePostBanner>
+      <SinglePostArticle dangerouslySetInnerHTML={{ __html: html }} />
       <SinglePostMeta meta={frontmatter} />
       <SinglePostComments allComments={allComments} />
       <SinglePostCommentForm postId={id} />
+      <Footer />
+      <BottomSpacing />
       {/* </Layout> */}
     </>
   )

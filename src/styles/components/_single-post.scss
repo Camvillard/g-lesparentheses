@@ -14,13 +14,11 @@
 
 @media (min-width: $smScreen) {
   .single-post--text {
-    max-width: 532px;
-    margin-left: 0;
+    max-width: 506px;
+    margin-left: 8vw;
   }
   .single-post--section,
   .single-post--image {
-    width: 90%;
-    margin-left: 5%;
     margin-bottom: 36px;
   }
 

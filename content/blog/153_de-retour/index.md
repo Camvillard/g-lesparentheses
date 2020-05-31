@@ -12,6 +12,9 @@ order: 153
 <div class="main-container">
   <div class="single-post--section">
     <p class="single-post--text">
+      abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+    </p>
+    <p class="single-post--text">
       enfin, de retour, je ne sais pas, je n'en sais vraiment rien. J'ai voulu prendre le temps de refabriquer les parenthèses de bout en bout. Repartir de zéro, non pas au niveau des textes, je les aime bien, je crois, ces textes, mais je voulais avoir des fondations solides pour l'enveloppe, c'est à dire jque je voulais mettre à la poubelle tout ce qui avait un rapport avec Wordpress, que je hais du plus profond de mon âme, maintenant que je suis suffisamment snob pour pouvoir détester Wordpress. Sauf que forcément, et bien ça a pris un peu plus de temps.
     </p>
     <p class="single-post--text">
@@ -24,7 +27,7 @@ order: 153
       Ensuite, j'ai adopté un petit chat, qui, bien entendu, a volé de nombreuses heures de ma productivité, puisqu'elle est tellement adorable que je peux passer des heures à la regarder dormir sans bouger, c'est vraiment très chou, mais cela n'arrange rien du tout de mon côté. Elle m'empêche également de travailler trop tard puisqu'elle vient réclamer des jeux à partir de 20h tapantes, tous les soirs, sans exception. Encore là, c'est difficile de lui demander de me laisser travailler, alors je vais jouer avec elle et je laisse en plan mes lignes de code, que je retrouve quelques jours plus tard et après, il se trouve qu'entre-temps j'ai appris plein de nouveaux trucs que je veux appliquer à ce blog donc je rase tout et je recommence. Vous voyez bien que c'est difficile.
     </p>
   </div>
-  <section class="single-post--image grid columns-2">
+  <section class="single-post--image grid columns-2 lg-columns-2">
     <div class="grid-element one">
       <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
     </div>

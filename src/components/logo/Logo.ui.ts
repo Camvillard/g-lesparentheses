@@ -18,16 +18,9 @@ export const LogoWrapper = styled(Link)`
     max-height: 52px;
   }
   @media (min-width: ${smScreen}) {
-    width: 40vw;
-  }
-  @media (min-width: ${mdScreen}) {
-    margin: 32px 4vw 64px;
-    width: 32vw;
-  }
-  @media (min-width: ${lgScreen}) {
-    width: 24vw;
-  }
-  @media (min-width: ${xlgScreen}) {
+    svg {
+      max-height: 62px;
+    }
   }
 `
 export const LogoElement = styled.svg``
