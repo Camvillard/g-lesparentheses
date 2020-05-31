@@ -2,10 +2,10 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 
-import { FullScreenContainer } from "../components/Containers/FullScreenContainer.ui"
+import { FullScreenContainer } from "../components/FullScreen/FullScreenContainer.ui"
 import { themeColors } from "../theme/themeVariables"
-import { MainContainer } from "../components/Containers/MainContainer.ui"
-import { Flexbox } from "../components/Containers/Flexbox.ui"
+import { MainContainer } from "../components/MainContainer/MainContainer.ui"
+import { Flexbox } from "../components/Flexbox/Flexbox.ui"
 
 const { forestGreen, offWhite } = themeColors
 

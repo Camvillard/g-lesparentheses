@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { MainContainer } from "../Containers/MainContainer.ui"
+import { MainContainer } from "../MainContainer/MainContainer.ui"
 import { Header3 } from "../Headers/Headers.ui"
 import { themeBreakpoints } from "../../theme/themeVariables"
 

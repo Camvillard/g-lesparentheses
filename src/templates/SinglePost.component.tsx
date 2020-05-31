@@ -21,7 +21,7 @@ import {
   MainContainer,
   BottomSpacing,
   TopSpacing,
-} from "../components/Containers/MainContainer.ui"
+} from "../components/MainContainer/MainContainer.ui"
 import { SinglePostMeta } from "../components/SinglePost/SinglePostMeta.component"
 import { SinglePostData } from "../types/BlogPost.type"
 import { Grid, GridElement } from "../components/Grid/Grid.ui"

@@ -6,7 +6,7 @@ import {
   MetaGroup,
   MetaTitle,
 } from "./SinglePostMeta.ui"
-import { MainContainer } from "../Containers/MainContainer.ui"
+import { MainContainer } from "../MainContainer/MainContainer.ui"
 
 type TSinglePostMetaProps = {
   meta: Frontmatter

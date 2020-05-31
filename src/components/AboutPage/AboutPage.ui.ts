@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { WideContainer } from "../Containers/MainContainer.ui"
+import { WideContainer } from "../MainContainer/MainContainer.ui"
 import { themeColors } from "../../theme/themeVariables"
 import { Header1, Header3 } from "../Headers/Headers.ui"
 import { BackIcon } from "../Icons/BackIcon.component"

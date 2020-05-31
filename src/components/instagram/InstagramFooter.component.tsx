@@ -6,7 +6,7 @@ import {
   InstagramPic,
   InstagramTitle,
 } from "./InstagramFooter.ui"
-import { WideContainer, MainContainer } from "../Containers/MainContainer.ui"
+import { WideContainer, MainContainer } from "../MainContainer/MainContainer.ui"
 import { HomepageSectionTitle } from "../Homepage/Homepage.ui"
 import { Grid } from "../Grid/Grid.ui"
 

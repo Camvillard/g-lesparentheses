@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { FullScreenContainer } from "../Containers/FullScreenContainer.ui"
+import { FullScreenContainer } from "../FullScreen/FullScreenContainer.ui"
 import { Header1 } from "../Headers/Headers.ui"
 import { themeColors } from "../../theme/themeVariables"
 

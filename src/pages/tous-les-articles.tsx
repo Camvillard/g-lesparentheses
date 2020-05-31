@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout/Layout.component"
 import { PageProps } from "../types/Page.type"
 import SecondPost from "../components/Posts/SecondPost/SecondPost.component"
-import { MainContainer } from "../components/Containers/MainContainer.ui"
+import { MainContainer } from "../components/MainContainer/MainContainer.ui"
 
 const PostIndex = (props: PageProps) => {
   const { data } = props

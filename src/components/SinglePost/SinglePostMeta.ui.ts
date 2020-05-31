@@ -4,7 +4,7 @@ import {
   themeBreakpoints,
   themeFonts,
 } from "../../theme/themeVariables"
-import { MainContainer } from "../Containers/MainContainer.ui"
+import { MainContainer } from "../MainContainer/MainContainer.ui"
 import { Accent } from "../../theme/globalstyle"
 const {
   darkGray,

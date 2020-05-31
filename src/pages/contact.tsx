@@ -4,7 +4,7 @@ import Airtable from "airtable"
 import { InputElement } from "../components/Inputs/InputElement.component"
 import { GlobalStyle } from "../theme/globalstyle"
 import SEO from "../components/SEO/SEO.component"
-import { FullScreenContainer } from "../components/Containers/FullScreenContainer.ui"
+import { FullScreenContainer } from "../components/FullScreen/FullScreenContainer.ui"
 import { themeColors } from "../theme/themeVariables"
 import {
   ContactPageTitle,

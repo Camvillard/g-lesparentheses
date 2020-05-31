@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
-import { MainContainer } from "../Containers/MainContainer.ui"
+import { MainContainer } from "../MainContainer/MainContainer.ui"
 
 const { oldPink, darkGray } = themeColors
 const { mdScreen } = themeBreakpoints

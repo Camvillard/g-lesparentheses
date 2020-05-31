@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
-import { Flexbox } from "../Containers/Flexbox.ui"
+import { Flexbox } from "../Flexbox/Flexbox.ui"
 import { Grid } from "../Grid/Grid.ui"
 import { Header3 } from "../Headers/Headers.ui"
 import { HomepageSectionTitle } from "../Homepage/Homepage.ui"
