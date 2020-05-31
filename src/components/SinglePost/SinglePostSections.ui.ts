@@ -9,18 +9,16 @@ export const SinglePostSection = styled.div`
 `
 
 export const SinglePostThumbnail = styled.img`
-  @media (min-width: ${smScreen}) {
-    width: 90%;
-    margin-left: 5%;
-  }
+  display: block;
 `
 export const SinglePostTitle = styled(Header1)`
-  font-size: 4.2rem;
-  margin-top: 0.1em;
+  font-size: 6.2rem;
+  margin-top: -0.8em;
   margin-bottom: 0.6em;
+  position: relative;
   @media (min-width: ${smScreen}) {
-    font-size: 6.4rem;
-    margin-top: -0.65em;
+    font-size: 8.4rem;
+    margin-top: -0.8em;
   }
   @media (min-width: ${mdScreen}) {
     font-size: 8rem;

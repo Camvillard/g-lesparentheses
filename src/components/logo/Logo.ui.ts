@@ -11,12 +11,11 @@ type WrapperProps = {
 
 export const LogoWrapper = styled(Link)`
   display: block;
-  margin: 24px 4vw 48px;
-  width: 80vw;
+  width: 100%;
   position: relative;
   svg {
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 52px;
   }
   @media (min-width: ${smScreen}) {
     width: 40vw;

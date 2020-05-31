@@ -1,66 +1,53 @@
-import React, { useState, Fragment } from "react"
-import { themeColors } from "../../theme/themeVariables"
+import React, { useState } from "react"
+import Logo from "../logo/Logo.component"
 import {
-  MenuOpenItem,
-  MenuOpenLink,
-  NavWrapper,
-  NavbarListItem,
-  OpenMenuWrapper,
   MenuWrapper,
-  MenuOpenExtLink,
-  MenuOpenToggleLink,
+  MenuItem,
+  MenuLink,
+  CategoriesListWrapper,
   CategoryLink,
   CategoryCount,
-  CategoriesListWrapper,
+  SocialMenuWrapper,
+  SocialMenuWrapperItem,
+  FooterNavWrapper,
+  ToggleMenu,
 } from "./Nav.ui"
-import { BlobMenu, BlobSocial } from "./Blobs.component"
-import { Link } from "gatsby"
 import { Category, fakeCats } from "../../types/Category.type"
 
-const { oldPink, darkGray, offWhite, lightPink, forestGreen } = themeColors
-
-const Social = () => {
+const SocialMenu = () => {
   return (
-    <OpenMenuWrapper>
-      <MenuOpenItem>
-        <MenuOpenExtLink
+    <SocialMenuWrapper>
+      <SocialMenuWrapperItem>
+        <a
+          href="https://twitter.com/cam_villard"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          twitter/
+        </a>
+      </SocialMenuWrapperItem>
+      <SocialMenuWrapperItem>
+        <a
           href="https://www.instagram.com/cam_villard/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          instagram
-        </MenuOpenExtLink>
-      </MenuOpenItem>
-      <MenuOpenItem>
-        <MenuOpenExtLink
-          href="https://twitter.com/cam_villard"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          twitter
-        </MenuOpenExtLink>
-      </MenuOpenItem>
-      <MenuOpenItem>
-        <MenuOpenExtLink
-          href="https://twitter.com/cam_villard"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          behance
-        </MenuOpenExtLink>
-      </MenuOpenItem>
-      <MenuOpenItem>
-        <MenuOpenExtLink
-          href="https://twitter.com/cam_villard"
+          instagram/
+        </a>
+      </SocialMenuWrapperItem>
+      <SocialMenuWrapperItem>
+        <a
+          href="https://github.com/camvillard"
           target="_blank"
           rel="noopener noreferrer"
         >
           github
-        </MenuOpenExtLink>
-      </MenuOpenItem>
-    </OpenMenuWrapper>
+        </a>
+      </SocialMenuWrapperItem>
+    </SocialMenuWrapper>
   )
 }
+
 type CategoriesProps = {
   categories: Category[]
 }
@@ -78,28 +65,35 @@ const CategoriesList = ({ categories }: CategoriesProps) => {
   )
 }
 
-const Menu = ({ categories }: CategoriesProps) => {
-  const [isOpen, openCategories] = useState(false)
+type FooterMenuProps = {
+  categories: Category[]
+}
+const FooterMenu = ({ categories }: FooterMenuProps) => {
   const [shopStatus, showShopStatus] = useState(false)
+  const [categoriesIsOpen, openCategories] = useState(false)
+  const [socialIsOpen, openSocial] = useState(false)
+
   const toggleShop = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault()
     showShopStatus(!shopStatus)
   }
+  const toggleCategories = () => {
+    openCategories(!categoriesIsOpen)
+  }
+  const toggleSocial = () => {
+    openSocial(!socialIsOpen)
+  }
   return (
     <MenuWrapper>
-      {/* <MenuOpenItem>
-        {isOpen && <CategoriesList categories={categories} />}
-        <MenuOpenToggleLink onClick={() => openCategories(!isOpen)}>
-          catégories
-        </MenuOpenToggleLink>
-      </MenuOpenItem> */}
-      <MenuOpenItem>
-        <MenuOpenLink to={"/a-propos"}>à propos</MenuOpenLink>
-      </MenuOpenItem>
-      <MenuOpenItem>
-        <MenuOpenLink to={"/contact"}>contact</MenuOpenLink>
-      </MenuOpenItem>
-      <MenuOpenItem>
+      <MenuItem onClick={toggleCategories}>catégories</MenuItem>
+      {categoriesIsOpen && <CategoriesList categories={categories} />}
+      <MenuItem>
+        <MenuLink to={"/a-propos"}>à propos</MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink to={"/contact"}>contact</MenuLink>
+      </MenuItem>
+      <MenuItem>
         <a
           href="https://www.behance.net/camvillard"
           target="_blank"
@@ -107,51 +101,31 @@ const Menu = ({ categories }: CategoriesProps) => {
         >
           portfolio
         </a>
-      </MenuOpenItem>
-      <MenuOpenItem>
-        <MenuOpenLink to={"/"} onClick={toggleShop}>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink to={"/"} onClick={toggleShop}>
           {shopStatus ? "bientôt !" : "e-shop"}
-        </MenuOpenLink>
-      </MenuOpenItem>
+        </MenuLink>
+      </MenuItem>
+      <MenuItem onClick={toggleSocial}>
+        {socialIsOpen ? <SocialMenu /> : "social"}
+      </MenuItem>
     </MenuWrapper>
   )
 }
 
 export const Nav = () => {
-  const [menuOpen, openMenu] = useState(false)
-  const [socialOpen, openSocial] = useState(false)
-
-  const toggle = (menu: string) => {
-    if (menu === "menu") {
-      openMenu(!menuOpen)
-      openSocial(false)
-    }
-    if (menu === "social") {
-      openMenu(false)
-      openSocial(!socialOpen)
-    }
+  const [menuIsOpen, openMenu] = useState(false)
+  const toggleMenu = () => {
+    openMenu(!menuIsOpen)
   }
   return (
-    <Fragment>
-      <NavWrapper open={menuOpen || socialOpen}>
-        <NavbarListItem
-          onClick={() => toggle("menu")}
-          open={menuOpen || socialOpen}
-        >
-          {menuOpen ? "fermer" : "menu"}
-        </NavbarListItem>
-        <NavbarListItem
-          onClick={() => toggle("social")}
-          open={menuOpen || socialOpen}
-        >
-          {socialOpen ? "fermer" : "social"}
-        </NavbarListItem>
-        <NavbarListItem open={menuOpen || socialOpen}>
-          <Link to={"/contact"}>contact</Link>
-        </NavbarListItem>
-      </NavWrapper>
-      {menuOpen && <Menu categories={fakeCats} />}
-      {socialOpen && <Social />}
-    </Fragment>
+    <FooterNavWrapper isOpen={menuIsOpen}>
+      <Logo />
+      <ToggleMenu onClick={toggleMenu}>
+        {menuIsOpen ? "fermer" : "menu"}
+      </ToggleMenu>
+      {menuIsOpen && <FooterMenu categories={fakeCats} />}
+    </FooterNavWrapper>
   )
 }

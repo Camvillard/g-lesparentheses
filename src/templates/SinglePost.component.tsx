@@ -15,6 +15,13 @@ import { SinglePostComments } from "../components/SinglePost/SinglePostComments.
 import { MainContainer } from "../components/Containers/MainContainer.ui"
 import { SinglePostMeta } from "../components/SinglePost/SinglePostMeta.component"
 import { SinglePostData } from "../types/BlogPost.type"
+import { Grid, GridElement } from "../components/Grid/Grid.ui"
+import {
+  FeaturedImageContainer,
+  FeturedImageOverlay,
+} from "../components/Posts/PostCard.ui"
+import { GlobalStyle } from "../theme/globalstyle"
+import { Nav } from "../components/Nav/Nav.component"
 
 type PostTemplateProps = {
   location: string
@@ -35,17 +42,49 @@ const PostTemplate = (props: PostTemplateProps) => {
   const allComments = convertNodesInComments(data.allAirtable.edges)
 
   return (
-    <Layout location={location} title={siteTitle} pageName="single-post">
+    // <Layout location={location} title={siteTitle} pageName="single-post">
+    <>
+      <GlobalStyle />
       <SEO title={title} description={extrait} />
+      <Nav />
       <MainContainer>
-        <SinglePostThumbnail src={imageUrl || imagePlaceholder} alt={title} />
-        <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
+        <Grid
+          columns={{
+            default: "1fr 1fr 1fr 1fr",
+            sm: "repeat(8, 1fr)",
+            md: "repeat(12, 1fr)",
+          }}
+        >
+          <FeaturedImageContainer
+            columns={{
+              default: "2 / span 3",
+              sm: "4 / span 5",
+              md: "7 / span 6",
+            }}
+          >
+            <FeturedImageOverlay />
+            <SinglePostThumbnail
+              src={imageUrl || imagePlaceholder}
+              alt={title}
+            />
+          </FeaturedImageContainer>
+          <GridElement
+            columns={{
+              default: "1 / span 4",
+              sm: "1 / span 7",
+              md: "1 / span 9",
+            }}
+          >
+            <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />
+          </GridElement>
+        </Grid>
       </MainContainer>
       <article dangerouslySetInnerHTML={{ __html: html }} />
       <SinglePostMeta meta={frontmatter} />
       <SinglePostComments allComments={allComments} />
       <SinglePostCommentForm postId={id} />
-    </Layout>
+      {/* </Layout> */}
+    </>
   )
 }
 
