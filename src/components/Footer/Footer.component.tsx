@@ -1,20 +1,29 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { themeFonts, themeColors } from "../../theme/themeVariables"
+import {
+  themeFonts,
+  themeColors,
+  themeBreakpoints,
+} from "../../theme/themeVariables"
 import InstagramFooter from "../instagram/InstagramFooter.component"
 
 const { bodyFont } = themeFonts
 const { darkGray } = themeColors
+const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 const FooterWrapper = styled.footer`
-  width: 80vw;
-  margin: 120px auto 48px;
+  width: 92vw;
+  margin: 80px auto 128px;
+  @media (min-width: ${smScreen}) {
+    width: 90vw;
+  }
+  @media (min-width: ${xlgScreen}) {
+    width: 88vw;
+  }
 `
 
-const FooterLegal = styled.div`
-  // text-align: center;
-`
+const FooterLegal = styled.div``
 
 const FooterLink = styled(Link)`
   font-family: ${bodyFont};

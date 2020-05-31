@@ -52,6 +52,7 @@ const LastPost = ({ post }: BlogPostCardProps) => {
         columns={{
           default: "span 4",
           sm: "span 8",
+          lg: "span 11",
         }}
       >
         {publicationDate}
@@ -71,9 +72,9 @@ const LastPost = ({ post }: BlogPostCardProps) => {
         columns={{ default: "span 4", sm: "span 6" }}
         top={{
           default: "-40px",
-          sm: "-48px",
-          md: "-64px",
-          lg: "54px",
+          sm: "-0.85em",
+          md: "-0.95em",
+          lg: "-0.95em",
           xlg: "56px",
         }}
         left={{

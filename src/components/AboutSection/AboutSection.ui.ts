@@ -4,15 +4,14 @@ import { Header3 } from "../Headers/Headers.ui"
 import { Accent } from "../../theme/globalstyle"
 import { Link } from "gatsby"
 import { ButtonLinkSimple } from "../Buttons/Buttons.ui"
+import { HomepageSectionTitle } from "../Homepage/Homepage.ui"
 
 export const AboutSectionWrapper = styled(MainContainer)`
   margin: auto;
 `
 
-export const AboutHeader = styled(Header3)`
-  font-size: 4.2rem;
+export const AboutHeader = styled(HomepageSectionTitle)`
   margin-bottom: 2rem;
-  padding-left: 12px;
 `
 
 export const AboutContent = styled(Accent)``

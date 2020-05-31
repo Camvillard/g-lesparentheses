@@ -1,8 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { InstagramContainer, InstagramPic } from "./InstagramFooter.ui"
+import {
+  InstagramGrid,
+  InstagramContainer,
+  InstagramPic,
+  InstagramTitle,
+} from "./InstagramFooter.ui"
 import { WideContainer, MainContainer } from "../Containers/MainContainer.ui"
 import { HomepageSectionTitle } from "../Homepage/Homepage.ui"
+import { Grid } from "../Grid/Grid.ui"
 
 export type InstagramData = {
   node: InstagramDataNode
@@ -38,13 +44,12 @@ const InstagramFooter = () => {
   `)
   const instagramData = data.allInstaNode.edges
   return (
-    <WideContainer>
-      <MainContainer>
-        <HomepageSectionTitle>sur instagram.</HomepageSectionTitle>
-      </MainContainer>
-      <InstagramContainer
-        columns={{ default: "repeat(3, 1fr)", sm: "repeat(6, 1fr)" }}
-      >
+    <InstagramGrid
+      columns={{ default: "1fr", sm: "180px auto", md: "270px auto" }}
+      align={"end"}
+    >
+      <InstagramTitle>instagram.</InstagramTitle>
+      <InstagramContainer columns={{ default: "repeat(3, 1fr)", sm: "" }}>
         {instagramData.map((ig: InstagramData) => (
           <a
             href={`https://www.instagram.com/p/${ig.node.id}/`}
@@ -60,7 +65,7 @@ const InstagramFooter = () => {
           </a>
         ))}
       </InstagramContainer>
-    </WideContainer>
+    </InstagramGrid>
   )
 }
 

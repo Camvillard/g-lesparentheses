@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { themeColors, themeBreakpoints } from "../../theme/themeVariables"
 import { Flexbox } from "../Containers/Flexbox.ui"
 import { Grid } from "../Grid/Grid.ui"
+import { Header3 } from "../Headers/Headers.ui"
+import { HomepageSectionTitle } from "../Homepage/Homepage.ui"
 
 const {
   lightPink,
@@ -15,16 +17,38 @@ const {
 
 const { smScreen, mdScreen, lgScreen } = themeBreakpoints
 
-export const InstagramContainer = styled(Grid)`
+export const InstagramGrid = styled(Grid)`
   @media (min-width: ${smScreen}) {
+    padding: 0 4vw;
+  }
+  @media (min-width: ${mdScreen}) {
+    margin-top: 124px;
+  }
+`
+
+export const InstagramContainer = styled(Grid)`
+  align-items: end;
+  @media (min-width: ${smScreen}) {
+    grid-column: 2 / span 1;
   }
 
   @media (min-width: ${mdScreen}) {
-    flex-direction: row;
-    align-items: center;
   }
 
   @media (min-width: ${lgScreen}) {
+  }
+`
+
+export const InstagramTitle = styled(HomepageSectionTitle)`
+  margin-left: 4vw;
+  @media (min-width: ${smScreen}) {
+    line-height: 1;
+    margin-left: 0;
+    text-align: right;
+  }
+  @media (min-width: ${mdScreen}) {
+    margin-left: 0;
+    text-align: right;
   }
 `
 export const InstagramImages = styled(Flexbox)`

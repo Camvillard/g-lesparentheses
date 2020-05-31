@@ -70,7 +70,7 @@ interface PostTitleProps extends GridElementProps {
 }
 
 export const PostTitle = styled(Link)`
-  font-size: 4.8rem;
+  font-size: 5.2rem;
   font-weight: 700;
   position: relative;
   margin-top: ${(props: PostTitleProps) => props.top?.default};
@@ -83,14 +83,14 @@ export const PostTitle = styled(Link)`
     grid-column: ${(props: PostTitleProps) => props.columns.sm};
     margin-top: ${(props: PostTitleProps) => props.top?.sm};
     margin-left: ${(props: PostTitleProps) => props.left?.sm};
-    font-size: 5.6em;
+    font-size: 6.6em;
   }
 
   @media (min-width: ${mdScreen}) {
     grid-column: ${(props: PostTitleProps) => props.columns.md};
     margin-top: ${(props: PostTitleProps) => props.top?.md};
     margin-left: ${(props: PostTitleProps) => props.left?.md};
-    font-size: 6.2rem;
+    font-size: 7.8rem;
   }
 
   @media (min-width: ${lgScreen}) {
