@@ -11,7 +11,7 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
-import { createExcerpt } from "../../../shared/posts/post.helpers"
+import { createExcerpt, isFeminine } from "../../../shared/posts/post.helpers"
 import { BlogPostCardProps } from "../../../types/BlogPost.type"
 
 const { forestGreen } = themeColors
@@ -28,13 +28,6 @@ const LastPost = ({ post }: BlogPostCardProps) => {
     extrait,
     slug,
   } = frontmatter
-
-  const isFeminine = (category: string): boolean => {
-    if (category === "histoire" || category === "recette") {
-      return true
-    }
-    return false
-  }
 
   const publicationDate = `${categories} publié${
     isFeminine(categories) ? "e" : ""

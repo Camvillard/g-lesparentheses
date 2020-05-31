@@ -12,7 +12,7 @@ import {
 } from "../PostCard.ui"
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
-import { createExcerpt } from "../../../shared/posts/post.helpers"
+import { createExcerpt, isFeminine } from "../../../shared/posts/post.helpers"
 import { BlogPostCardProps } from "../../../types/BlogPost.type"
 
 const { forestGreen } = themeColors
@@ -30,6 +30,10 @@ const SecondPost = ({ post }: BlogPostCardProps) => {
     slug,
   } = frontmatter
 
+  const publicationDate = `${categories} publié${
+    isFeminine(categories) ? "e" : ""
+  } le ${date}`
+
   return (
     <PostContainer
       columns={{
@@ -45,7 +49,7 @@ const SecondPost = ({ post }: BlogPostCardProps) => {
           sm: "2 / span 6",
         }}
       >
-        histoire publiée le {date}
+        {publicationDate}
       </CardMeta>
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 6" }}

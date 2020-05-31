@@ -71,7 +71,7 @@ const AboutPage = (props: AboutProps) => {
         <AboutContentHeader isUp={sectionIsOpen}>
           <TopSection isUp={sectionIsOpen}>
             <AboutPageTitle color={"white"} isUp={sectionIsOpen}>
-              à propos de moi.
+              à propos.
             </AboutPageTitle>
             <AboutMenu isUp={sectionIsOpen}>
               <AboutMenuElement

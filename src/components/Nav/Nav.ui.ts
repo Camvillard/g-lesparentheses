@@ -14,11 +14,14 @@ type FooterNavWrapperProps = {
   isOpen: boolean
 }
 export const FooterNavWrapper = styled.div<FooterNavWrapperProps>`
+  border-top: ${props => (props.isOpen ? "none" : "1px solid" + darkGray)};
   display: grid;
   grid-template-columns: 3fr 2fr;
-  padding: 8px 8px 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: ${props => (props.isOpen ? "24px" : "8px")};
   position: fixed;
-  z-index: 10000000000;
+  z-index: ${props => (props.isOpen ? "1001" : "100")};
   bottom: 0;
   left: 0;
   right: 0;
@@ -27,13 +30,15 @@ export const FooterNavWrapper = styled.div<FooterNavWrapperProps>`
   justify-items: start;
   align-items: ${props => (props.isOpen ? "start" : "center")};
   @media (min-width: ${smScreen}) {
-    padding: 8px 32px 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: ${props => (props.isOpen ? "32px" : "8px")};
   }
 `
 
-export const ToggleMenu = styled.p`
+export const ToggleMenu = styled.div`
   margin-right: 0;
-  text-align: right;
+  justify-self: end;
 `
 
 export const MenuWrapper = styled.ul`
@@ -58,6 +63,9 @@ export const MenuItem = styled.li`
   color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
+  @media (min-width: ${smScreen}) {
+    font-size: 6.4rem;
+  }
   a {
     color: ${darkGray};
     font-weight: 800;

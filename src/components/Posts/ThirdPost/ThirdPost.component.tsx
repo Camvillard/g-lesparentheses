@@ -13,7 +13,7 @@ import {
 import { themeColors } from "../../../theme/themeVariables"
 import { GridElement } from "../../Grid/Grid.ui"
 import { BlogPostCardProps } from "../../../types/BlogPost.type"
-import { createExcerpt } from "../../../shared/posts/post.helpers"
+import { createExcerpt, isFeminine } from "../../../shared/posts/post.helpers"
 
 const { forestGreen } = themeColors
 
@@ -29,6 +29,11 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
     extrait,
     slug,
   } = frontmatter
+
+  const publicationDate = `${categories} publié${
+    isFeminine(categories) ? "e" : ""
+  } le ${date}`
+
   return (
     <PostContainer
       columns={{
@@ -46,7 +51,7 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
           lg: "3 / span 8",
         }}
       >
-        histoire publiée le {date}
+        {publicationDate}
       </CardMeta>
       <FeaturedImageContainer
         columns={{
@@ -75,9 +80,6 @@ const ThirdPost = ({ post }: BlogPostCardProps) => {
         <span dangerouslySetInnerHTML={{ __html: title }} />
       </PostTitle>
       <GridElement columns={{ default: "span 4", sm: "3 / span 5" }}>
-        <PostExcerpt>
-          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-        </PostExcerpt>
         <PostExcerpt>{createExcerpt(extrait)}</PostExcerpt>
         <MoreButton to={`/article/${slug}`} textcolor={forestGreen}>
           lire la suite

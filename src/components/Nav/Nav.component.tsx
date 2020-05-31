@@ -13,6 +13,7 @@ import {
   ToggleMenu,
 } from "./Nav.ui"
 import { Category, fakeCats } from "../../types/Category.type"
+import { OpenNav, CloseNav } from "../Icons/ToggleNav.component"
 
 const SocialMenu = () => {
   return (
@@ -85,8 +86,8 @@ const FooterMenu = ({ categories }: FooterMenuProps) => {
   }
   return (
     <MenuWrapper>
-      <MenuItem onClick={toggleCategories}>catégories</MenuItem>
-      {categoriesIsOpen && <CategoriesList categories={categories} />}
+      {/* <MenuItem onClick={toggleCategories}>catégories</MenuItem>
+      {categoriesIsOpen && <CategoriesList categories={categories} />} */}
       <MenuItem>
         <MenuLink to={"/a-propos"}>à propos</MenuLink>
       </MenuItem>
@@ -123,7 +124,7 @@ export const Nav = () => {
     <FooterNavWrapper isOpen={menuIsOpen}>
       <Logo />
       <ToggleMenu onClick={toggleMenu}>
-        {menuIsOpen ? "fermer" : "menu"}
+        {menuIsOpen ? <CloseNav /> : <OpenNav />}
       </ToggleMenu>
       {menuIsOpen && <FooterMenu categories={fakeCats} />}
     </FooterNavWrapper>

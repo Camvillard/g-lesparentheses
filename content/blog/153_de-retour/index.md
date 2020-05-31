@@ -4,7 +4,7 @@ date: 14 avril 2020
 slug: de-retour
 image_url: https://res.cloudinary.com/lesparentheses/image/upload/v1590693305/153_de-retour/deretour_1.jpg
 image_alt: crayons de couleur
-categories: récit de voyage
+categories: histoire
 extrait: enfin, de retour, je ne sais pas, je n'en sais vraiment rien. J'ai voulu prendre le temps de refabriquer les parenthèses de bout en bout. Repartir de zéro, non pas au niveau des textes, je les aime bien, je crois, ces textes, mais je voulais avoir des fondations solides pour l'enveloppe, c'est à dire jque je voulais mettre à la poubelle tout ce qui avait un rapport avec Wordpress, que je hais du plus profond de mon âme, maintenant que je suis suffisamment snob pour pouvoir détester Wordpress. Sauf que forcément, et bien ça a pris un peu plus de temps.
 order: 153
 ---

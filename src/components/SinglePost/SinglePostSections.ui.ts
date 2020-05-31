@@ -7,19 +7,14 @@ const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 const { darkGray } = themeColors
 
 export const SinglePostBanner = styled(Grid)`
-  // margin-top: 24px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // width: 92vw;
   grid-template-rows: auto 1fr;
   width: 100vw;
   background: ${darkGray};
   padding: 8vh 8vw;
-  // padding-left: 8vw;
   margin-top: 0;
   height: 100vh;
   position: relative;
-  z-index: 10000000000000000;
+  z-index: 1000;
   @media (min-width: ${mdScreen}) {
   }
 `
