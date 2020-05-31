@@ -6,87 +6,55 @@ import {
   themeFonts,
 } from "../../theme/themeVariables"
 
-const { darkGray, forestGreen, oldPink } = themeColors
-const { smScreen } = themeBreakpoints
+const { darkGray, forestGreen, lightPink, oldPink } = themeColors
+const { smScreen, mdScreen } = themeBreakpoints
 const { accentFont } = themeFonts
 
-type NavWrapperProps = {
-  open: boolean
+type FooterNavWrapperProps = {
+  isOpen: boolean
 }
-
-export const NavWrapper = styled.ul<NavWrapperProps>`
+export const FooterNavWrapper = styled.div<FooterNavWrapperProps>`
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 8px 8px 0;
   position: fixed;
-  bottom: 2vh;
-  right: -1px;
-  z-index: 100000000;
-  padding: 8px 0;
-  margin: 0;
-  list-style: none;
-  @media (min-width: ${smScreen}) {
-    left: -1px;
-    right: auto;
-    top: 44vh;
-    bottom: auto;
-  }
-`
-
-export const NavbarListItem = styled.li<NavWrapperProps>`
-  color: ${darkGray};
-  padding: 1px 4px;
-  margin: 4px 0;
-  border: 1px solid white;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: right;
-  // background: ${props => (props.open ? "white" : oldPink)};
-  // color: ${props => (props.open ? darkGray : "white")};
-  background: white;
-  color: ${darkGray};
-  font-family: ${accentFont};
-  a {
-    background: white;
-    color: ${darkGray};
-    font-family: ${accentFont};
-    font-size: 1.2rem;
-  }
-  &:hover {
-    cursor: pointer;
-  }
-  @media (min-width: ${smScreen}) {
-    border: none;
-    text-align: left;
-  }
-`
-
-export const OpenMenuWrapper = styled.ul`
-  position: fixed;
-  top: 0;
+  z-index: 10000000000;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: 1000;
+  height: ${props => (props.isOpen ? "100vh" : "auto")};
+  background: ${props => (props.isOpen ? oldPink : "white")};
+  justify-items: start;
+  align-items: ${props => (props.isOpen ? "start" : "center")};
+`
+
+export const ToggleMenu = styled.p`
+  margin-right: 0;
+  text-align: right;
+`
+
+export const MenuWrapper = styled.ul`
+  grid-column: 1 / span 2;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
-  padding: 0 24px;
+  padding: 0 16px;
   list-style: none;
-  background: white;
   @media (min-width: ${smScreen}) {
     padding-left: 124px;
   }
 `
 
-export const MenuWrapper = styled(OpenMenuWrapper)``
-
-export const SocialWrapper = styled(OpenMenuWrapper)``
-
-export const MenuOpenItem = styled.li`
+export const MenuItem = styled.li`
   margin: 0;
   width: 100%;
   position: relative;
+  color: ${darkGray};
+  font-weight: 800;
+  font-size: 4.2rem;
   a {
     color: ${darkGray};
     font-weight: 800;
@@ -97,22 +65,10 @@ export const MenuOpenItem = styled.li`
   }
 `
 
-export const MenuOpenLink = styled(Link)`
+export const MenuLink = styled(Link)`
   color: ${darkGray};
   font-weight: 800;
   font-size: 4.2rem;
-  @media (min-width: ${smScreen}) {
-    font-size: 6.4rem;
-  }
-`
-
-export const MenuOpenToggleLink = styled.span`
-  color: ${darkGray};
-  font-weight: 800;
-  font-size: 4.2rem;
-  &:hover {
-    cursor: pointer;
-  }
   @media (min-width: ${smScreen}) {
     font-size: 6.4rem;
   }
@@ -121,6 +77,7 @@ export const MenuOpenToggleLink = styled.span`
 type MenuExtLinkProps = {
   color?: string
 }
+
 export const MenuOpenExtLink = styled.a<MenuExtLinkProps>`
   color: ${darkGray};
   font-weight: 800;
@@ -130,11 +87,23 @@ export const MenuOpenExtLink = styled.a<MenuExtLinkProps>`
   }
 `
 
+export const CategoriesListWrapper = styled.div`
+  width: 100%;
+  // max-width: 300px;
+  word-break: break-all;
+  @media (min-width: ${smScreen}) {
+    // max-width: 410px;
+  }
+`
+
 export const CategoryLink = styled(Link)`
-  font-size: 2.2rem;
-  padding-left: 8px;
-  &:first-child {
-    padding-left: 0px;
+  font-size: 2.2rem !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding-right: 8px;
+  color: ${darkGray};
+  &:last-child {
+    padding-right: 0px;
   }
 `
 
@@ -144,13 +113,18 @@ export const CategoryCount = styled.span`
   top: -0.8em;
 `
 
-export const CategoriesListWrapper = styled.div`
-  position: absolute;
-  top: -92px;
-  left: 0;
-  max-width: 300px;
-  word-break: break-all;
-  @media (min-width: ${smScreen}) {
-    max-width: 410px;
+export const SocialMenuWrapper = styled.ul`
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`
+export const SocialMenuWrapperItem = styled.li`
+  margin: 0;
+  a {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: ${darkGray};
+    padding: 0;
   }
 `

@@ -8,10 +8,10 @@ export const MainContainer = styled.div`
   margin-right: auto;
   width: 92vw;
   @media (min-width: ${smScreen}) {
-    width: 88vw;
+    width: 90vw;
   }
-  @media (min-width: ${mdScreen}) {
-    width: 84vw;
+  @media (min-width: ${xlgScreen}) {
+    width: 86vw;
   }
 `
 

@@ -22,6 +22,10 @@ export const Grid = styled.div`
     grid-template-columns: ${(props: GridProps) => props.columns.sm};
     grid-gap: 12px;
   }
+  @media (min-width: ${mdScreen}) {
+    grid-template-columns: ${(props: GridProps) => props.columns.md};
+    grid-gap: 12px;
+  }
   @media (min-width: ${lgScreen}) {
     grid-template-columns: ${(props: GridProps) => props.columns.lg};
     grid-gap: 24px;

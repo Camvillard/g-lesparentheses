@@ -7,12 +7,10 @@ import { themeColors } from "../../theme/themeVariables"
 const { oldPink, darkGray } = themeColors
 export const Header = () => {
   return (
-    <HeaderWrapper>
-      <Logo
-        ratio={{ default: 0.5, sm: 0.4, lg: 0.2 }}
-        fillColor={darkGray}
-        baseline={true}
-      />
-    </HeaderWrapper>
+    <Logo
+      ratio={{ default: 0.5, sm: 0.4, lg: 0.2 }}
+      fillColor={darkGray}
+      baseline={true}
+    />
   )
 }

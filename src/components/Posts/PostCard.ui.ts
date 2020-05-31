@@ -41,7 +41,6 @@ export const CardMeta = styled(Accent)<CardMetaProps>`
 
 export const FeaturedImageContainer = styled(GridElement)`
   position: relative;
-
   @media (min-width: ${mdScreen}) {
     width: 100%;
     margin: auto;
@@ -50,16 +49,13 @@ export const FeaturedImageContainer = styled(GridElement)`
 
 export const FeaturedImage = styled.img`
   width: 100%;
-  @media (min-width: ${mdScreen}) {
-    max-height: 600px;
-  }
+  // @media (min-width: ${mdScreen}) {
+  //   max-height: 600px;
+  // }
 `
 
 export const FeturedImageOverlay = styled.div`
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.4)
-  );
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
   position: absolute;
   top: 0;
   left: 0;
