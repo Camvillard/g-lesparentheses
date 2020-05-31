@@ -6,6 +6,7 @@ const { oldPink, darkGray } = themeColors
 const { mdScreen } = themeBreakpoints
 
 export const CommentFormWrapper = styled(MainContainer)`
+  margin-bottom: 64px;
   @media (min-width: ${mdScreen}) {
     width: calc(84vw - 5%);
   }

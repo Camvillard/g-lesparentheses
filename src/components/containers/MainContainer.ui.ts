@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
     width: 90vw;
   }
   @media (min-width: ${xlgScreen}) {
-    width: 86vw;
+    width: 88vw;
   }
 `
 
@@ -35,4 +35,10 @@ export const WideContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 100vw;
+`
+export const TopSpacing = styled.div`
+  margin-top: 24px;
+`
+export const BottomSpacing = styled.div`
+  margin-top: 124px;
 `
