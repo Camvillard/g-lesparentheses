@@ -71,6 +71,7 @@ const PostTemplate = (props: PostTemplateProps) => {
             md: "1 / span 6",
           }}
         >
+          <SinglePostMeta meta={frontmatter} />
           <SinglePostFeaturedImageOverlay />
           <SinglePostThumbnail src={imageUrl || imagePlaceholder} alt={title} />
         </SinglePostThumnbailWrapper>
@@ -85,7 +86,6 @@ const PostTemplate = (props: PostTemplateProps) => {
         </SinglePostTitleWrapper>
       </SinglePostBanner>
       <SinglePostArticle dangerouslySetInnerHTML={{ __html: html }} />
-      <SinglePostMeta meta={frontmatter} />
       <SinglePostComments allComments={allComments} />
       <SinglePostCommentForm postId={id} />
       <Footer />

@@ -6,10 +6,7 @@ import { themeBreakpoints } from "../../theme/themeVariables"
 const { xsScreen, smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 export const CommentsWrapper = styled(MainContainer)`
-  margin: 32px auto;
-  @media (min-width: ${mdScreen}) {
-    width: calc(84vw - 5%);
-  }
+  margin: 48px auto;
 `
 export const CommentsTitle = styled(Header3)`
   font-size: 4rem;

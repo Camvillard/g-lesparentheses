@@ -7,9 +7,6 @@ const { mdScreen } = themeBreakpoints
 
 export const CommentFormWrapper = styled(MainContainer)`
   margin-bottom: 64px;
-  @media (min-width: ${mdScreen}) {
-    width: calc(84vw - 5%);
-  }
 `
 
 export const CommentSuccessWrapper = styled.div`
@@ -51,5 +48,5 @@ export const CommentSuccessText = styled.p`
 `
 
 export const CommentForm = styled.form`
-  max-width: 764px;
+  max-width: 564px;
 `
