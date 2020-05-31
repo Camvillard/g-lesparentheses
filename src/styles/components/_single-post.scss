@@ -1,25 +1,41 @@
 /*----- LAYOUTS : SINGLE POST ----- */
 
-.single-post--section {
-  margin-bottom: 24px;
+.single-post--section,
+.single-post--image {
+  margin: 24px 0;
 }
 
 .single-post--text {
   margin-bottom: 0.6rem;
 }
 
-.single-post--image {
-  margin: 16px 0;
+.single-post--section-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.single-post--infos-box-title {
+  font-size: 1.8rem;
+  font-family: $accentFont;
 }
 
 @media (min-width: $smScreen) {
   .single-post--text {
     max-width: 506px;
-    margin-left: 8vw;
+    margin-left: 0;
   }
   .single-post--section,
   .single-post--image {
     margin-bottom: 36px;
+  }
+
+  .single-post--image {
+    max-width: 536px;
+  }
+
+  .single-post--section-title {
+    max-width: 506px;
+    font-size: 3.2rem;
   }
 
   .single-post--image.fullwidth {

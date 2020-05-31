@@ -29,15 +29,23 @@ export const MetaGroup = styled.div`
   margin: 4px 0;
 `
 export const MetaContent = styled.span`
+  // color: ${gray};
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
   font-family: ${accentFont};
+  @media (min-width: ${mdScreen}) {
+    color: white;
+  }
 `
 export const MetaTitle = styled.p`
+  // color: ${gray};
   color: white;
   font-weight: 600;
   margin-bottom: 0;
   margin-top: 0;
   font-size: 1.2rem;
+  @media (min-width: ${mdScreen}) {
+    color: white;
+  }
 `

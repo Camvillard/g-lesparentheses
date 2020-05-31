@@ -7,20 +7,20 @@ const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 const { darkGray } = themeColors
 
 export const SinglePostBanner = styled(Grid)`
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 92vw;
+  // margin-top: 24px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 92vw;
+  grid-template-rows: auto 1fr;
+  width: 100vw;
+  background: ${darkGray};
+  padding: 8vh 8vw;
+  // padding-left: 8vw;
+  margin-top: 0;
+  height: 100vh;
+  position: relative;
+  z-index: 10000000000000000;
   @media (min-width: ${mdScreen}) {
-    grid-template-rows: auto 1fr;
-    width: 100vw;
-    background: ${darkGray};
-    padding-top: 12vh;
-    padding-left: 8vw;
-    margin-top: 0;
-    height: 100vh;
-    position: relative;
-    z-index: 10000000000000000;
   }
 `
 
@@ -41,13 +41,17 @@ export const SinglePostThumbnail = styled.img`
 `
 
 export const SinglePostTitleWrapper = styled(GridElement)`
-  margin-left: -24px;
+  margin-top: 24px;
+  @media (min-width: ${smScreen}) {
+    margin-left: -24px;
+  }
 `
 export const SinglePostTitle = styled(Header1)`
-  font-size: 6.2rem;
-  margin-top: -0.7em;
+  font-size: 5.2rem;
+  // margin-top: -0.7em;
   margin-bottom: 0.1em;
   position: relative;
+  color: white;
   @media (min-width: ${smScreen}) {
     font-size: 8.4rem;
     margin-top: -0.8em;
@@ -57,6 +61,7 @@ export const SinglePostTitle = styled(Header1)`
     font-size: 8.6rem;
   }
   @media (min-width: ${lgScreen}) {
+    margin-top: -1.1em;
     font-size: 10.8rem;
   }
 `
@@ -65,6 +70,7 @@ export const SinglePostText = styled.p`
   margin-bottom: 0.6rem;
 `
 export const SinglePostArticle = styled.article`
+  margin-top: 24px;
   @media (min-width: ${mdScreen}) {
     margin-top: 32px;
   }

@@ -12,9 +12,6 @@ order: 153
 <div class="main-container">
   <div class="single-post--section">
     <p class="single-post--text">
-      abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
-    </p>
-    <p class="single-post--text">
       enfin, de retour, je ne sais pas, je n'en sais vraiment rien. J'ai voulu prendre le temps de refabriquer les parenthèses de bout en bout. Repartir de zéro, non pas au niveau des textes, je les aime bien, je crois, ces textes, mais je voulais avoir des nouvelles fondations pour l'enveloppe, c'est à dire, en gros, que je voulais mettre à la poubelle tout ce qui avait un rapport avec Wordpress, que je hais du plus profond de mon âme, maintenant que je suis suffisamment snob pour pouvoir détester Wordpress. Sauf que forcément, et bien ça a pris un peu plus de temps que prévu.
     </p>
     <p class="single-post--text">
@@ -50,7 +47,8 @@ order: 153
     </p>
     <p class="single-post--text">
       Quoi qu'il en soit, ce confinage m'a laissé le temps de recommencer encore quelques fois (s'il fallait encore prouver que je fais partie de ces personnes qui n'ont pas compris que quelque chose de fait sera toujours mieux que quelque chose de pa(s)rfait) et donc finir de mettre en ligne une nouvelle version, qui me rend, je dois dire, très fière, puisque tout est codé par mes soins et que je me suis beaucoup amusée en codant le tout. Évidemment, j'ai encore plein de trucs que je voulais faire et que je n'ai pas eu le temps de finaliser, mais comme je m'étais auto-imposé une deadline, j'ai mis sur des posts-its ce qu'il reste à faire, et décidé de publier ce qui était déjà fait. <br>
-      Ne vous inquiétez donc pas si vous voyez de temps à autres des petites fantaisies de ci de là, ce n'est que moi - ou peut-être Coco qui est passée de manière intempestive sur mon clavier, cela pourra arriver aussi. Dites-moi en revanche si mes fioritures cassent tout de votre côté, ce n'est absolument pas le but. Dites-moi également s'il y a des choses qui vous paraissent être un bug, parce que je suis très fière d'avoir tout codé, mais du coup comme j'ai tout codé, c'est quand même possible qu'il y ait des bugs. Je veux dire, je commence à être pas trop trop mauvaise, mais enfin quand même, je suis loin d'être irréprochable, évidemment.
+      Ne vous inquiétez donc pas si vous voyez de temps à autres des petites fantaisies de ci de là, ce n'est que moi - ou peut-être Coco qui est passée de manière intempestive sur mon clavier, cela pourra arriver aussi. Dites-moi en revanche si mes fioritures cassent tout de votre côté, ce n'est absolument pas le but. Dites-moi également s'il y a des choses qui vous paraissent être un bug, parce que je suis très fière d'avoir tout codé, mais du coup comme j'ai tout codé, c'est quand même possible qu'il y ait des bugs. Je veux dire, je commence à être pas trop trop mauvaise, mais enfin quand même, je suis loin d'être irréprochable, évidemment.<br>
+      Également, s'il y a des choses que vous aimez bien voir sur les blogs et qui manquent ici, n'hésitez pas à m'en faire part (comme part exemple naviguer entre les articles avec un bouton d'article suivant/précédant, qui est en cours d'intégration, parce que moi j'aie bien ça).
     </p>
   </div>
   <div class="single-post--section">

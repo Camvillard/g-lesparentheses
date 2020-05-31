@@ -1,9 +1,9 @@
 ---
-title: deux mille dix nuit, dix neuf
-slug: deux-mille-dix-nuit-dix-neuf
+title: deux mille dix huit, dix neuf
+slug: deux-mille-dix-huit-dix-neuf
 date: "20 septembre 2019"
-image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_100.jpg"
-image_alt: ""
+image_url: https://res.cloudinary.com/lesparentheses/image/upload/v1590952317/152_deux-mille-dix-huit/lesparentheses-2019-cover.jpg
+image_alt: "paysage enneigé"
 categories: histoire
 extrait: Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages. Il n’y avait pas vraiment de mots pour définir deux mille dix huit – rien ne rime avec ça, c’est désespérant, alors cela laissait la porte ouverte à tout, trois cent soixante cinq jours de page blanche sans aucune attente. Et c’est vrai, je n’attendais rien de précis de deux mille dix huit, je crois que deux mille dix sept m’avait bien appris que cela ne sert pas à grand chose de prévoir, rien ne se passe jamais vraiment comme prévu.
 order: 152
@@ -32,6 +32,10 @@ order: 152
     </p>
   </div>
 
+  <div class="single-post--image">
+    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952314/152_deux-mille-dix-huit/lesparentheses-2019_2.jpg" alt="skateboard and light">
+  </div>
+
   <div class="single-post--section">
     <p class="single-post--text">
       Au mois de mai, un peu avant un peu après, j’ai pris des billets d’avion pour rentrer à la maison. Ça n’allait plus bien du tout, tout le monde autour de moi commençait à un peu me faire sentir qu’il fallait faire quelque chose, alors j’ai pris des billets d’avion pour passer quelques semaines loin du quotidien et près de ma maman, de son taboulé et des vagues de l’Atlantique.
@@ -44,13 +48,8 @@ order: 152
     </p>
   </div>
 
-  <div class="single-post--image-gallery grid">
-    <div class="is-one-half">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
-    </div>
-    <div class="is-one-half">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
-    </div>
+  <div class="single-post--image">
+    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952315/152_deux-mille-dix-huit/lesparentheses-2019_1.jpg" alt="biarritz">
   </div>
 
   <div class="single-post--section">
@@ -63,6 +62,10 @@ order: 152
     <p class="single-post--text">
       À mon retour de vacances en Europe, la vie s’est accélérée, sans que je ne comprenne exactement pourquoi, comment, dans quel but. L’année qui me semblait si longue et difficile à traîner est devenue légère et beaucoup plus pailletée.
     </p>
+  </div>
+
+  <div class="single-post--image">
+    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952313/152_deux-mille-dix-huit/lesparentheses-2019_6.jpg" alt="montréal by night">
   </div>
 
   <div class="single-post--section">
@@ -87,6 +90,10 @@ order: 152
     </p>
   </div>
 
+  <div class="single-post--image">
+    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952315/152_deux-mille-dix-huit/lesparentheses-2019_7.jpg" alt="port-au-persil">
+  </div>
+
   <div class="single-post--section">
     <p class="single-post--text">
       Sans aucune transition avec le paragraphe précédent, ma petite soeur est venue me rendre visite – enfin, après cinq ans. Avec deux de ses amies – salut les meufs – on a pris la voiture, des sacs de couchage, et on est parties vers le Nord, bien plus au Nord. Ces sept jours de fous rires m’ont fait un bien fou, et revoir ma petite soeur et partager ces moments avec elle était précieux. Je l’aime plus que tout au monde, cette femme, et tous les jours, elle m’impressionne un petit peu plus, et tous les jours, je suis un petit peu plus fière de ce qu’elle devient.
@@ -102,16 +109,23 @@ order: 152
     </p>
   </div>
 
+  <div class="single-post--image">
+    <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952315/152_deux-mille-dix-huit/lesparentheses-2019_5.jpg" alt="les quatre fantastiques aux grand jardins">
+  </div>
+
   <div class="single-post--section">
     <p class="single-post--text">
       Alors voilà, deux mille dix huit, c’était tout ça. Bien sûr, il y a eu d’autres choses – j’ai fait du clemoncello (c’est comme du limoncello mais avec des clémentines, c’est très bon, mais pas en shooters) ; j’ai acheté une salopette qui, d’après les garçons, me fait un cul d’enfer ; je suis partie en camping avec les trois meufs les plus fantastiques de la vie et on s’est mises presque à poil sur une route du Québec pour rigoler ; j’ai failli mourir quand, avec C. on a calé sur un énorme rond-point sur le chemin du désert des Bardenas Reales parce qu’on avait une voiture qui avait décidé d’être indépendante au niveau du moteur – après coup on a ri, mais enfin, on a quand même eu très peur – et j’ai trouvé un billet de 20 euros par terre juste après alors je nous ai acheté des glaces au yaourt et des gins to (et du coup on est pas allées jusqu’au désert) ; j’ai goûté beaucoup de nouveaux gins ; j’ai essayé d’aimer la bière, en vain et j’ai fait quelques entorses à mon véganisme face aux plateaux de fromages divers (et au Comté toujours présent dans le frigo de mes parents), ce qui m’a fait me poser beaucoup de questions sur les valeurs que l’on défend.
     </p>
     <p class="single-post--text">
-        Et j’ai continué à boire trop de café.
+      Et j’ai continué à boire trop de café.
     </p>
     <p class="single-post--text">
       J’ai refermé deux mille dix huit en grand, après un Noël rempli de premières fois et un réveillon de Saint-Sylvestre remplie de polenta grillée – un régal, les amis, un régal – et de tartelettes d’oignons et champignons – un régal, les amis, un régal – et surtout, remplie de (presque toutes) ces personnes qui comptent. On avait accroché une boule à facettes dans le salon, elle y trône encore et je me cogne la tête dedans systématiquement.
     </p>
+    <div class="single-post--image">
+      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952313/152_deux-mille-dix-huit/lesparentheses-2019_3.jpg" alt="du papier journal et du feu">
+    </div>
     <p class="single-post--text">
       J’ai commencé deux mille dix neuf en tailleur par terre à faire un puzzle Harry Potter tout en buvant du café ; comme d’habitude, pleine d’une énergie nouvelle et pleine de toutes ces promesses qu’une première semaine de janvier peut apporter.
     </p>

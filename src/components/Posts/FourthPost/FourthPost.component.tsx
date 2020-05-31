@@ -49,9 +49,7 @@ const FourthPost = ({ post }: BlogPostCardProps) => {
       <FeaturedImageContainer
         columns={{ default: "span 4", sm: " 2 / span 4" }}
       >
-        <FeaturedImage
-          src={`https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg`}
-        />
+        <FeaturedImage src={imageUrl} alt={imageAlt} />
       </FeaturedImageContainer>
       <PostTitle
         to={`/article/${slug}`}
