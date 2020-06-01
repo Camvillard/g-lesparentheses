@@ -52,7 +52,6 @@ const PostTemplate = (props: PostTemplateProps) => {
   const allComments = convertNodesInComments(data.allAirtable.edges)
 
   return (
-    // <Layout location={location} title={siteTitle} pageName="single-post">
     <>
       <GlobalStyle />
       <SEO title={title} description={extrait} />
@@ -90,7 +89,6 @@ const PostTemplate = (props: PostTemplateProps) => {
       <SinglePostCommentForm postId={id} />
       <Footer />
       <BottomSpacing />
-      {/* </Layout> */}
     </>
   )
 }

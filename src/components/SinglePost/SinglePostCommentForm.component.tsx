@@ -24,7 +24,7 @@ const sendComment = (
   formRef: any
 ) => {
   const base = new Airtable({
-    apiKey: process.env.AIRTABLE_API_KEY,
+    apiKey: "keyAOCtPMQ3gzQcWT",
   }).base("app45GbA2JUHNzpjq")
 
   base("commentaires")
