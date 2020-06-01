@@ -24,14 +24,6 @@ order: 153
       Ensuite, j'ai adopté un petit chat, qui, bien entendu, a volé de nombreuses heures de ma productivité, puisqu'elle est tellement adorable que je peux passer des heures à la regarder dormir sans bouger, c'est vraiment très chou, surtout quand elle fait sa toilette du visage, avec des petites patounes d'amour, mais cela n'arrange rien du tout de mon côté. Elle m'empêche également de travailler trop tard puisqu'elle vient réclamer des jeux à partir de 20h tapantes, tous les soirs, sans exception. Encore là, c'est difficile de lui demander de me laisser travailler, alors je vais jouer avec elle et je laisse en plan mes lignes de code, que je retrouve quelques jours plus tard et après, il se trouve qu'entre-temps j'ai appris plein de nouveaux trucs que je veux appliquer à ce blog donc je rase tout et je recommence. Vous voyez bien que c'est difficile.
     </p>
   </div>
-  <section class="single-post--image grid columns-2 lg-columns-2">
-    <div class="grid-element one">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg" alt="">
-    </div>
-    <div class="grid-element one">
-      <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1569002037/test/coworkamping_16.jpg" alt="">
-    </div>
-  </section>
   <div class="single-post--section">
     <p class="single-post--text">
       Également, nous avons déménagé - deux fois, quelle blague, et nous nous dirigeons vers une troisième fois dans moins d'un mois -, et bien entendu, comme tout déménagement, cela a pris du temps, de l'énergie et de la bonne humeur. J'aurais bien entendu préféré travailler sur ce blog qu'emballer dans des torchons 124 verres à vin (on avait chiné toute la vaisselle pour la mariage mais on a jamais pris le temps de la revendre/redonner après), mais je crois que mes amis en ont un peu marre de m'aider à déménager des cartons pas temrinés.
