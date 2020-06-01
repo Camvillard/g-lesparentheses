@@ -16,11 +16,17 @@ const { accentFont } = themeFonts
 export const AboutPageContainer = styled(WideContainer)`
   background: ${darkGray};
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  padding-bottom: 8vh;
   padding-left: 8vw;
   padding-right: 4vw;
+  @media (min-width: ${smScreen}) {
+    padding-left: 10vw;
+    padding-right: 28vw;
+  }
+  @media (min-width: ${smScreen}) {
+    padding-left: 12vw;
+    padding-right: 32vw;
+  }
 `
 
 export const BackHomeIcon = styled(Link)`
@@ -28,83 +34,54 @@ export const BackHomeIcon = styled(Link)`
   top: 24px;
   right: 24px;
 `
-type AboutPageTitleProps = {
-  isUp: string
-}
 
-export const AboutPageTitle = styled(Header1)<AboutPageTitleProps>`
-  font-size: ${props => (props.isUp ? "2.4rem" : "6.2rem")};
+export const AboutPageTitle = styled(Header1)`
+  font-size: 6.2rem;
   @media (min-width: ${smScreen}) {
-    font-size: ${props => (props.isUp ? "3.2rem" : "8.2rem")};
+    font-size: 8.2rem;
   }
 `
 
-export const AboutContentWrapper = styled.div``
-
-const styleIsUp =
-  "position: fixed;top: 0;left: 0vw;right: 0;padding: 6vh 4vw 0 8vw; background: " +
-  darkGray
-
-export const AboutContentHeader = styled.div<AboutPageTitleProps>`
-  ${props => (props.isUp ? styleIsUp : "")};
+export const AboutContentWrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 `
 
-const styleTopSection =
-  "display: flex;justify-content: space-between;align-content: center"
-
-export const TopSection = styled.div<AboutPageTitleProps>`
-  ${props => (props.isUp ? styleTopSection : "")};
+export const AboutMenu = styled.ul`
+  list-style: none;
+  padding: 0;
 `
 
-export const AboutSectionTitle = styled(Header3)`
-  color: white;
-  width: 100%;
-  margin-top: 10vh;
-  position: relative;
-  display: ${(props: ABoutMenuElementProps) =>
-    props.displayTitle ? "block" : "none"};
-  svg {
-    position: absolute;
-    top: -20px;
-    left: -4vw;
+export const AboutMenuElement = styled.li`
+  a {
+    color: white;
+    font-weight: 400;
+    margin: 0.3em 0;
+    font-size: 1.8rem;
+    @media (min-width: ${smScreen}) {
+      font-size: 3.6rem;
+    }
+    @media (min-width: ${smScreen}) {
+    }
   }
 `
 
-export const AboutMenu = styled.div<AboutPageTitleProps>`
-  margin: ${props => (props.isUp ? "18px 0 0" : "48px 0")};
-  text-align: ${props => (props.isUp ? "right" : "left")};
-`
-
-type ABoutMenuElementProps = {
-  displayTitle: boolean
-}
-
-export const AboutMenuElement = styled.p`
-  color: white;
-  font-weight: 400;
-  margin: 0.3em 0;
-  font-size: ${(props: ABoutMenuElementProps) =>
-    props.displayTitle ? "1.4rem" : "1.8rem"};
-  display: ${(props: ABoutMenuElementProps) =>
-    props.displayTitle ? "block" : "none"};
-  @media (min-width: ${smScreen}) {
-    font-size: ${(props: ABoutMenuElementProps) =>
-      props.displayTitle ? "2.2rem" : "3.6rem"};
-  }
-  @media (min-width: ${smScreen}) {
-  }
-`
-
-type AboutSectionContentProps = {
-  displaySection: boolean
-}
-
-export const AboutSectionContent = styled.div<AboutSectionContentProps>`
-  display: ${props => (props.displaySection ? "block" : "none")};
-  margin-top: ${props => (props.displaySection ? "38vh" : "")};
+export const AboutSectionContent = styled.div`
+  min-height: 100vh;
+  margin-top: 88px;
+  padding-top: 48px;
   color: white;
   @media (min-width: ${smScreen}) {
-    margin-top: ${props => (props.displaySection ? "4vh" : "")};
+  }
+`
+export const AboutSectionTitle = styled.h3`
+  margin-bottom: 24px;
+  span {
+    color: white;
+    border-bottom: 3px solid white;
   }
 `
 
@@ -113,3 +90,28 @@ export const AboutSectionParagraph = styled.p`
 `
 
 export const CloseAboutIcon = styled.div``
+
+type JumpDirection = "up" | "down"
+
+type JumpSectionProps = {
+  direction: JumpDirection
+}
+export const JumpSection = styled.a<JumpSectionProps>`
+  display: block;
+  margin-top: 32px;
+  color: white;
+
+  &:last-child {
+    margin-top: 16px;
+  }
+
+  svg {
+    transform: rotate(
+      ${props => (props.direction === "up" ? "90deg" : "-90deg")}
+    );
+  }
+
+  span {
+    margin-left: 16px;
+  }
+`
