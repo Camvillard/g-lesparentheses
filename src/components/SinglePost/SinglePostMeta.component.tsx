@@ -16,18 +16,16 @@ export const SinglePostMeta = ({ meta }: TSinglePostMetaProps) => {
 
   return (
     <SinglePostMetaFooter>
-      <MainContainer>
-        <MetaGroup>
-          <MetaTitle>
-            publié le / <MetaContent>{date}</MetaContent>
-          </MetaTitle>
-        </MetaGroup>
-        <MetaGroup>
-          <MetaTitle>
-            catégories / <MetaContent>{categories}</MetaContent>
-          </MetaTitle>
-        </MetaGroup>
-      </MainContainer>
+      <MetaGroup>
+        <MetaTitle>
+          publié le / <MetaContent>{date}</MetaContent>
+        </MetaTitle>
+      </MetaGroup>
+      <MetaGroup>
+        <MetaTitle>
+          catégories / <MetaContent>{categories}</MetaContent>
+        </MetaTitle>
+      </MetaGroup>
     </SinglePostMetaFooter>
   )
 }
