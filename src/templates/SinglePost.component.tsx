@@ -67,7 +67,7 @@ const PostTemplate = (props: PostTemplateProps) => {
           columns={{
             default: "1 / span 4",
             sm: "1 / span 5",
-            md: "1 / span 6",
+            md: "1 / span 7",
           }}
         >
           <SinglePostMeta meta={frontmatter} />
@@ -78,7 +78,7 @@ const PostTemplate = (props: PostTemplateProps) => {
           columns={{
             default: "1 / span 4",
             sm: "3 / span 5",
-            md: "4 / span 8",
+            md: "3 / span 9",
           }}
         >
           <SinglePostTitle dangerouslySetInnerHTML={{ __html: title }} />

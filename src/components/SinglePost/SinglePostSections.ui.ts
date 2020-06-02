@@ -10,7 +10,7 @@ export const SinglePostBanner = styled(Grid)`
   grid-template-rows: auto 1fr;
   width: 100vw;
   background: ${darkGray};
-  padding: 8vh 8vw;
+  padding: 4vh 4vw;
   margin-top: 0;
   height: 100vh;
   position: relative;
@@ -43,7 +43,6 @@ export const SinglePostTitleWrapper = styled(GridElement)`
 `
 export const SinglePostTitle = styled(Header1)`
   font-size: 5.2rem;
-  // margin-top: -0.7em;
   margin-bottom: 0.1em;
   position: relative;
   color: white;
@@ -52,12 +51,11 @@ export const SinglePostTitle = styled(Header1)`
     margin-top: -0.8em;
   }
   @media (min-width: ${mdScreen}) {
-    color: white;
     font-size: 8.6rem;
   }
   @media (min-width: ${lgScreen}) {
-    margin-top: -1.1em;
-    font-size: 10.8rem;
+    margin-top: -1.2em;
+    font-size: 9.2rem;
   }
 `
 export const SinglePostText = styled.p`
