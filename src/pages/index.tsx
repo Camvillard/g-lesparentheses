@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import { HomepageSection } from "../components/Homepage/Homepage.ui"
-import InstagramFooter from "../components/instagram/InstagramFooter.component"
 import Layout from "../components/Layout/Layout.component"
 import LastPost from "../components/Posts/LastPost/LastPost.component"
 import SecondPost from "../components/Posts/SecondPost/SecondPost.component"

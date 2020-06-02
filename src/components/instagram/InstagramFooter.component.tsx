@@ -25,6 +25,8 @@ type InstragmLocalFiles = {
   url: string
 }
 
+const instagramPosts = [{ id: "B_3Ex_pFZm2", url: "" }]
+
 const InstagramFooter = () => {
   const data = useStaticQuery(graphql`
     query InstagramQuery {
