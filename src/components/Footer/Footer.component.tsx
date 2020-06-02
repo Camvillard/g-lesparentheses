@@ -6,7 +6,6 @@ import {
   themeColors,
   themeBreakpoints,
 } from "../../theme/themeVariables"
-import InstagramFooter from "../instagram/InstagramFooter.component"
 
 const { bodyFont } = themeFonts
 const { darkGray } = themeColors
@@ -60,7 +59,6 @@ const DesignText = styled.p`
 export const Footer = () => {
   return (
     <>
-      <InstagramFooter />
       <FooterWrapper>
         <FooterLegal>
           <FooterLink to={"/"}>mentions legales</FooterLink>
