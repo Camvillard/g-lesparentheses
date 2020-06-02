@@ -34,16 +34,16 @@ const InfosSection = () => {
         m’en tiens à ça.
       </AboutSectionParagraph>
       <AboutSectionParagraph>
-        je suis née au Chili, qui est le plus des pays du monde, même si je suis
-        bien forcée d’admettre que ce n’est là que mon chauvinisme qui parle,
-        puisque je n’ai pas vraiment eu l’occasion de tant explorer mon pays que
-        ça.
+        je suis née au Chili, qui est le plus beau des pays du monde, même si je
+        suis bien forcée d’admettre que ce n’est là que mon chauvinisme qui
+        parle, puisque je n’ai pas vraiment eu l’occasion de tant explorer mon
+        pays que ça.
       </AboutSectionParagraph>
       <AboutSectionParagraph>
         j’habite à Montréal. il fait souvent très froid, il fait souvent très
-        chaud. on pourrait croire que cela fait en moyenne, mais en fait, pas du
-        tout. néanmoins, la vie est douce, là bas, même si acheter du pain et du
-        vin demande une reflexion financière importante.
+        chaud. on pourrait croire que cela fait une moyenne, mais en fait, pas
+        du tout. néanmoins, la vie est douce, là bas, même si acheter du pain et
+        du vin demande une reflexion financière importante.
       </AboutSectionParagraph>
       <AboutSectionParagraph>
         j’aime bien faire du sport, j'ai couru un marathon à l'aube de mes 30
@@ -59,10 +59,10 @@ const InfosSection = () => {
       </AboutSectionParagraph>
       <AboutSectionParagraph>
         enfin pour finir, j'ai un chat adorable qui nous a empêchés de dormir
-        pendant environ 8 mois, avat qu'on se décide à acheter un distributeur
+        pendant environ 8 mois, avant qu'on se décide à acheter un distributeur
         automatique de croquettes, je voue un culte sans limite à Carrie
         Mathison et aux muffins anglais de mon amie Esme, je ne mets jamais de
-        rouge à lèvres même si j'aimerai beaucoup, mais j'ai la bouhe un petit
+        rouge à lèvres même si j'aimerai beaucoup, mais j'ai la bouche un petit
         peu trop fine à mon goût pour oser porter du rouge vif, quel drame, et
         je perds souvent le fil de mes phrases.
       </AboutSectionParagraph>
@@ -85,12 +85,12 @@ const ProSection = () => {
         <span>ma vie pro.</span>
       </AboutSectionTitle>
       <AboutSectionParagraph>
-        mon parcours professionel n'a rien à envie à [insérer un exemple mais je
-        n'en ai pas trouvé encore pour le moment, contactez-moi si vous avez une
-        idée], parce que j'ai eu un diplôme d'architecte, mais en fait j'ai pas
-        aimé, alors je suis devenue graphiste puis directrice artistique mais ça
-        m'a pas suffit, alors je suis devenue développeuse web et pour le
-        moment, on dirait que ça me convient.
+        mon parcours professionel n'a rien à envier à [insérer un exemple mais
+        je n'en ai pas trouvé encore pour le moment, contactez-moi si vous avez
+        une idée], parce que j'ai eu un diplôme d'architecte, mais en fait j'ai
+        pas aimé, alors je suis devenue graphiste puis directrice artistique
+        mais ça m'a pas suffit, alors je suis devenue développeuse web et pour
+        le moment, on dirait que ça me convient.
       </AboutSectionParagraph>
       <AboutSectionParagraph>
         je travaille chez Decathlon (à fond la forme) et je suis très contente
@@ -103,9 +103,9 @@ const ProSection = () => {
       <AboutSectionParagraph>
         puisqu'on parle de travail, hein, j'ai une affection particulière pour
         Javascript et j'utilise surtout React dans la vie de tous les jours. ce
-        site est devloppé comme ça, en utilisant GatsbyJS comme framework.
+        site est developpé comme ça, en utilisant GatsbyJS comme framework.
         parfois je fais aussi un peu de backend, mais je suis vraiment moins
-        bonne, et dans ce cas-là, j'utilise Ruby et le framwork Ruby on Rails,
+        bonne, et dans ce cas-là, j'utilise Ruby et le framework Ruby on Rails,
         ou bien NodeJS, parce que bon, avec Javascript on peut tout faire et
         c'est très bien comme ça.
       </AboutSectionParagraph>
@@ -144,6 +144,10 @@ const RandomFactsSection = () => {
       <AboutSectionParagraph>
         je déteste aussi les Pim's à l'orange, mais je n'ai pas d'anecdote à
         raconter à ce sujet, j'espère que ma subjectivité ne vous froissera pas.
+      </AboutSectionParagraph>
+      <AboutSectionParagraph>
+        en revanche, j'aime beaucoup (beaucoup) la noix de coco et la vanille et
+        si je pouvais, je passerai ma vie enveloppée de ces deux saveurs.
       </AboutSectionParagraph>
       <AboutSectionParagraph>
         je me suis mariée après 8 mois de relation et c'était vraiment une des
