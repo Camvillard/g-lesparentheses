@@ -21,7 +21,7 @@ export const SinglePostMetaFooter = styled.div`
   margin: 8px auto;
   padding: 8px 0;
   @media (min-width: ${mdScreen}) {
-    width: calc(84vw - 5%);
+    // width: calc(84vw - 5%);
   }
 `
 
