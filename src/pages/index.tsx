@@ -41,7 +41,7 @@ const BlogIndex = (props: IProps) => {
         <AboutSection />
       </HomepageSection>
 
-      <PetitesParenthesesHomepageSection />
+      {/* <PetitesParenthesesHomepageSection /> */}
       {/* <NewsletterSection /> */}
     </Layout>
   )
