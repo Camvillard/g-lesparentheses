@@ -55,7 +55,7 @@ export const SinglePostTitle = styled(Header1)`
   }
   @media (min-width: ${lgScreen}) {
     margin-top: -1.2em;
-    font-size: 9.2rem;
+    font-size: 10.2rem;
   }
 `
 export const SinglePostText = styled.p`

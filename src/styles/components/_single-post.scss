@@ -1,4 +1,4 @@
-/*----- LAYOUTS : SINGLE POST ----- */
+/*----- COMPONENTS : SINGLE POST ----- */
 
 .single-post--section,
 .single-post--image {
@@ -43,7 +43,7 @@
     margin-bottom: 36px;
   }
 
-  .single-post--image {
+  .single-post--image.max-width {
     max-width: 536px;
   }
 
@@ -54,7 +54,8 @@
 
   .single-post--image.fullwidth {
     width: 100%;
-    margin: 0;
+    max-width: 100%;
+    margin: 24px 0;
   }
 } // end of smScreen - 768px
 

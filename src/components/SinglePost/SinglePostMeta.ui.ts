@@ -21,7 +21,7 @@ export const SinglePostMetaFooter = styled.div`
   margin: 8px auto;
   padding: 8px 0;
   @media (min-width: ${mdScreen}) {
-    // width: calc(84vw - 5%);
+    padding: 0;
   }
 `
 
@@ -29,7 +29,6 @@ export const MetaGroup = styled.div`
   margin: 4px 0;
 `
 export const MetaContent = styled.span`
-  // color: ${gray};
   color: white;
   font-size: 1.2rem;
   font-weight: 300;
@@ -39,7 +38,6 @@ export const MetaContent = styled.span`
   }
 `
 export const MetaTitle = styled.p`
-  // color: ${gray};
   color: white;
   font-weight: 600;
   margin-bottom: 0;

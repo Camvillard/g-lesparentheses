@@ -1,0 +1,49 @@
+/*----- COMPONENTS : WIDTHS ----- */
+
+.w-80 {
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width: $xsScreen) {
+  .xs-w-80 {
+    width: 80%;
+    margin: auto;
+  }
+} // end of xsScreen - 576px
+
+@media (min-width: $smScreen) {
+  .sm-w-80 {
+    width: 80%;
+    margin: auto;
+  }
+  .sm-w-100 {
+    width: 100%;
+    margin: auto;
+  }
+} // end of smScreen - 768px
+
+@media (min-width: $mdScreen) {
+  .md-w-80 {
+    width: 80%;
+    margin: auto;
+  }
+  .md-w-100 {
+    width: 100%;
+    margin: auto;
+  }
+} // end of mdScreen - 992px
+
+@media (min-width: $lgScreen) {
+  .lg-w-80 {
+    width: 80%;
+    margin: auto;
+  }
+  .lg-w-100 {
+    width: 100%;
+    margin: auto;
+  }
+} // end of lgScreen - 1200px
+
+@media (min-width: $xlgScreen) {
+} // end of xlgScreen - 1440px
