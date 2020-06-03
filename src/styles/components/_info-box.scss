@@ -14,6 +14,9 @@
   padding: 4px;
   transform: rotate(-90deg);
   transform-origin: top left;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .single-post--info-box {
@@ -57,9 +60,12 @@
   align-items: center;
   justify-content: flex-end;
   padding-top: 4px;
-  padding-right: 4px;
+  padding-right: 12px;
   padding-bottom: 4px;
   border-bottom: 1px solid $forestGreen;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .info-box--section-title {
@@ -75,6 +81,7 @@
 }
 
 .info-box--content {
+  font-size: 1.2rem;
   font-family: $accentFont;
 }
 
@@ -85,6 +92,39 @@
 } // end of smScreen - 768px
 
 @media (min-width: $mdScreen) {
+  .info-box--title {
+    position: fixed;
+    top: calc(20vh + 142px);
+    left: -1px;
+    width: 146px;
+    background: white;
+    border: 1px solid $forestGreen;
+    font-family: $accentFont;
+    font-size: 1.4rem;
+  }
+
+  .single-post--info-box {
+    &.is-active {
+      top: 20vh;
+      padding-top: 20px;
+      width: 600px;
+      background: white;
+      border: 1px solid $forestGreen;
+      overflow-y: scroll;
+      // minus top position minus footernav height minus 20 to breathe
+      max-height: calc(100vh - 20vh - 65px - 20px);
+    }
+  }
+  .info-box--close-section {
+    position: fixed;
+    top: 20vh;
+    left: -1px;
+    width: 600px;
+  }
+
+  .info-box--content {
+    font-size: 1.3rem;
+  }
 } // end of mdScreen - 1024px
 
 @media (min-width: $lgScreen) {
