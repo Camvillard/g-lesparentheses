@@ -10,7 +10,6 @@ order: 152
 ---
 
 <div class="main-container">
-
   <div class="single-post--section">
     <p class="single-post--text">
       Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages.
@@ -31,11 +30,9 @@ order: 152
       Pour tout le reste…
     </p>
   </div>
-
   <div class="single-post--image">
     <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952314/152_deux-mille-dix-huit/lesparentheses-2019_2.jpg" alt="skateboard and light">
   </div>
-
   <div class="single-post--section">
     <p class="single-post--text">
       Au mois de mai, un peu avant un peu après, j’ai pris des billets d’avion pour rentrer à la maison. Ça n’allait plus bien du tout, tout le monde autour de moi commençait à un peu me faire sentir qu’il fallait faire quelque chose, alors j’ai pris des billets d’avion pour passer quelques semaines loin du quotidien et près de ma maman, de son taboulé et des vagues de l’Atlantique.
@@ -47,11 +44,9 @@ order: 152
       Cette marque de papeterie représentait beaucoup plus qu’un simple petit business. C’était la première fois que je fabriquais de toutes pièces un projet, dont j’étais la seule responsable. Cela me plaisait, de ne rien devoir à personne – et c’est sans doute cela qui aura précipité la fin de cette aventure. J’ai mis beaucoup de temps à admettre cet échec – et surtout à admettre que plus qu’un échec, c’était surtout beaucoup d’apprentissages. Aujourd’hui, cela va mieux. Ma petite marque est en liquidation, mais j’ai beaucoup d’idées pour relancer autre chose, toujours avec des mots (mais pas que), toujours avec du papier (mais pas que) et cette fois-ci, en m’entourant des bonnes personnes pour m’épauler tout au long de l’aventure.
     </p>
   </div>
-
   <div class="single-post--image">
     <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952315/152_deux-mille-dix-huit/lesparentheses-2019_1.jpg" alt="biarritz">
   </div>
-
   <div class="single-post--section">
     <p class="single-post--text">
       Pendant ce voyage, j’ai rencontré ma petite nièce et filleule d’amour, ce qui n’a pas manqué me serrer le coeur quand, trois jours après, j’ai fait un bisou à toute la famille, accompagné du sempiternel à bientôt qui ne veut rien dire parce que ce bientôt est un mensonge, quand on passe plus d’un an séparés, ce n’est pas bientôt.
@@ -63,11 +58,9 @@ order: 152
       À mon retour de vacances en Europe, la vie s’est accélérée, sans que je ne comprenne exactement pourquoi, comment, dans quel but. L’année qui me semblait si longue et difficile à traîner est devenue légère et beaucoup plus pailletée.
     </p>
   </div>
-
   <div class="single-post--image">
     <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952313/152_deux-mille-dix-huit/lesparentheses-2019_6.jpg" alt="montréal by night">
   </div>
-
   <div class="single-post--section">
     <p class="single-post--text">
       C. est venu passer quelques jours à Montréal. On a ri, on est allés nager à l’aube, on a bu du vin jusqu’à presque l’aube, on a regardé des dessins animés et surtout, oh la la, surtout, on a passé des heures à bosser ensemble chacun sur ses lignes de code. Cela faisait longtemps qu’il me disait de tenter Le Wagon, et, bien que l’idée me semblait excellente, je repoussais parce que c’est pas le bon moment, j’ai pas d’argent, je suis pas certaine, et encore bien des excuses. Et puis un soir, après une journée de boulot et une soirée de gin to, j’ai mis de côté mon orgueil, ma fierté et mon ego et ai demandé à mon papa de me prêter l’argent pour faire cette formation, avec un argumentaire solide. Le lendemain, il me disait oui. Quelques mois plus tard, je présentais l’app que je venais de développer. Dans quelques jours maintenant, je donne un workshop avec eux et je serai prof assistante pour le prochain batch et j’ai terriblement hâte de pouvoir transmettre à mon tour un bout de la formidable expérience que j’ai pu vivre, et je suis aussi terriblement fière de pouvoir travailler pour cette entreprise.
@@ -77,7 +70,6 @@ order: 152
       J’en ai déjà (trop) (longuement) parlé mais ces deux mois m’ont fait passer de meuf-zéro-patience-zéro-confiance à meuf-qui-leade-une-équipe-et-qui-n’hésite-plus-à-dire-oui-à-toutes-ces-nouveautés. Je suis même capable de téléphoner à des recruteurs sans avoir les mains qui tremblent, rendez-vous compte. Et surtout, je commence à admettre que j’ai des compétences et que ce n’est pas mauvais de les mettre en avant ; que j’ai des faiblesses et des lacunes aussi et que ce n’est pas mauvais de les avouer aussi ; et que s’entourer des bonnes personnes est la clé (de l’amour, de l’amitié, à l’instar de la musique, comme le chantait la Star Ac’), mais aussi est la clé pour bien avancer.
     </p>
   </div>
-
   <div class="single-post--section">
     <p class="single-post--text">
       Entre tout ça, j’ai travaillé quelques semaines dans une grosse agence de publicité. Une candidature envoyée un mardi, un entretien le jeudi, un oui le vendredi et un nouveau bureau deux jours après, avec tout ce qui allait avec. Des nouveaux collègues, des nouvelles habitudes, des bagels et des fruits à volonté, les bières le jeudi soir et les gros canapés pour bosser dedans au besoin.
@@ -89,11 +81,9 @@ order: 152
       Mon avenir pro n’est donc toujours pas exactement figuré out (je sais que c’est un affreux anglicisme, oui), mais j’ai des petits brins d’idées. En éliminant tout ce qui ne me convient pas, je devrais réussir à dessiner les contours de ma vie professionnelle rêvée (en fait, non, je sais exactement où je veux aller la prochaine année mais je suis encore trop superstitieuse pour en parler).
     </p>
   </div>
-
   <div class="single-post--image">
     <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952315/152_deux-mille-dix-huit/lesparentheses-2019_7.jpg" alt="port-au-persil">
   </div>
-
   <div class="single-post--section">
     <p class="single-post--text">
       Sans aucune transition avec le paragraphe précédent, ma petite soeur est venue me rendre visite – enfin, après cinq ans. Avec deux de ses amies – salut les meufs – on a pris la voiture, des sacs de couchage, et on est parties vers le Nord, bien plus au Nord. Ces sept jours de fous rires m’ont fait un bien fou, et revoir ma petite soeur et partager ces moments avec elle était précieux. Je l’aime plus que tout au monde, cette femme, et tous les jours, elle m’impressionne un petit peu plus, et tous les jours, je suis un petit peu plus fière de ce qu’elle devient.
@@ -108,11 +98,9 @@ order: 152
         (J’ai gagné en beaucoup de choses cette année, mais tout de même pas en adulthood et en maturité face à la prise de décisions.)
     </p>
   </div>
-
   <div class="single-post--image">
     <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1590952315/152_deux-mille-dix-huit/lesparentheses-2019_5.jpg" alt="les quatre fantastiques aux grand jardins">
   </div>
-
   <div class="single-post--section">
     <p class="single-post--text">
       Alors voilà, deux mille dix huit, c’était tout ça. Bien sûr, il y a eu d’autres choses – j’ai fait du clemoncello (c’est comme du limoncello mais avec des clémentines, c’est très bon, mais pas en shooters) ; j’ai acheté une salopette qui, d’après les garçons, me fait un cul d’enfer ; je suis partie en camping avec les trois meufs les plus fantastiques de la vie et on s’est mises presque à poil sur une route du Québec pour rigoler ; j’ai failli mourir quand, avec C. on a calé sur un énorme rond-point sur le chemin du désert des Bardenas Reales parce qu’on avait une voiture qui avait décidé d’être indépendante au niveau du moteur – après coup on a ri, mais enfin, on a quand même eu très peur – et j’ai trouvé un billet de 20 euros par terre juste après alors je nous ai acheté des glaces au yaourt et des gins to (et du coup on est pas allées jusqu’au désert) ; j’ai goûté beaucoup de nouveaux gins ; j’ai essayé d’aimer la bière, en vain et j’ai fait quelques entorses à mon véganisme face aux plateaux de fromages divers (et au Comté toujours présent dans le frigo de mes parents), ce qui m’a fait me poser beaucoup de questions sur les valeurs que l’on défend.
@@ -134,5 +122,4 @@ order: 152
       C’est bien tout ce que je nous souhaite.
     </p>
   </div>
-
 </div>

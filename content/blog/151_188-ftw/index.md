@@ -19,7 +19,6 @@ order: 151
     <p class="single-post--text">
       Après quelques cafés (les premiers d’une longue, très longue série, je pense avoir éclaté mon record de consommation de caféine pendant cette période-là), on s’est installés en classe, avec ces nouvelles habitudes que l’on va commencer à se fabriquer sans trop savoir encore jusqu’où elles iront. Ma place, deuxième table à gauche, place du milieu. J. à ma gauche, A. à ma droite. Ce sera comme ça tous les matins, tous les soirs, alternant ainsi les heures de cours tantôt très studieuses, tous très concentrés, fronçant des sourcils sur des concepts un peu compliqués encore, qui nous paraissent flous, abstraits, lointains ; tantôt d’une insolente déconcentration, fous-rires et gribouillis sur les cahiers, gloussement sur des blagues pas si drôles, mais après une journée passée à coder, qui nous en aurait voulu, de rigoler bêtement comme cela.
     </p>
-
   </section>
   <section class="single-post--section">
     <h3 class="single-post--section-title ">
