@@ -14,11 +14,12 @@ import { UpperCounter } from "../Counter/UpperCounter.ui"
 
 type SinglePostComments = {
   allComments: CommentObject[]
+  extraPadding?: boolean
 }
 export const SinglePostComments = (props: SinglePostComments) => {
-  const { allComments } = props
+  const { allComments, extraPadding } = props
   return (
-    <CommentsWrapper>
+    <CommentsWrapper extraPadding={extraPadding}>
       <CommentsTitle>
         commentaires.<UpperCounter>({allComments.length})</UpperCounter>
       </CommentsTitle>

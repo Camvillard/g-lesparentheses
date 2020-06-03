@@ -1,4 +1,4 @@
-/*----- COMPONENTS  : GRID ----- */
+/*----- COMP1NTS  : GRID ----- */
 
 // regular grid
 .grid {
@@ -22,25 +22,28 @@
 }
 
 .grid-element {
-  &.span-one {
+  &.start-1 {
+    grid-column-start: 1;
+  }
+  &.span-1 {
     grid-column-end: span 1;
   }
-  &.start-two {
+  &.start-2 {
     grid-column-start: 2;
   }
-  &.span-two {
+  &.span-2 {
     grid-column-end: span 2;
   }
-  &.start-three {
+  &.start-3 {
     grid-column-start: 3;
   }
-  &.span-three {
+  &.span-3 {
     grid-column-end: span 3;
   }
-  &.start-four {
+  &.start-4 {
     grid-column-start: span 4;
   }
-  &.span-four {
+  &.span-4 {
     grid-column-end: span 4;
   }
 
@@ -126,70 +129,70 @@
   }
 
   .grid-element {
-    &.sm-start-two {
+    &.sm-start-2 {
       grid-column-start: 2;
     }
-    &.sm-span-two {
+    &.sm-span-2 {
       grid-column-end: span 2;
     }
-    &.sm-start-three {
+    &.sm-start-3 {
       grid-column-start: 3;
     }
-    &.sm-span-three {
+    &.sm-span-3 {
       grid-column-end: span 3;
     }
-    &.sm-start-four {
+    &.sm-start-4 {
       grid-column-start: span 4;
     }
-    &.sm-span-four {
+    &.sm-span-4 {
       grid-column-end: span 4;
     }
-    &.sm-start-five {
+    &.sm-start-5 {
       grid-column-start: span 5;
     }
-    &.sm-span-five {
+    &.sm-span-5 {
       grid-column-end: span 5;
     }
-    &.sm-start-six {
+    &.sm-start-6 {
       grid-column-start: span 6;
     }
-    &.sm-span-six {
+    &.sm-span-6 {
       grid-column-end: span 6;
     }
-    &.sm-start-seven {
+    &.sm-start-7 {
       grid-column-start: span 7;
     }
-    &.sm-span-seven {
+    &.sm-span-7 {
       grid-column-end: span 7;
     }
-    &.sm-start-eight {
+    &.sm-start-8 {
       grid-column-start: span 8;
     }
-    &.sm-span-eight {
+    &.sm-span-8 {
       grid-column-end: span 8;
     }
-    &.sm-start-nine {
+    &.sm-start-9 {
       grid-column-start: span 9;
     }
-    &.sm-span-nine {
+    &.sm-span-9 {
       grid-column-end: span 9;
     }
-    &.sm-start-ten {
+    &.sm-start-10 {
       grid-column-start: span 10;
     }
-    &.sm-span-ten {
+    &.sm-span-10 {
       grid-column-end: span 10;
     }
-    &.sm-start-eleven {
+    &.sm-start-11 {
       grid-column-start: span 11;
     }
-    &.sm-span-eleven {
+    &.sm-span-11 {
       grid-column-end: span 11;
     }
-    &.sm-start-twelve {
+    &.sm-start-12 {
       grid-column-start: span 12;
     }
-    &.sm-span-twelve {
+    &.sm-span-12 {
       grid-column-end: span 12;
     }
   }
@@ -234,70 +237,70 @@
   }
 
   .grid-element {
-    &.md-start-two {
+    &.md-start-2 {
       grid-column-start: 2;
     }
-    &.md-span-two {
+    &.md-span-2 {
       grid-column-end: span 2;
     }
-    &.md-start-three {
+    &.md-start-3 {
       grid-column-start: 3;
     }
-    &.md-span-three {
+    &.md-span-3 {
       grid-column-end: span 3;
     }
-    &.md-start-four {
+    &.md-start-4 {
       grid-column-start: span 4;
     }
-    &.md-span-four {
+    &.md-span-4 {
       grid-column-end: span 4;
     }
-    &.md-start-five {
+    &.md-start-5 {
       grid-column-start: span 5;
     }
-    &.md-span-five {
+    &.md-span-5 {
       grid-column-end: span 5;
     }
-    &.md-start-six {
+    &.md-start-6 {
       grid-column-start: span 6;
     }
-    &.md-span-six {
+    &.md-span-6 {
       grid-column-end: span 6;
     }
-    &.md-start-seven {
+    &.md-start-7 {
       grid-column-start: span 7;
     }
-    &.md-span-seven {
+    &.md-span-7 {
       grid-column-end: span 7;
     }
-    &.md-start-eight {
+    &.md-start-8 {
       grid-column-start: span 8;
     }
-    &.md-span-eight {
+    &.md-span-8 {
       grid-column-end: span 8;
     }
-    &.md-start-nine {
+    &.md-start-9 {
       grid-column-start: span 9;
     }
-    &.md-span-nine {
+    &.md-span-9 {
       grid-column-end: span 9;
     }
-    &.md-start-ten {
+    &.md-start-10 {
       grid-column-start: span 10;
     }
-    &.md-span-ten {
+    &.md-span-10 {
       grid-column-end: span 10;
     }
-    &.md-start-eleven {
+    &.md-start-11 {
       grid-column-start: span 11;
     }
-    &.md-span-eleven {
+    &.md-span-11 {
       grid-column-end: span 11;
     }
-    &.md-start-twelve {
+    &.md-start-12 {
       grid-column-start: span 12;
     }
-    &.md-span-twelve {
+    &.md-span-12 {
       grid-column-end: span 12;
     }
   }
@@ -348,70 +351,70 @@
   }
 
   .grid-element {
-    &.lg-start-two {
+    &.lg-start-2 {
       grid-column-start: 2;
     }
-    &.lg-span-two {
+    &.lg-span-2 {
       grid-column-end: span 2;
     }
-    &.lg-start-three {
+    &.lg-start-3 {
       grid-column-start: 3;
     }
-    &.lg-span-three {
+    &.lg-span-3 {
       grid-column-end: span 3;
     }
-    &.lg-start-four {
+    &.lg-start-4 {
       grid-column-start: span 4;
     }
-    &.lg-span-four {
+    &.lg-span-4 {
       grid-column-end: span 4;
     }
-    &.lg-start-five {
+    &.lg-start-5 {
       grid-column-start: span 5;
     }
-    &.lg-span-five {
+    &.lg-span-5 {
       grid-column-end: span 5;
     }
-    &.lg-start-six {
+    &.lg-start-6 {
       grid-column-start: span 6;
     }
-    &.lg-span-six {
+    &.lg-span-6 {
       grid-column-end: span 6;
     }
-    &.lg-start-seven {
+    &.lg-start-7 {
       grid-column-start: span 7;
     }
-    &.lg-span-seven {
+    &.lg-span-7 {
       grid-column-end: span 7;
     }
-    &.lg-start-eight {
+    &.lg-start-8 {
       grid-column-start: span 8;
     }
-    &.lg-span-eight {
+    &.lg-span-8 {
       grid-column-end: span 8;
     }
-    &.lg-start-nine {
+    &.lg-start-9 {
       grid-column-start: span 9;
     }
-    &.lg-span-nine {
+    &.lg-span-9 {
       grid-column-end: span 9;
     }
-    &.lg-start-ten {
+    &.lg-start-10 {
       grid-column-start: span 10;
     }
-    &.lg-span-ten {
+    &.lg-span-10 {
       grid-column-end: span 10;
     }
-    &.lg-start-eleven {
+    &.lg-start-11 {
       grid-column-start: span 11;
     }
-    &.lg-span-eleven {
+    &.lg-span-11 {
       grid-column-end: span 11;
     }
-    &.lg-start-twelve {
+    &.lg-start-12 {
       grid-column-start: span 12;
     }
-    &.lg-span-twelve {
+    &.lg-span-12 {
       grid-column-end: span 12;
     }
   }

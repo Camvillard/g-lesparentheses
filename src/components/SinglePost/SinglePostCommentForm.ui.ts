@@ -7,6 +7,7 @@ const { mdScreen } = themeBreakpoints
 
 export const CommentFormWrapper = styled(MainContainer)`
   margin-bottom: 64px;
+  padding: ${(props: any) => (props.extraPadding ? "0 2vw" : "0")};
 `
 
 export const CommentSuccessWrapper = styled.div`

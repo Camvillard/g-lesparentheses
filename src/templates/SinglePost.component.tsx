@@ -84,8 +84,8 @@ const PostTemplate = (props: PostTemplateProps) => {
         </SinglePostTitleWrapper>
       </SinglePostBanner>
       <SinglePostArticle dangerouslySetInnerHTML={{ __html: html }} />
-      <SinglePostComments allComments={allComments} />
-      <SinglePostCommentForm postId={id} />
+      <SinglePostComments allComments={allComments} extraPadding={infoBox} />
+      <SinglePostCommentForm postId={id} extraPadding={infoBox} />
       <Footer />
       <BottomSpacing />
     </>

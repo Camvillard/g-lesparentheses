@@ -16,6 +16,7 @@ import { CommentsTitle } from "./SinglePostComments.ui"
 
 type CommentFormProps = {
   postId: string
+  extraPadding?: boolean
 }
 
 const sendComment = (
@@ -41,7 +42,10 @@ const sendComment = (
     })
 }
 
-export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
+export const SinglePostCommentForm = ({
+  postId,
+  extraPadding,
+}: CommentFormProps) => {
   const [name, setName] = useState("")
   const formRef = useRef<HTMLFormElement>(null)
   const [email, setEmail] = useState("")
@@ -61,7 +65,7 @@ export const SinglePostCommentForm = ({ postId }: CommentFormProps) => {
   }
 
   return (
-    <CommentFormWrapper>
+    <CommentFormWrapper extraPadding={extraPadding}>
       <CommentsTitle>laisser un commentaire</CommentsTitle>
       {commentIsPosted && (
         <CommentSuccessWrapper>

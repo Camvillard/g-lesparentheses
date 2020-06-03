@@ -7,6 +7,7 @@ const { xsScreen, smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
 export const CommentsWrapper = styled(MainContainer)`
   margin: 48px auto;
+  padding: ${(props: any) => (props.extraPadding ? "0 2vw" : "0")};
 `
 export const CommentsTitle = styled(Header3)`
   font-size: 4rem;
