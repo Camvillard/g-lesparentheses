@@ -5,6 +5,11 @@
   margin: 24px 0;
 }
 
+.single-post--section.grid-element,
+.single-post--image.grid-element {
+  margin: 0;
+}
+
 .single-post--text {
   margin-bottom: 0.6rem;
 }
@@ -19,10 +24,19 @@
   font-family: $accentFont;
 }
 
+.single-post--featured {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: $darkGray;
+}
+
 @media (min-width: $smScreen) {
   .single-post--text {
-    max-width: 506px;
     margin-left: 0;
+    max-width: 506px;
+    &.max-width {
+      max-width: 506px;
+    }
   }
   .single-post--section,
   .single-post--image {

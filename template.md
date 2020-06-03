@@ -2,7 +2,7 @@
 title: template
 date: "12 octobre 2019"
 slug: template
-image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1569002038/test/coworkamping_63.jpg"
+image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1590693305/153_de-retour/deretour_1.jpg"
 image_alt: ""
 categories: histoire, carnet de voyage, recette, récit de sport, brin de culture
 extrait: Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages.

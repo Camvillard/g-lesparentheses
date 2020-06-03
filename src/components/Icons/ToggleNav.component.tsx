@@ -30,7 +30,7 @@ export const OpenNav = () => {
       <path
         d="M0.63623 1.18182H29.7271M0.63623 12.8182H29.7271"
         stroke="#24262B"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   )
@@ -48,7 +48,7 @@ export const CloseNav = () => {
       <path
         d="M0.818359 1.02494L21.3887 21.5953M0.818359 21.3886L21.3887 0.818176"
         stroke="#24262B"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   )

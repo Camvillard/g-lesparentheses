@@ -2,10 +2,12 @@
 
 @import "containers";
 @import "grid";
+@import "images";
+@import "info-box";
 @import "single-post";
 
-@media (min-width: $xsmScreen) {
-} // end of xsmScreen - 576px
+@media (min-width: $xsScreen) {
+} // end of xsScreen - 576px
 
 @media (min-width: $smScreen) {
 } // end of smScreen - 768px

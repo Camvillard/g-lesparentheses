@@ -29,6 +29,7 @@ export type Frontmatter = {
   extrait: string
   order: number
   slug: string
+  has_info?: boolean
 }
 
 export type SinglePostData = {

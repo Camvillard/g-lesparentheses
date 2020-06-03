@@ -1,9 +1,8 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
 
 // styles & assets
 import "../styles/main.scss"
-import Layout from "../components/Layout/Layout.component"
 import {
   SinglePostTitle,
   SinglePostThumbnail,
@@ -17,21 +16,13 @@ import SEO from "../components/SEO/SEO.component"
 import { SinglePostCommentForm } from "../components/SinglePost/SinglePostCommentForm.component"
 import { convertNodesInComments } from "../shared/comments/comments.helpers"
 import { SinglePostComments } from "../components/SinglePost/SinglePostComments.component"
-import {
-  MainContainer,
-  BottomSpacing,
-  TopSpacing,
-} from "../components/MainContainer/MainContainer.ui"
+import { BottomSpacing } from "../components/MainContainer/MainContainer.ui"
 import { SinglePostMeta } from "../components/SinglePost/SinglePostMeta.component"
 import { SinglePostData } from "../types/BlogPost.type"
-import { Grid, GridElement } from "../components/Grid/Grid.ui"
-import {
-  FeaturedImageContainer,
-  FeturedImageOverlay,
-} from "../components/Posts/PostCard.ui"
 import { GlobalStyle } from "../theme/globalstyle"
 import { Nav } from "../components/Nav/Nav.component"
 import { Footer } from "../components/Footer/Footer.component"
+import { activateInfosBox } from "../shared/posts/post.helpers"
 
 type PostTemplateProps = {
   location: string
@@ -40,16 +31,24 @@ type PostTemplateProps = {
 }
 const PostTemplate = (props: PostTemplateProps) => {
   const { data } = props
-
-  const { location, pageContext } = props
-  const { title: siteTitle } = data.site.siteMetadata
+  const { pageContext } = props
   const { frontmatter, html, id } = data.markdownRemark
-  const { title, image_url: imageUrl, extrait } = frontmatter
-  const { previous, next } = pageContext
+  const { title, image_url: imageUrl, extrait, has_info: infoBox } = frontmatter
+  const [isLoaded, setLoaded] = useState(false)
 
   const imagePlaceholder = `https://images.unsplash.com/photo-1567147220783-b84e25517cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80`
 
   const allComments = convertNodesInComments(data.allAirtable.edges)
+
+  useEffect(() => {
+    setLoaded(true)
+    if (infoBox) {
+      activateInfosBox()
+    }
+    return () => {
+      setLoaded(false)
+    }
+  }, [isLoaded])
 
   return (
     <>
@@ -113,6 +112,7 @@ export const pageQuery = graphql`
         extrait
         image_url
         categories
+        has_info
       }
     }
     allAirtable(
