@@ -30,6 +30,14 @@
   color: $darkGray;
 }
 
+.single-post--subtitle {
+  font-family: $accentFont;
+  text-transform: uppercase;
+}
+.single-post--text-subtitle {
+  font-family: $accentFont;
+}
+
 @media (min-width: $smScreen) {
   .single-post--text {
     margin-left: 0;

@@ -5,7 +5,7 @@ slug: creme-solaire-ciel-grand-ouvert
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1591132514/154_creme-solaire/lesparentheses_magog-10.jpg"
 image_alt: "le marais de la rivière aux cerises"
 categories: carnet de voyage
-extrait: Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages.
+extrait: Il faisait très chaud ce jour-là. L'été, enfin, comme il se plait à arriver à Montréal, une diva, entrée fracassante après l'hiver incessant et besoin de reconnaissance, tout de suite, trente degrés. Les bras dénudés, les pantalons raccourcis, allégés, il faisait chaud ce jour-là.
 order: 154
 has_info: true
 ---
@@ -104,6 +104,17 @@ has_info: true
     <section class="single-post--image grid-element start-1 span-4 lg-start-7 lg-span-5">
       <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1591132503/154_creme-solaire/lesparentheses_magog-08.jpg" alt="le marais de la riviere aux cerises">
     </section>
+  </div>
+</div>
+<section class="single-post--image fullwidth">
+  <div class="main-container extra-padding margin-top">
+    <h5 class="single-post--subtitle">comment y aller ?</h5>
+    <p class="single-post--text-subtitle">(incluant nos étapes-échec parce que c'est bien moins drôle sans.)</p>
+  </div>
+  <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1591464539/154_creme-solaire/magog-map.png" alt="le marais de la riviere aux cerises">
+</section>
+<div class="main-container extra-padding">
+  <div class="grid columns-4 sm-columns-8 lg-columns-12">
     <section class="single-post--image grid-element start-1 span-4 sm-span-8 lg-span-12">
       <img src="https://res.cloudinary.com/lesparentheses/image/upload/v1591132503/154_creme-solaire/lesparentheses_magog-14.jpg" alt="le marais de la riviere aux cerises">
     </section>

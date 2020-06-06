@@ -8,7 +8,7 @@ const { darkGray } = themeColors
 
 export const SinglePostBanner = styled(Grid)`
   grid-template-rows: auto 1fr;
-  width: 100vw;
+  width: 100%;
   background: ${darkGray};
   padding: 4vh 4vw;
   margin-top: 0;
