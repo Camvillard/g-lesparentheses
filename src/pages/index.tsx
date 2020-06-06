@@ -26,7 +26,7 @@ const BlogIndex = (props: IProps) => {
   const { title } = data.site.siteMetadata
   return (
     <Layout location={props.location} pageName={"homepage"} title={title}>
-      <SEO title="All posts" />
+      <SEO title="tous les articles" />
 
       <HomepageSection>
         <LastPost post={firstPost} />

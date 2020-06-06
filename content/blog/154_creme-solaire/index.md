@@ -1,6 +1,6 @@
 ---
 title: de la crème solaire & le ciel grand ouvert.
-date: 3 juin 2019
+date: 6 juin 2019
 slug: creme-solaire-ciel-grand-ouvert
 image_url: "https://res.cloudinary.com/lesparentheses/image/upload/v1591132514/154_creme-solaire/lesparentheses_magog-10.jpg"
 image_alt: "le marais de la rivière aux cerises"
@@ -134,7 +134,7 @@ has_info: true
   <section class="info-box--section">
     <h4 class="info-box--section-title"><span>pour y aller.</span></h4>
     <p class="info-box--content">
-      69 chemin Roy, Magog QC, J1X 0N4 je suppose que si vous mettez cette adresse dans votre GPS, il saura vous y conduire. le site est aussi accessible facilement à pied si vous êtes à Magog et que vous vous promenez tranquillement et que vous vous dites d’uncoup « oh mais oui, Camille avait parlé d’un truc mignon dans le coin » et que vous voulez y aller. il suffit de suivre le chemin piétonnier qui longe le lac Mamphrémagog, puis au chemin Roy, vous tournez à droite, et c’est à une centaine (peut-être quelques centaines) de mètres plus loin.
+      69 chemin Roy, Magog QC, J1X 0N4, je suppose que si vous mettez cette adresse dans votre GPS, il saura vous y conduire. le site est aussi accessible facilement à pied si vous êtes à Magog et que vous vous promenez tranquillement et que vous vous dites d’uncoup « oh mais oui, Camille avait parlé d’un truc mignon dans le coin » et que vous voulez y aller. il suffit de suivre le chemin piétonnier qui longe le lac Mamphrémagog, puis au chemin Roy, vous tournez à droite, et c’est à une centaine (peut-être quelques centaines) de mètres plus loin.
     </p>
   </section>
   <section class="info-box--section">

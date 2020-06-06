@@ -53,7 +53,7 @@ const PostTemplate = (props: PostTemplateProps) => {
   return (
     <>
       <GlobalStyle />
-      <SEO title={title} description={extrait} />
+      <SEO title={title} description={extrait} thumbnail={imageUrl} />
       <Nav />
       <SinglePostBanner
         columns={{
