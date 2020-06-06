@@ -66,7 +66,6 @@ const LastPost = ({ post }: BlogPostCardProps) => {
           default: "span 4",
           sm: "span 6",
           md: "span 7",
-          lg: "span 8",
         }}
         top={{
           default: "0px",
