@@ -48,6 +48,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::selection {
+    background: ${darkGray};
+    color: white;
+  }
+
   body {
     margin: 0;
     word-wrap: break-word;
