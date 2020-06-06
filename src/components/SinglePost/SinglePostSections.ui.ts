@@ -10,13 +10,11 @@ export const SinglePostBanner = styled(Grid)`
   grid-template-rows: auto 1fr;
   width: 100%;
   background: ${darkGray};
-  padding: 4vh 4vw;
+  padding: 3vh;
   margin-top: 0;
   height: 100vh;
   position: relative;
   z-index: 1000;
-  @media (min-width: ${mdScreen}) {
-  }
 `
 
 export const SinglePostThumnbailWrapper = styled(GridElement)`

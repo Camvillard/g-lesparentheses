@@ -46,7 +46,7 @@ const Contact = () => {
 
   const sendMessage = (message: Message) => {
     const base = new Airtable({
-      apiKey: process.env.AIRTABLE_API_KEY,
+      apiKey: "keyAOCtPMQ3gzQcWT",
     }).base("app45GbA2JUHNzpjq")
 
     base("contact")
@@ -56,8 +56,6 @@ const Contact = () => {
         },
       ])
       .then((r: any) => {
-        console.log("r", r)
-
         if (r) {
           setPosted(true)
           formRef?.current?.reset()
