@@ -22,11 +22,12 @@ const BlogIndex = (props: IProps) => {
   const { data } = props
   const { allMarkdownRemark } = data
   const [firstPost, secondPost, thirdPost, fourthPost] = allMarkdownRemark.edges
+  const { image_url: imageUrl } = firstPost.node.frontmatter
 
   const { title } = data.site.siteMetadata
   return (
     <Layout location={props.location} pageName={"homepage"} title={title}>
-      <SEO title="tous les articles" />
+      <SEO title="tous les articles" thumbnail={imageUrl} />
 
       <HomepageSection>
         <LastPost post={firstPost} />
