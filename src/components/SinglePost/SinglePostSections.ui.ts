@@ -12,7 +12,7 @@ export const SinglePostBanner = styled(Grid)`
   background: ${darkGray};
   padding: 3vh;
   margin-top: 0;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1000;
 `
