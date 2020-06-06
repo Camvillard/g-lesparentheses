@@ -7,6 +7,7 @@ image_alt: "coucher de soleil"
 categories: histoire
 extrait: Je n’aurais pas pensé que parler de ce mois entre parenthèses aurait été si compliqué. Je n’aurais pas forcément pensé que j’allais remettre en question ce besoin d’écrire sur tout et sur n’importe quoi. Je pensais que les mots allaient glisser plus facilement, mais force est de constater que lorsque tout va bien, les mots restent bloqués.
 order: 149
+has_info: false
 ---
 
 <div class="main-container">

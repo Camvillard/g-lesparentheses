@@ -7,6 +7,7 @@ image_alt: "le wagon montréal"
 categories: histoire
 extrait: 1er octobre, 8h30.Autour de la grande table en bois, pas très loin des croissants et des chocolatines de bienvenue, on se j(a)uge, café fumant devant nous. Il est encore tôt et on nous a bien dit de ne pas arriver en retard, à 8h30, on ferme les portes, tant pis pour vous. Alors on est tous là, les 22 petits nouveaux, batch 188, session d'automne du Wagon Montréal.
 order: 151
+has_info: false
 ---
 
 <div class="main-container">

@@ -3,7 +3,10 @@ import { themeBreakpoints } from "../../theme/themeVariables"
 
 const { smScreen, mdScreen, lgScreen, xlgScreen } = themeBreakpoints
 
-export const MainContainer = styled.div`
+type MainContainerProps = {
+  extraPadding?: boolean
+}
+export const MainContainer = styled.div<MainContainerProps>`
   margin-left: auto;
   margin-right: auto;
   width: 92vw;

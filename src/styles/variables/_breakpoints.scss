@@ -1,19 +1,22 @@
 /* ------ VARIABLES : BREAKPOINTS ------ */
 
-$xsmScreen: 576px;
+$xsScreen: 410px;
 $smScreen: 768px;
-$mdScreen: 992px;
-$lgScreen: 1200px;
+$mdScreen: 1024px;
+$lgScreen: 1280px;
 $xlgScreen: 1440px;
+
+@media (min-width: $xsScreen) {
+} // end of smScreen - 410px
 
 @media (min-width: $smScreen) {
 } // end of smScreen - 768px
 
 @media (min-width: $mdScreen) {
-} // end of mdScreen - 992px
+} // end of mdScreen - 1024px
 
 @media (min-width: $lgScreen) {
-} // end of lgScreen - 1200px
+} // end of lgScreen - 1280px
 
 @media (min-width: $xlgScreen) {
 } // end of xlgScreen - 1440px

@@ -7,6 +7,7 @@ image_alt: "paysage enneigé"
 categories: histoire
 extrait: Alors voilà, déjà six petits jours que deux mille dix-huit a (presque) doucement refermé ses pages. Il n’y avait pas vraiment de mots pour définir deux mille dix huit – rien ne rime avec ça, c’est désespérant, alors cela laissait la porte ouverte à tout, trois cent soixante cinq jours de page blanche sans aucune attente. Et c’est vrai, je n’attendais rien de précis de deux mille dix huit, je crois que deux mille dix sept m’avait bien appris que cela ne sert pas à grand chose de prévoir, rien ne se passe jamais vraiment comme prévu.
 order: 152
+has_info: false
 ---
 
 <div class="main-container">

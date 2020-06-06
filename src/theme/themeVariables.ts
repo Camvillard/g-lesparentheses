@@ -13,7 +13,7 @@ const headersFont = `'europa', sans-serif` // 300, 400 & 700
 const accentFont = `'attribute-mono', sans-serif` //400
 
 // default : 375px - iPhone 8
-const xsScreen = `40px`
+const xsScreen = `410px`
 
 // iPad - 8 cols
 const smScreen = `768px`

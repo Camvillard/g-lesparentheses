@@ -7,6 +7,7 @@ image_alt: "montréal sous la neige"
 categories: histoire
 extrait: À 11h35 ça a fait 5 ans. Vol Air Transat TS500-quelque-chose, mon excellente mémoire pour les choses inutiles me fait défaut pour une fois, mais j’étais au hublot ; de ça, je me souviens. J’avais failli pas vraiment pouvoir partir - mon passeport n’avait pas la même adresse que je ne sais plus trop quel autre papier et à ce moment là, comme je n’étais plus certaine de vouloir réellement partir, j’avais presque espéré un refus à l’embarquement.
 order: 150
+has_info: false
 ---
 
 <div class="main-container">

@@ -62,7 +62,7 @@ const LastPost = ({ post }: BlogPostCardProps) => {
       </FeaturedImageContainer>
       <PostTitle
         to={`/article/${slug}`}
-        columns={{ default: "span 4", sm: "span 6" }}
+        columns={{ default: "span 4", sm: "span 6", md: "span 7" }}
         top={{
           default: "-40px",
           sm: "-0.85em",

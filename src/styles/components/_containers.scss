@@ -4,6 +4,15 @@
   margin-left: auto;
   margin-right: auto;
   width: 88vw;
+
+  &.extra-padding {
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+
+  &.margin-top {
+    margin-top: 32px;
+  }
 }
 
 .fullwidth-container {
@@ -11,8 +20,8 @@
   margin: 24px auto;
 }
 
-@media (min-width: $xsmScreen) {
-} // end of xsmScreen - 576px
+@media (min-width: $xsScreen) {
+} // end of xsScreen - 576px
 
 @media (min-width: $smScreen) {
   .main-container {
@@ -23,10 +32,24 @@
 @media (min-width: $mdScreen) {
   .main-container {
     width: 88vw;
+    &.extra-padding {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &.margin-top {
+      margin-top: 48px;
+    }
   }
 } // end of mdScreen - 992px
 
 @media (min-width: $lgScreen) {
+  .main-container {
+    width: 90vw;
+    &.extra-padding {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 } // end of lgScreen - 1200px
 
 @media (min-width: $xlgScreen) {

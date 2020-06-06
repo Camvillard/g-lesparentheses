@@ -8,7 +8,7 @@ const { darkGray } = themeColors
 
 export const SinglePostBanner = styled(Grid)`
   grid-template-rows: auto 1fr;
-  width: 100vw;
+  width: 100%;
   background: ${darkGray};
   padding: 3vh;
   margin-top: 0;
@@ -53,7 +53,7 @@ export const SinglePostTitle = styled(Header1)`
   }
   @media (min-width: ${lgScreen}) {
     margin-top: -1.2em;
-    font-size: 9.2rem;
+    font-size: 10.2rem;
   }
 `
 export const SinglePostText = styled.p`
