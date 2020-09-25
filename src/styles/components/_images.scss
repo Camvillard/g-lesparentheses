@@ -7,3 +7,27 @@
 .w-80 {
   width: 80%;
 }
+
+#img-150-height {
+  height: 22vh;
+  width: 100%;
+}
+
+@media (min-width: $smScreen) {
+  #img-150-height {
+    height: 32vh;
+    width: 100%;
+  }
+} // end of mdScreen - 992px
+@media (min-width: $mdScreen) {
+  #img-150-height {
+    height: 40vh;
+    width: 100%;
+  }
+} // end of mdScreen - 992px
+@media (min-width: $mdScreen) {
+  #img-150-height {
+    height: 64vh;
+    width: 100%;
+  }
+} // end of mdScreen - 992px
