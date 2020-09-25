@@ -10,7 +10,7 @@ export const SinglePostBanner = styled(Grid)`
   grid-template-rows: auto 1fr;
   width: 100%;
   background: ${darkGray};
-  padding: 3vh;
+  padding: 8vh 4vw 3vh;
   margin-top: 0;
   min-height: 100vh;
   position: relative;
@@ -46,7 +46,7 @@ export const SinglePostTitle = styled(Header1)`
   color: white;
   @media (min-width: ${smScreen}) {
     font-size: 8.4rem;
-    margin-top: -0.8em;
+    margin-top: -1em;
   }
   @media (min-width: ${mdScreen}) {
     font-size: 8.6rem;

@@ -65,8 +65,8 @@ const PostTemplate = (props: PostTemplateProps) => {
         <SinglePostThumnbailWrapper
           columns={{
             default: "1 / span 4",
-            sm: "1 / span 5",
-            md: "2 / span 6",
+            sm: "1 / span 7",
+            md: "1 / span 8",
           }}
         >
           <SinglePostMeta meta={frontmatter} />
@@ -76,7 +76,7 @@ const PostTemplate = (props: PostTemplateProps) => {
         <SinglePostTitleWrapper
           columns={{
             default: "1 / span 4",
-            sm: "3 / span 5",
+            sm: "2 / span 6",
             md: "3 / span 9",
           }}
         >

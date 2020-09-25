@@ -3,7 +3,7 @@
 // regular grid
 .grid {
   display: grid;
-  grid-gap: 16px;
+  gap: 24px 16px;
   &.columns-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -18,6 +18,9 @@
   }
   &.columns-6 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  &.gap-small {
+    gap: 24px 8px;
   }
 }
 
@@ -92,7 +95,6 @@
 
 @media (min-width: $smScreen) {
   .grid {
-    grid-gap: 16px;
     &.sm-columns-2 {
       grid-template-columns: 1fr 1fr;
     }
@@ -200,7 +202,9 @@
 
 @media (min-width: $mdScreen) {
   .grid {
-    grid-gap: 16px;
+    &.gap-small {
+      gap: 16px;
+    }
     &.sm-md-columns-2 {
       grid-template-columns: 1fr 1fr;
     }

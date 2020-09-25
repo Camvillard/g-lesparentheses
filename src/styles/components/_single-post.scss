@@ -2,12 +2,12 @@
 
 .single-post--section,
 .single-post--image {
-  margin: 24px 0;
+  margin: 0;
 }
 
-.single-post--section.grid-element,
-.single-post--image.grid-element {
-  margin: 0;
+.margin-section {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .single-post--text {
@@ -28,6 +28,8 @@
   font-size: 2.4rem;
   font-weight: 700;
   color: $darkGray;
+  margin: 8px 0;
+  line-height: 1.1;
 }
 
 .single-post--subtitle {
@@ -41,14 +43,14 @@
 @media (min-width: $smScreen) {
   .single-post--text {
     margin-left: 0;
-    max-width: 506px;
+    font-size: 1.6rem;
     &.max-width {
       max-width: 506px;
     }
   }
-  .single-post--section,
-  .single-post--image {
-    margin-bottom: 36px;
+  .margin-section {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .single-post--image.max-width {
@@ -65,16 +67,26 @@
     max-width: 100%;
     margin: 24px 0;
   }
+  .single-post--featured {
+    font-size: 4rem;
+  }
 } // end of smScreen - 768px
 
 @media (min-width: $mdScreen) {
 } // end of mdScreen - 992px
 
 @media (min-width: $lgScreen) {
-  .single-post--section {
-    margin-bottom: 32px;
+  .margin-section {
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+  .single-post--featured {
+    font-size: 4.8rem;
   }
 } // end of lgScreen - 1200px
 
 @media (min-width: $xlgScreen) {
+  .single-post--text {
+    font-size: 1.8rem;
+  }
 } // end of xlgScreen - 1440px
