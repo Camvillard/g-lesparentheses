@@ -78,7 +78,7 @@ order: 155
   <div class="grid columns-4 sm-columns-8 lg-columns-12">
     <section class="grid-element start-1 span-3 sm-span-4 lg-start-2">
       <p class="single-post--text">
-        et puis bien sûr, je balaye assez vite ces si. em sept ans, Montréal n'a jamais failli à ce que je venais chercher ici, c'est-à-dire moi. bien sûr, c'est très grandiloquent (quel beau mot), mais c'est pas trop loin de la vérité. il y a sept ans, je prenais l'avion  mais je reviens dans huit mois ». comme on dit parfois, the rest is history ».
+        et puis bien sûr, je balaye assez vite ces si. en sept ans, Montréal n'a jamais failli à ce que je venais chercher ici, c'est-à-dire moi. bien sûr, c'est très grandiloquent (quel beau mot), mais c'est pas trop loin de la vérité. il y a sept ans, je prenais l'avion  mais je reviens dans huit mois ». comme on dit parfois, the rest is history ».
       </p>
       <p class="single-post--text">
         sept ans, c'est l'âge de raison. alors cette septième année à Montréal, j'ai acheté un appartement, j'ai adopté un chat et je me suis mariée et je suis infiniment heureuse de pouvoir me dire que pour toujours, Montréal aura été le théâtre de ces trois grandes étapes.
@@ -127,7 +127,7 @@ order: 155
 <div class="main-container margin-section grid columns-4 md-columns-8 lg-columns-12">
   <section class="single-post--section grid-element start-1 span-3 sm-start-3 sm-span-2 lg-start-6 lg-span-4">
     <p class="single-post--text">
-      je n'ai beaucoup de photos de Montréal et, ces derniers temps, je dois avouer que j'ai 1. beaucoup de travail, 2. pas beaucoup le temps de me promener et 3. surtout la flemme, en vrai, de trimballer mon appareil photo alors toutes les photos de cet article ont été prises au gré du temps, pendant cette septième année.
+      je n'ai pas beaucoup de photos de Montréal et, ces derniers temps, je dois avouer que j'ai 1. beaucoup de travail, 2. pas beaucoup le temps de me promener et 3. surtout la flemme, en vrai, de trimballer mon appareil photo alors toutes les photos de cet article ont été prises au gré du temps, pendant cette septième année.
     </p>
 
   </section>
